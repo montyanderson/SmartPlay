@@ -55,5 +55,5 @@ gulp.task("finish", function() {
     });
 });
 
-gulp.task("build", ["styles", "scripts", "finish"]);
+gulp.task("default", ["styles", "scripts", "finish"]);
 gulp.task("dev", ["styles", "scripts", "watch"]);
