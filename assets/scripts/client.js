@@ -12,8 +12,7 @@ module.exports = function() {
     socket.emit("tag", "jazzy");
 
     socket.on("artist", function(data) {
-        var template = "
-        <li class='ui-state-default'> \
+        var template = "<li class='ui-state-default'> \
             <div class='trash' title='Remove'><span class='lid'></span><span class='can'></span></div> \
             <div class='card small'> \
                 <div class='card-image'> \
