@@ -1,6 +1,13 @@
 module.exports = function() {
-    	$('.valign-wrapper').height($('.peak').height());
-    	$('#sortable').sortable({
-    		axis: "y"
-    	});
+    $('.scroll').hover(function() {
+        $(this).animate({
+            'padding-right': '100px',
+            'border-radius': '20px'
+        });
+    }, function () {
+
+    });
+	$('#sortable').sortable({
+		axis: "y"
+	});
 };
