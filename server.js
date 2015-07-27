@@ -1,4 +1,5 @@
 var express = require("express"),
+    compression = require("compression");
     http = require("http"),
     socketio = require("socket.io");
 
@@ -14,6 +15,7 @@ var engine = require("./engine.js"),
 app.engine("mustache", engine);
 app.set("view engine", "mustache");
 
+app.use(compression());
 app.use(router);
 
 var server = http.createServer(app);
