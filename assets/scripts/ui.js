@@ -5,9 +5,7 @@ module.exports = function() {
 	$('#sortable').sortable({
 		axis: "y"
 	});
-    alert("I'm running, harry!");
-
-    //$('.button-collapse').sideNav();
+    
     $(document).ready(function() {
         $('.parallax').parallax();
     });
