@@ -3,6 +3,7 @@ var lastfm = require("./lastfm.js");
 module.exports = function(io) {
     io.on("connection", function(socket) {
         socket.on("artist", function(artist) {
+            console.log(artist);
             lastfm({
                 method: "artist.search",
                 artist: artist
