@@ -13,4 +13,12 @@ app.set("view engine", "mustache");
 
 app.use(router);
 
+console.log("Starting server...");
 app.listen(process.env.PORT || 8080);
+
+process.argv.forEach(function(arg) {
+    if(arg == "--test") {
+        console.log("Closing server...");
+        process.exit();
+    }
+});
