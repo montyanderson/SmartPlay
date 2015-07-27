@@ -10,4 +10,11 @@ router.get("/", function(req, res) {
     });
 });
 
+router.get("/landing", function(req, res) {
+    res.render("landing", {
+        layout: "main"
+    });
+});
+
+
 module.exports = router;
