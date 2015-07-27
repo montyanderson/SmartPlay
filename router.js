@@ -4,14 +4,14 @@ var router = express.Router();
 router.use(express.static("public"));
 router.use(express.static("node_modules/materialize-css/bin"));
 
-router.get("/", function(req, res) {
-    res.render("index", {
+router.get("/app", function(req, res) {
+    res.render("app", {
         layout: "main",
         toolBoxTitle: 'Add Artist'
     });
 });
 
-router.get("/landing", function(req, res) {
+router.get("/", function(req, res) {
     res.render("landing", {
         layout: "main"
     });
