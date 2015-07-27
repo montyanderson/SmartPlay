@@ -15,7 +15,7 @@ module.exports = function() {
     socket.on("artist", function(data) {
         /*jshint multistr: true */
 
-        var template = "<li class='ui-state-default'> \
+        var template = "<li class='ui-state-default' data-name='{{{name}}}'> \
             <div class='trash' title='Remove'><span class='lid'></span><span class='can'></span></div> \
             <div class='card small'> \
                 <div class='card-image'> \
