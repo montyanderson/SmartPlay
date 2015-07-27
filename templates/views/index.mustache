@@ -1,7 +1,7 @@
 
 <div class="container">
     <div class="row">
-        <div class="col s6 peak">
+            <div class="col s6">
             <h2>Most Important</h2>
             <ul id="sortable">
                 <li class="ui-state-default">
@@ -16,52 +16,31 @@
                         </div>
                       </div>
                 </li>
-                <li class="ui-state-default">
-                    <div class="card small">
-                        <div class="card-image">
-                            <img src="http://ecx.images-amazon.com/images/I/518JDKQVHTL._SS500_.jpg">
-                            <span class="card-title">Elvis Presly</span>
-                        </div>
-                        <div class="card-content">
-                          <p>Obscurity: <span>80</span></p>
-                        </div>
-                      </div>
-                </li>
-                <li class="ui-state-default">
-                    <div class="card small">
-                        <div class="card-image">
-                            <img src="https://kookrecepten.files.wordpress.com/2014/06/the-chordettes.jpg">
-                            <span class="card-title">The Chordettes</span>
-                        </div>
-                        <div class="card-content">
-                          <p>Obscurity: <span>80</span></p>
-                        </div>
-                      </div>
-                </li>
-                <li class="ui-state-default">
-                    <div class="card small">
-                        <div class="card-image">
-                            <img src="http://img3.wikia.nocookie.net/__cb20080519014448/lyricwiki/images/9/9e/Frank_Sinatra_-_Sinatra_Sings...Of_Love_And_Things_(1962).jpg">
-                            <span class="card-title">Frank Sinatra</span>
-                        </div>
-                        <div class="card-content">
-                          <p>Obscurity: <span>80</span></p>
-                        </div>
-                      </div>
-                </li>
             </ul>
             <h2>Least important</h2>
         </div>
-        <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
-           <a class="btn-floating btn-large red">
-             <i class="large material-icons">mode_edit</i>
-           </a>
-           <ul>
-             <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></i></a></li>
-             <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
-             <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
-             <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
-           </ul>
-         </div>
+        <div class="col s6">
+            <!-- Modal Trigger -->
+            <a class="waves-effect waves-light btn modal-trigger" href="#tool-box">Add artist</a>
+
+            <!-- Modal Structure -->
+            <div id="tool-box" class="modal bottom-sheet">
+              <div class="modal-content">
+                <h4>{{toolBoxTitle}}</h4>
+                <ul class="collection">
+                  <li class="collection-item avatar">
+                    <i class="material-icons circle">perm_identity</i>
+                    <div class="input-field col s6">
+                      <input placeholder="Artist name" id="artist_name" type="text" class="validate">
+                      <label for="first_name">Enter Artist:</label>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat artist-submit">Submit</a>
+              </div>
+            </div>
+        </div>
     </div>
 </div>

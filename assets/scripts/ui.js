@@ -1,11 +1,6 @@
 module.exports = function() {
-    $('.scroll').hover(function() {
-        $(this).animate({
-            'padding-right': '100px',
-            'border-radius': '20px'
-        });
-    }, function () {
-
+    $('.modal-trigger').on('click', function () {
+          $('#tool-box').openModal();
     });
 	$('#sortable').sortable({
 		axis: "y"
