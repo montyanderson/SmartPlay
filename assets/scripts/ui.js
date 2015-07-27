@@ -7,6 +7,9 @@ module.exports = function() {
 	});
     alert("I'm running, harry!");
 
-    $('.button-collapse').sideNav();
-    $('.parallax').parallax();
+    //$('.button-collapse').sideNav();
+    $(document).ready(function() {
+        $('.parallax').parallax();
+    });
+
 };
