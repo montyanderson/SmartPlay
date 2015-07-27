@@ -2,4 +2,7 @@ window.$ = window.jQuery = require("jquery");
 require("jquery-ui");
 
 require("./ui.js")();
-require("./client.js")();
+
+if(location.pathname === "/app") {
+    require("./client.js")();
+}
