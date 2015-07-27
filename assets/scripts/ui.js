@@ -1,5 +1,5 @@
 module.exports = function() {
-    $('.modal-trigger').on('click', function () {
+    $('.modal-trigger').click(function () {
           $('#tool-box').openModal();
     });
 	$('#sortable').sortable({
