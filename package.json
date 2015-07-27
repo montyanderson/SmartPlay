@@ -4,10 +4,10 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
-    "test": "node server --test",
+    "dev": "gulp dev",
     "prepublish": "gulp",
-    "dev": "gulp dev"
+    "start": "node server.js",
+    "test": "node server --test"
   },
   "repository": {
     "type": "git",
