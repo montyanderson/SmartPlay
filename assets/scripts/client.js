@@ -7,6 +7,7 @@ module.exports = function() {
     $(".artist-submit").click(function() {
         console.log($(".artist-name").val());
         socket.emit("artist", $(".artist-name").val());
+        return false;
     });
 
     socket.emit("artist", "whitechapel");
