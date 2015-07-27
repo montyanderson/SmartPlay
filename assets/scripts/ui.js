@@ -1,11 +1,11 @@
 module.exports = function() {
-    $('.modal-trigger').on('click', function () {
+    $('.modal-trigger').click(function () {
           $('#tool-box').openModal();
     });
-	$('#sortable').sortable({
+	$('.sortable').sortable({
 		axis: "y"
 	});
-    
+
     $(document).ready(function() {
         $('.parallax').parallax();
     });
