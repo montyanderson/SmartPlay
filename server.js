@@ -5,6 +5,7 @@ var express = require("express"),
 
 var app = express();
 
+app.set("name", "SmartPlay");
 app.set("views", __dirname + "/templates/views");
 app.set("layouts", __dirname + "/templates/layouts");
 
