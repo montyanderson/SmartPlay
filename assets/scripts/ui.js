@@ -5,13 +5,6 @@ module.exports = function() {
     $('.modal-trigger').click(function () {
           $($(this).attr("href")).openModal();
     });
-    $('.btn-expand').hover(function () {
-        $().animate({
-            'padding-right':'50px'
-        },1)
-    }, function () {
-
-    });
 
     $('.sortable').on("DOMSubtreeModified", function() {
         $('.sortable').children().last().hover(function () {
