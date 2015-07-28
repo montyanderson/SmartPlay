@@ -21,32 +21,49 @@ module.exports = function() {
         alert(data);
     });
 
-    socket.on("artist", function(data) {
-        /*jshint multistr: true */
+    /*jshint multistr: true */
 
-        var template = "<li class='ui-state-default' data-name='{{{name}}}'> \
-            <div class='trash' title='Remove'><span class='lid'></span><span class='can'></span></div> \
-            <div class='card small'> \
-                <div class='card-image'> \
-                    <img src='{{{image}}}'> \
-                  <span class='card-title'>{{name}}</span> \
-              </div> \
+    var template = "<li class='ui-state-default' data-name='{{{name}}}'> \
+        <div class='trash' title='Remove'><span class='lid'></span><span class='can'></span></div> \
+        <div class='card small'> \
+            <div class='card-image'> \
+                <img src='{{{image}}}'> \
+                <span class='card-title'>{{name}}</span> \
+          </div> \
                 <div class='card-content'> \
-                  <p>Obscurity: <span>80</span></p> \
-                </div> \
+                    {{#data}} \
+                        <p>{{0}}: <span>{{1}}</span></p> \
+                    {{/data}} \
               </div> \
-        </li>";
+          </div> \
+    </li>";
+
+    socket.on("artist", function(data) {
 
         console.log(data);
 
         var html = mustache.render(template, {
             name: data.name,
-            image: data.image[4]["#text"]
+            image: data.image[4]["#text"],
+            data: [
+                ["Obscurity", "75"],
+            ]
         });
 
 
         $(".sortable").append(html);
     });
 
-    socket.on("tag", console.log);
+    socket.on("tag", function(data) {
+        console.log(data);
+
+        var html = mustache.render(template, {
+            name: data.name,
+            data: [
+                ["Wiki", data.wiki.summary]
+            ]
+        });
+
+        $(".sortable").append(html);
+    });
 };

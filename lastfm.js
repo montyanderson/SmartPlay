@@ -11,8 +11,13 @@ module.exports = function(query, callback) {
     request(base + querystring.stringify(merge({
         api_key: config.lastfm,
         format: "json",
-        limit: "1"
+        limit: 1
     }, query)), function(err, res, body) {
-        callback(JSON.parse(body));
+        if(!err) {
+            callback(JSON.parse(body));
+        } else {
+            console.log("error: " + err);
+            callback({});
+        }
     });
 };
