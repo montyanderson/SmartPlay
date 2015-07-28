@@ -71,12 +71,6 @@ li .card.small {
 	}
 }
 
-i.small {
-	float: right;
-	display: none;
-}
-
-
 .buttons {
 	margin-top: 25px;
 }
@@ -84,3 +78,13 @@ i.small {
 /*.col .fixed-action-btn ul {
 	left:9px;
 } */
+
+.sortable > li > .bin {
+	transition: 0.5s opacity;
+	opacity: 0;
+	float: right;
+	z-index: 1000;
+}
+.sortable > li:hover > .bin {
+	opacity: 1;
+}

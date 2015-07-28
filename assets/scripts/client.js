@@ -41,7 +41,7 @@ module.exports = function() {
     /*jshint multistr: true */
 
     var template = "<li class='ui-state-default' data-name='{{{name}}}' data-type='{{{type}}}'> \
-        <i class='material-icons small'>delete</i> \
+        <i class='material-icons small bin'>delete</i> \
         <div class='card small'> \
             <div class='card-image {{color}}'> \
                 <img src='{{{image}}}'> \

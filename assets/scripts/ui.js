@@ -13,14 +13,6 @@ module.exports = function() {
 
     });
 
-    $('.sortable').on("DOMSubtreeModified", function() {
-        $('.sortable').children().last().hover(function () {
-            $(this).find('i').fadeIn(500);
-        }, function () {
-            $(this).find('i').fadeOut(500);
-        });
-    });
-
     $(document).ready(function() {
         $('.parallax').parallax();
     });
