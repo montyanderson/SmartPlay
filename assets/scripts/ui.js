@@ -6,13 +6,14 @@ module.exports = function() {
           $($(this).attr("href")).openModal();
     });
     $('.btn-expand').hover(function () {
+        var attr = $(this).attr('data-direction');
         $(this).animate({
-            $(this).attr('data-direction'):'50px',
+            attr:'50px',
             'border-radius':'20px'
         }, 1);
     }, function () {
         $(this).animate({
-            $(this).attr('data-direction'):'0px',
+            attr:'0px',
             'border-radius':'100px'
         }, 1);
     });
