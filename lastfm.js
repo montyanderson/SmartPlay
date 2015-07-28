@@ -3,7 +3,22 @@ var request = require("request"),
     querystring = require("querystring");
     fs = require("fs");
 
+try {
+    require.resolve("redis");
+} catch(e) {
+    console.error("Please install redis:");
+    console.error("npm install");
+    process.exit();
+}
+
+var redis = require("redis");
+
 var config = JSON.parse(fs.readFileSync("config.json").toString());
+
+if(!config.redis) {
+    console.error("Please ask Monty for the redis server details!");
+    process.exit();
+}
 
 var base = "http://ws.audioscrobbler.com/2.0/?";
 

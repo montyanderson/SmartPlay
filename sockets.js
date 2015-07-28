@@ -19,7 +19,7 @@ module.exports = function(io) {
                     console.log(data);
 
                     if(data.results.artistmatches !== []) {
-                        if(artist.obscurity && typeof artist.obscurity === number && Math.abs(artist.obscuity) <= 100) {
+                        if(artist.obscurity && Math.abs(artist.obscuity) <= 100) {
                             data.results.artistmatches.artist.obscurity = artist.obscurity;
                         }
 
