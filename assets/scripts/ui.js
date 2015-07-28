@@ -1,6 +1,6 @@
 module.exports = function() {
     $('.modal-trigger').click(function () {
-          $('#tool-box').openModal();
+          $($(this).attr("href")).openModal();
     });
 	$('.sortable').sortable({
 		axis: "y"

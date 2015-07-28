@@ -10,26 +10,29 @@
         </div>
         <div class="col s6">
             <!-- Modal Trigger -->
-            <a class="waves-effect waves-light btn modal-trigger" href="#tool-box">Add artist</a>
+            <a class="waves-effect waves-light btn modal-trigger" href="#add-artist">Add artist</a>
 
-            <!-- Modal Structure -->
-            <div id="tool-box" class="modal bottom-sheet">
-              <div class="modal-content">
-                <h4>{{toolBoxTitle}}</h4>
-                <ul class="collection">
-                  <li class="collection-item avatar">
-                    <i class="material-icons circle">perm_identity</i>
-                    <div class="input-field col s6">
-                      <input placeholder="Artist name" type="text" class="validate artist-name">
-                      <label for="first_name">Enter Artist:</label>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-              <div class="modal-footer">
-                <a href="#" class="modal-action modal-close waves-effect waves-green btn-flat artist-submit">Submit</a>
-              </div>
-            </div>
         </div>
     </div>
 </div>
+
+{{#modals}}
+<div id="{{id}}" class="modal bottom-sheet">
+  <div class="modal-content">
+    <h4>{{title}}</h4>
+    <ul class="collection">
+      <li class="collection-item avatar">
+        <i class="material-icons circle">perm_identity</i>
+        <div class="input-field col s6">
+          <input placeholder="Artist name" type="text" class="validate {{class}}-name">
+          <label for="first_name">Enter Artist:</label>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="modal-footer">
+    <a href="#" class="modal-action modal-close waves-effect waves-green btn-flat {{class}}-submit">Submit</a>
+  </div>
+</div>
+
+{{/modals}}

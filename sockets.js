@@ -8,8 +8,12 @@ module.exports = function(io) {
                 method: "artist.search",
                 artist: artist
             }, function(data) {
-                console.log(data);
-                socket.emit("artist", data.results.artistmatches.artist[0]);
+                if(data.results.artistmatches.artist) {
+                    console.log(data);
+                    socket.emit("artist", data.results.artistmatches.artist[0]);
+                } else {
+                    socket.emit("err", "Sorry, no matches for that artist were found.");
+                }
             });
         });
     });
