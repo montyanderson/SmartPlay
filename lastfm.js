@@ -20,19 +20,33 @@ if(!config.redis) {
     process.exit();
 }
 
+var db = redis.createClient(config.redis.port, config.redis.ip, {
+    auth_pass: config.redis.auth
+});
+
 var base = "http://ws.audioscrobbler.com/2.0/?";
 
 module.exports = function(query, callback) {
-    request(base + querystring.stringify(merge({
+    var url = base + querystring.stringify(merge({
         api_key: config.lastfm,
         format: "json",
         limit: 1
-    }, query)), function(err, res, body) {
-        if(!err) {
-            callback(JSON.parse(body));
+    }, query));
+
+    db.get(url, function(err, reply) {
+        if(reply != null) {
+            console.log(url + " was retrived from redis.");
+            callback(JSON.parse(reply.toString()));
         } else {
-            console.log("error: " + err);
-            callback({});
+            request(url, function(err, res, body) {
+                if(!err) {
+                    db.set(url, body);
+                    callback(JSON.parse(body));
+                } else {
+                    console.log("error: " + err);
+                    callback({});
+                }
+            });
         }
     });
 };
