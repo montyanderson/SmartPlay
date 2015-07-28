@@ -41,6 +41,7 @@ module.exports = function(query, callback) {
             request(url, function(err, res, body) {
                 if(!err) {
                     db.set(url, body);
+                    db.expire(url, 60 * 60 * 24 * 7 * 4); // expire in 1 month
                     callback(JSON.parse(body));
                 } else {
                     console.log("error: " + err);
