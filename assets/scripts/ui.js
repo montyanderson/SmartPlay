@@ -10,8 +10,6 @@ module.exports = function() {
         $('.parallax').parallax();
     });
 
-    $('#obscurity').disableSelection();
-
     window.addEventListener("hashchange", function() {
         if(location.hash.substr(0, 8) === "#delete-") {
             $(".sortable").children().each(function() {
