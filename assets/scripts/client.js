@@ -41,7 +41,7 @@ module.exports = function() {
     /*jshint multistr: true */
 
     var template = "<li class='ui-state-default' data-name='{{{name}}}' data-type='{{{type}}}'> \
-        <i class='material-icons small bin'>delete</i> \
+        <a href='#delete-{{name}}'><i class='material-icons small bin'>delete</i></a> \
         <div class='card small'> \
             <div class='card-image {{color}}'> \
                 <img src='{{{image}}}'> \
@@ -54,6 +54,8 @@ module.exports = function() {
               </div> \
           </div> \
     </li>";
+
+    console.log(template);
 
     socket.on("artist", function(data) {
 

@@ -79,12 +79,22 @@ li .card.small {
 	left:9px;
 } */
 
-.sortable > li > .bin {
-	transition: 0.25s opacity;
-	opacity: 0;
-	float: right;
-	z-index: 1000;
-}
-.sortable > li:hover > .bin {
-	opacity: 1;
+.sortable {
+	li {
+		a {
+			display: inline;
+			color: inherit;
+		}
+
+		.bin {
+			transition: 0.5s opacity;
+			opacity: 0;
+			float: right;
+			z-index: 1000;
+		}
+	}
+
+	li:hover .bin {
+		opacity: 1;
+	}
 }
