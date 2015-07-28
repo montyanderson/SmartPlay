@@ -5,13 +5,6 @@ module.exports = function() {
     $('.modal-trigger').click(function () {
           $($(this).attr("href")).openModal();
     });
-    $('.btn-expand').hover(function () {
-        $(this).animate({
-            'padding-right':'20px'
-        })
-    }, function () {
-
-    });
 
     $(document).ready(function() {
         $('.parallax').parallax();
