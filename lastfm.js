@@ -10,7 +10,8 @@ var base = "http://ws.audioscrobbler.com/2.0/?";
 module.exports = function(query, callback) {
     request(base + querystring.stringify(merge({
         api_key: config.lastfm,
-        format: "json"
+        format: "json",
+        limit: "1"
     }, query)), function(err, res, body) {
         callback(JSON.parse(body));
     });

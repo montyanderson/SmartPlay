@@ -8,9 +8,7 @@ module.exports = function() {
         if(location.hash === "#artist-submit") {
             console.log($(".artist-name").val());
             socket.emit("artist", $(".artist-name").val());
-        }
-
-        if(location.hash === "#tag-submit") {
+        } if(location.hash === "#tag-submit") {
             console.log($(".tag-name").val());
             socket.emit("tag", $(".tag-name").val());
         }
@@ -19,7 +17,9 @@ module.exports = function() {
     socket.emit("artist", "whitechapel");
     socket.emit("tag", "jazzy");
 
-    socket.on("err", console.log);
+    socket.on("alert", function(data) {
+        alert(data);
+    });
 
     socket.on("artist", function(data) {
         /*jshint multistr: true */
