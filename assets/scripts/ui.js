@@ -6,9 +6,9 @@ module.exports = function() {
           $($(this).attr("href")).openModal();
     });
     $('.btn-expand').hover(function () {
-        $(this).animate({
-            'padding-right':'20px'
-        })
+        $().animate({
+            'padding-right':'50px'
+        },1)
     }, function () {
 
     });
