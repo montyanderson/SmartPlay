@@ -1,7 +1,11 @@
-var lastfm = require("./lastfm.js");
+var lastfm = require("./lastfm.js"),
+    generator = require("./generator.js");
 
 module.exports = function(io) {
     io.on("connection", function(socket) {
+
+        socket.on("generate", generator);
+
         socket.on("artist", function(artist) {
             if(typeof artist === "string" && artist.length <= 50) {
                 console.log("artist: " + artist);

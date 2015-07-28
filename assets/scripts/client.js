@@ -8,11 +8,28 @@ module.exports = function() {
         if(location.hash === "#artist-submit") {
             console.log($(".artist-name").val());
             socket.emit("artist", $(".artist-name").val());
-        } if(location.hash === "#tag-submit") {
+        }
+
+        if(location.hash === "#tag-submit") {
             console.log($(".tag-name").val());
             socket.emit("tag", $(".tag-name").val());
         }
     }, false);
+
+    $(".generate").click(function() {
+        var data = [];
+
+        $(".sortable").children().each(function() {
+            data.push({
+                name: $(this).data("name"),
+                type: $(this).data("type")
+            });
+        });
+
+        console.log(data);
+        socket.emit("generate", data);
+    });
+
 
     socket.emit("artist", "whitechapel");
     socket.emit("tag", "jazzy");
@@ -23,8 +40,8 @@ module.exports = function() {
 
     /*jshint multistr: true */
 
-    var template = "<li class='ui-state-default' data-name='{{{name}}}'> \
-        <div class='trash' title='Remove'><span class='lid'></span><span class='can'></span></div> \
+    var template = "<li class='ui-state-default' data-name='{{{name}}}' data-type='{{{type}}}'> \
+        <i class='material-icons small'>delete</i> \
         <div class='card small'> \
             <div class='card-image {{color}}'> \
                 <img src='{{{image}}}'> \
@@ -47,7 +64,8 @@ module.exports = function() {
             image: data.image[4]["#text"],
             data: [
                 ["Listeners", data.listeners],
-            ]
+            ],
+            type: "artist"
         });
 
 
@@ -64,6 +82,7 @@ module.exports = function() {
             data: [
                 ["Wiki", data.wiki.summary]
             ],
+            type: "tag",
             color: colors[Math.floor(Math.random() * colors.length)]
         });
 
