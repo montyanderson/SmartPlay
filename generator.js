@@ -1,3 +1,7 @@
+var lastfm = require("./lastfm.js");
+
 module.exports = function(data) {
-    // typeof data = 'array'
+    data.forEach(function(obj) {
+        console.log(obj);
+    });
 };
