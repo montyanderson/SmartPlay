@@ -1,3 +1,4 @@
+location.hash = "#";
 window.$ = window.jQuery = require("jquery");
 require("jquery-ui");
 

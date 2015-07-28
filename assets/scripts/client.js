@@ -14,20 +14,22 @@ module.exports = function() {
             console.log($(".tag-name").val());
             socket.emit("tag", $(".tag-name").val());
         }
-
-        if(location.hash === "#generate") {
-            var data = [];
-
-            $(".sortable").children().each(function() {
-                data.push({
-                    name: $(this).data("name"),
-                    type: $(this).data("type")
-                });
-            });
-
-            console.log(data);
-        }
     }, false);
+
+    $(".generate").click(function() {
+        var data = [];
+
+        $(".sortable").children().each(function() {
+            data.push({
+                name: $(this).data("name"),
+                type: $(this).data("type")
+            });
+        });
+
+        console.log(data);
+        socket.emit("generate", data);
+    });
+
 
     socket.emit("artist", "whitechapel");
     socket.emit("tag", "jazzy");
