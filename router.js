@@ -11,11 +11,13 @@ router.get("/app", function(req, res) {
             {
                 title: "Add Artist",
                 class: "artist",
+                placeholder: "Artist",
                 id: "add-artist"
             },
             {
                 title: "Add Tag",
                 class: "tag",
+                placeholder: "Tag",
                 id: "add-tag"
             }
         ]
