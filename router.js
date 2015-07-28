@@ -14,9 +14,9 @@ router.get("/app", function(req, res) {
                 id: "add-artist"
             },
             {
-                title: "Add Artist",
-                class: "artist",
-                id: "add--artist"
+                title: "Add Tag",
+                class: "tag",
+                id: "add-tag"
             }
         ]
     });
