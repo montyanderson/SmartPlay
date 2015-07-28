@@ -10,6 +10,11 @@ module.exports = function() {
         //return false;
     });
 
+    $(".tag-submit").click(function() {
+        console.log($(".tag-name").val());
+        socket.emit("tag", $(".tag-name").val());
+    });
+
     socket.emit("artist", "whitechapel");
     socket.emit("tag", "jazzy");
 
