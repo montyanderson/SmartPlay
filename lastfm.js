@@ -31,7 +31,7 @@ module.exports = function(query, callback) {
         api_key: config.lastfm,
         format: "json",
         limit: 1
-    }, query));
+    }, query)).toLowerCase();
 
     db.get(url, function(err, reply) {
         if(reply != null) {
