@@ -4,16 +4,17 @@ var io = require("socket.io-client"),
 module.exports = function() {
     var socket = io(location.origin);
 
-    $(".artist-submit").click(function() {
-        console.log($(".artist-name").val());
-        socket.emit("artist", $(".artist-name").val());
-        //return false;
-    });
+    window.addEventListener("hashchange", function() {
+        if(location.hash === "#artist-submit") {
+            console.log($(".artist-name").val());
+            socket.emit("artist", $(".artist-name").val());
+        }
 
-    $(".tag-submit").click(function() {
-        console.log($(".tag-name").val());
-        socket.emit("tag", $(".tag-name").val());
-    });
+        if(location.hash === "#tag-submit") {
+            console.log($(".tag-name").val());
+            socket.emit("tag", $(".tag-name").val());
+        }
+    }, false);
 
     socket.emit("artist", "whitechapel");
     socket.emit("tag", "jazzy");
