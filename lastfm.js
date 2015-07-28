@@ -16,7 +16,7 @@ var redis = require("redis");
 var config = JSON.parse(fs.readFileSync("config.json").toString());
 
 if(!config.redis) {
-    console.error("Please ask Monty for the redis server details!");
+    console.error("Please ask Monty (God) for the redis server details!");
     process.exit();
 }
 
