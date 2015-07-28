@@ -34,7 +34,7 @@ module.exports = function(query, callback) {
     }, query)).toLowerCase();
 
     db.get(url, function(err, reply) {
-        if(reply != null) {
+        if(reply !== null) {
             console.log(url + " was retrived from redis.");
             callback(JSON.parse(reply.toString()));
         } else {
