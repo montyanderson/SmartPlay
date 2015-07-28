@@ -3,11 +3,15 @@ var io = require("socket.io-client"),
 
 module.exports = function() {
     var socket = io(location.origin);
+    var obscurity = [];
 
     window.addEventListener("hashchange", function() {
         if(location.hash === "#artist-submit") {
             console.log($(".artist-name").val());
-            socket.emit("artist", $(".artist-name").val());
+            socket.emit("artist", {
+                name: $(".artist-name").val(),
+                obscurity: $(".artist-obscurity").val()
+            });
         }
 
         if(location.hash === "#tag-submit") {
@@ -31,7 +35,10 @@ module.exports = function() {
     });
 
 
-    socket.emit("artist", "whitechapel");
+    socket.emit("artist", {
+        name: "whitechapel",
+        obscurity: 75
+    });
     socket.emit("tag", "jazzy");
 
     socket.on("alert", function(data) {

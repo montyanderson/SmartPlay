@@ -7,16 +7,22 @@ module.exports = function(io) {
         socket.on("generate", generator);
 
         socket.on("artist", function(artist) {
-            if(typeof artist === "string" && artist.length <= 50) {
-                console.log("artist: " + artist);
+            console.log(artist);
+
+            if(typeof artist.name === "string" && JSON.stringify(artist).length <= 250) {
+                console.log("artist: " + artist.name);
 
                 lastfm({
                     method: "artist.search",
-                    artist: artist
+                    artist: artist.name
                 }, function(data) {
                     console.log(data);
 
                     if(data.results.artistmatches !== []) {
+                        if(artist.obscurity && typeof artist.obscurity === number && Math.abs(artist.obscuity) <= 100) {
+                            data.results.artistmatches.artist.obscurity = artist.obscurity;
+                        }
+
                         socket.emit("artist", data.results.artistmatches.artist);
                     } else {
                         socket.emit("alert", "Sorry, no matches for that artist were found.");
