@@ -26,7 +26,7 @@ module.exports = function() {
     var template = "<li class='ui-state-default' data-name='{{{name}}}'> \
         <div class='trash' title='Remove'><span class='lid'></span><span class='can'></span></div> \
         <div class='card small'> \
-            <div class='card-image'> \
+            <div class='card-image {{color}}'> \
                 <img src='{{{image}}}'> \
                 <span class='card-title'>{{name}}</span> \
           </div> \
@@ -46,7 +46,7 @@ module.exports = function() {
             name: data.name,
             image: data.image[4]["#text"],
             data: [
-                ["Obscurity", "75"],
+                ["Listeners", data.listeners],
             ]
         });
 
@@ -57,11 +57,14 @@ module.exports = function() {
     socket.on("tag", function(data) {
         console.log(data);
 
+        var colors = ["red", "blue", "orange", "purple", "pink", "indigo", "cyan", "teal", "amber"];
+
         var html = mustache.render(template, {
             name: data.name,
             data: [
                 ["Wiki", data.wiki.summary]
-            ]
+            ],
+            color: colors[Math.floor(Math.random() * colors.length)]
         });
 
         $(".sortable").append(html);
