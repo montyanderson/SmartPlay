@@ -10,4 +10,5 @@ module.exports = function() {
         $('.parallax').parallax();
     });
 
+    $('#obscurity').disableSelection();
 };
