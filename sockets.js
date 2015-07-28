@@ -14,7 +14,7 @@ module.exports = function(io) {
 
                 lastfm({
                     method: "artist.search",
-                    artist: artist.name
+                    artist: artist.name.trim()
                 }, function(data) {
                     console.log(data);
 
