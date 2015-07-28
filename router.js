@@ -7,7 +7,18 @@ router.use(express.static("node_modules/materialize-css/bin"));
 router.get("/app", function(req, res) {
     res.render("app", {
         layout: "main",
-        toolBoxTitle: 'Add Artist'
+        modals: [
+            {
+                title: "Add Artist",
+                class: "artist",
+                id: "add-artist"
+            },
+            {
+                title: "Add Artist",
+                class: "artist",
+                id: "add--artist"
+            }
+        ]
     });
 });
 

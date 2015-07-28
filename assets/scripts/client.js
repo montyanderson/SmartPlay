@@ -7,11 +7,13 @@ module.exports = function() {
     $(".artist-submit").click(function() {
         console.log($(".artist-name").val());
         socket.emit("artist", $(".artist-name").val());
-        return false;
+        //return false;
     });
 
     socket.emit("artist", "whitechapel");
     socket.emit("tag", "jazzy");
+
+    socket.on("err", console.log);
 
     socket.on("artist", function(data) {
         /*jshint multistr: true */
