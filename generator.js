@@ -54,4 +54,10 @@ module.exports = function(data) {
         data[i].trackNum = convertContainer[i];
     }
     console.log(data);
+
+    /* This algorithim calculates the number of tracks to search for each
+    artist/tag based on their position in the sortable list. the final
+    result is a new object property called 'trackNum' which stores this
+    calculated number of tracks.
+     */
 };
