@@ -34,14 +34,14 @@ module.exports = function(data) {
                   len--;
               while (loopCount < difference) {
                 for (i = 0; i < len; i++) {
-                  if (descendArr[i] > 1 && loopCount < difference) {
-                    descendArr[i]--;
-                    loopCount++;
-                } else if (descendArr[i] == 1) {
-                    len--;
-                  } else {
-                    break;
-                  }
+                    if (descendArr[i] > 1 && loopCount < difference) {
+                        descendArr[i]--;
+                        loopCount++;
+                    } else if (descendArr[i] == 1) {
+                        len--;
+                    } else {
+                        break;
+                    }
                 }
               }
               len = data.length;
