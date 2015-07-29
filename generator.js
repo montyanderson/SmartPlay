@@ -19,13 +19,13 @@ module.exports = function(data, callback) {
             if(typeof search.artists.items[0] === "object") {
                 spotify("artists/" + search.artists.items[0].id + "/top-tracks", {
                     country: "GB",
-                    limit: artist.trackNum
+                    limit: 10
                 }, function(tracks) {
                     var arr = [];
 
-                    tracks.tracks.forEach(function(track) {
-                        arr.push(track.uri);
-                    });
+                    for(var i = 0; i < artist.trackNum; i++) {
+                        arr.push(tracks.tracks[i].uri);
+                    }
 
                     callback(null, arr);
                 });
