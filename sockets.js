@@ -4,7 +4,11 @@ var lastfm = require("./lastfm.js"),
 module.exports = function(io) {
     io.on("connection", function(socket) {
 
-        socket.on("generate", generator);
+        socket.on("generate", function(data) {
+            generator(data, function(res) {
+                socket.emit("playlist", res);
+            });
+        });
 
         socket.on("artist", function(artist) {
             console.log(artist);
