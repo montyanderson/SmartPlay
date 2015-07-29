@@ -23,7 +23,7 @@ module.exports = function(data, callback) {
                 }, function(tracks) {
                     var arr = [];
 
-                    for(var i = 0; i < artist.trackNum; i++) {
+                    for(var i = 0; i < artist.trackNum && tracks.tracks[i]; i++) {
                         arr.push(tracks.tracks[i].uri);
                     }
 
