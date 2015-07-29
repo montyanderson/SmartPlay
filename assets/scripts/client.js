@@ -34,6 +34,25 @@ module.exports = function() {
         socket.emit("generate", data);
     });
 
+    socket.on("playlist", function(data) {
+        var widget = '<iframe src="https://embed.spotify.com/?uri=spotify:trackset:PREFEREDTITLE:{{{uris}}}" width=500 height=500 frameborder="0" allowtransparency="true"></iframe>';
+
+        var uris = [];
+
+        data.forEach(function(uri) {
+            uris.push(uri.replace("spotify:track:", ""));
+        });
+
+        console.log(uris);
+
+        var html = mustache.render(widget, {
+            uris: uris.join(",")
+        });
+
+        console.log(html);
+
+        $(".buttons").append(html);
+    });
 
     socket.emit("artist", {
         name: "whitechapel",
