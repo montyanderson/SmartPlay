@@ -4,6 +4,11 @@ module.exports = function() {
 	});
     $('.modal-trigger').click(function () {
           $($(this).attr("href")).openModal();
+          $(document).keypress(function(e) {
+              if (e.which == 13) {
+                  $($(this).attr("href")).closeModal();
+              }
+          })
     });
 
     $(document).ready(function() {
