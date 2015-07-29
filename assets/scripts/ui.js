@@ -6,7 +6,8 @@ module.exports = function() {
           $($(this).attr("href")).openModal();
           $(document).keypress(function(e) {
               if (e.which == 13) {
-                  $($(this).attr("href")).closeModal();
+                  console.log("work");
+                  console.log($(this));
               }
           })
     });
