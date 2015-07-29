@@ -12,52 +12,37 @@ module.exports = function(data, callback) {
     });
 
     async.map(artists, function(artist, callback) {
-        lastfm({
-            method: "artist.gettoptracks",
-            artist: artist.name,
-            limit: artist.trackNum
-        }, function(data) {
-            if(data.toptracks && data.toptracks.track) {
-                callback(null, data.toptracks.track);
+        spotify("search", {
+            type: "artist",
+            q: artist.name
+        }, function(search) {
+            if(typeof search.artists.items[0] === "object") {
+                spotify("artists/" + search.artists.items[0].id + "/top-tracks", {
+                    country: "GB",
+                    limit: artist.trackNum
+                }, function(tracks) {
+                    var arr = [];
+
+                    tracks.tracks.forEach(function(track) {
+                        arr.push(track.uri);
+                    });
+
+                    callback(null, arr);
+                });
             } else {
-                callback(1);
+                callback({});
             }
         });
     }, function(err, data) {
-        data.forEach(function(artist) {
-            var songs = [];
+        var uris = [];
 
-            artist.forEach(function(track) {
-                songs.push({
-                    name: track.name,
-                    artist: track.artist.name
-                });
-            });
-
-            console.log(songs);
-
-            var i = 0;
-
-            async.map(songs, function(song, callback) {
-                spotify("search", {
-                    type: "track",
-                    q: song.name + " artist:" + song.artist,
-                    token: "BQAJna64ehr9TERX8YRjFPuZCXBibasrJlaUBIhVi1GedbLrlZUTWORiQtWB4GRcrGPFUQDgUTNmKuQ0RLHSHw",
-                    access_token: "BQAJna64ehr9TERX8YRjFPuZCXBibasrJlaUBIhVi1GedbLrlZUTWORiQtWB4GRcrGPFUQDgUTNmKuQ0RLHSHw"
-                }, function(res) {
-                    if(res.tracks && res.tracks.items[0]) {
-                        callback(null, res.tracks.items[0].uri);
-                        i++;
-                    } else {
-                        console.log(res);
-                        console.log(song);
-                        callback(null, null);
-                    }
-                });
-            }, function(err, res) {
-                callback(res);
+        data.forEach(function(tracks) {
+            tracks.forEach(function(track) {
+                uris.push(track);
             });
         });
+
+        callback(uris);
     });
 
 };
