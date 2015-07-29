@@ -51,7 +51,7 @@ module.exports = function() {
 
         console.log(html);
 
-        $(".buttons").append(html);
+        $(".playlist").html(html);
     });
 
     socket.emit("artist", {
