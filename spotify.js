@@ -1,28 +1,21 @@
 var request = require("request"),
     merge = require("merge"),
-    querystring = require("querystring");
+    querystring = require("querystring"),
     fs = require("fs"),
     redis = require("redis");
 
 var config = JSON.parse(fs.readFileSync("config.json").toString());
 
-if(!config.redis) {
-    console.error("Please ask Monty (God) for the redis server details!");
-    process.exit();
-}
-
 var db = redis.createClient(config.redis.port, config.redis.ip, {
     auth_pass: config.redis.auth
 });
 
-var base = "http://ws.audioscrobbler.com/2.0/?";
+var base = "https://api.spotify.com/v1/";
 
-module.exports = function(query, callback) {
-    var url = base + querystring.stringify(merge({
-        api_key: config.lastfm,
-        format: "json",
+module.exports = function(path, query, callback) {
+    var url = base + path + "/?" + querystring.stringify(merge({
         limit: 1
-    }, query)).toLowerCase().trim();
+    }, query));
 
     db.get(url, function(err, reply) {
         if(reply !== null) {
@@ -31,14 +24,13 @@ module.exports = function(query, callback) {
         } else {
             request(url, function(err, res, body) {
                 if(!err) {
-                    db.set(url, body);
-                    db.expire(url, 60 * 60 * 24 * 7 * 4); // expire in 1 month
                     callback(JSON.parse(body));
+                    db.set(url, body);
                 } else {
-                    console.log("error: " + err);
                     callback({});
                 }
             });
         }
     });
+
 };

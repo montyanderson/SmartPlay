@@ -1,63 +1,58 @@
-var lastfm = require("./lastfm.js");
+var async = require("async");
+
+var tracks = require("./tracks.js"),
+    lastfm = require("./lastfm.js"),
+    spotify = require("./spotify.js");
 
 module.exports = function(data) {
-    var len = data.length,
-        descendArr = [],
-        i = 0;
+    data = tracks(data);
 
-    for (i = len; i > 0; i--) {
-        descendArr.push(i);
-    }
+    var artists = data.filter(function(card) {
+        return card.type === "artist";
+    });
 
-    function convert () {
-        var naturalSum = (len / 2) * (len + 1),
-            totalTracks = 50;
+    async.map(artists, function(artist, callback) {
+        lastfm({
+            method: "artist.gettoptracks",
+            artist: artist.name,
+            limit: artist.trackNum
+        }, function(data) {
+            if(data.toptracks && data.toptracks.track) {
+                callback(null, data.toptracks.track);
+            } else {
+                callback(1);
+            }
+        });
+    }, function(err, data) {
+        data.forEach(function(artist) {
+            var songs = [];
 
-        if (totalTracks >= naturalSum) {
-            var sum = 0;
-            for (i = 0; i < len; i++) {
-                sum += Math.round(descendArr[i] / naturalSum * totalTracks);
-                descendArr[i] = Math.round(descendArr[i] / naturalSum * totalTracks);
-            }
-            if (sum == totalTracks + 1) {
-                descendArr[len-1]--;
-            }
-            return descendArr;
-        } else if (totalTracks < len) {
-            for (i = 0; i < len; i++) {
-                descendArr[i] = 1;
-            }
-            return descendArr;
-        } else {
-              var loopCount = 0,
-                  difference = naturalSum - totalTracks;
-                  len--;
-              while (loopCount < difference) {
-                for (i = 0; i < len; i++) {
-                    if (descendArr[i] > 1 && loopCount < difference) {
-                        descendArr[i]--;
-                        loopCount++;
-                    } else if (descendArr[i] == 1) {
-                        len--;
-                    } else {
-                        break;
+            artist.forEach(function(track) {
+                songs.push({
+                    name: track.name,
+                    artist: track.artist.name
+                });
+            });
+
+            console.log(songs);
+
+            var i = 0;
+
+            async.map(songs, function(song, callback) {
+                spotify("search", {
+                    type: "track",
+                    q: song.name,
+                    artist: song.artist
+                }, function(res) {
+                    if(res.tracks.items[0]) {
+                        callback(null, res.tracks.items[0].uri);
+                        i++;
                     }
-                }
-              }
-              len = data.length;
-              return descendArr;
-        }
-    }
+                });
+            }, function(err, res) {
+                console.log(res);
+            });
+        });
+    });
 
-    var convertContainer = convert();
-    for (i = 0; i < len; i++) {
-        data[i].trackNum = convertContainer[i];
-    }
-    console.log(data);
-
-    /* This algorithim calculates the number of tracks to search for each
-    artist/tag based on their position in the sortable list. the final
-    result is a new object property called 'trackNum' which stores this
-    calculated number of tracks.
-     */
 };
