@@ -4,14 +4,13 @@ module.exports = function() {
 	});
     $('.modal-trigger').click(function () {
           $($(this).attr("href")).openModal();
+          var self = this;
           $(document).keypress(function(e) {
               if (e.which == 13) {
-                  console.log("work");
-                  console.log($(this));
+                  $('.enter-sub')[0].click();
               }
-          })
+          });
     });
-
     $(document).ready(function() {
         $('.parallax').parallax();
     });
