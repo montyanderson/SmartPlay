@@ -44,9 +44,13 @@ module.exports = function(data, callback) {
                     q: song.name,
                     artist: song.artist
                 }, function(res) {
-                    if(res.tracks.items[0]) {
+                    if(res.tracks && res.tracks.items[0]) {
                         callback(null, res.tracks.items[0].uri);
                         i++;
+                    } else {
+                        console.log(res);
+                        console.log(song);
+                        callback(null, null);
                     }
                 });
             }, function(err, res) {

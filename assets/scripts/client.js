@@ -34,6 +34,9 @@ module.exports = function() {
         socket.emit("generate", data);
     });
 
+    socket.on("playlist", function(data) {
+        console.log(data);
+    });
 
     socket.emit("artist", {
         name: "whitechapel",
