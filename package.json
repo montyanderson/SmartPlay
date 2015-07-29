@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/montyanderson/yrs2015#readme",
   "dependencies": {
+    "animate.css": "^3.2.5",
     "async": "^1.4.0",
     "browserify": "^11.0.0",
     "compression": "^1.5.1",
