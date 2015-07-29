@@ -2,9 +2,22 @@
 
 ## Install
 
-* Install Node.js or io.js
+* Install Node.js and redis.
 
 * Clone the repository
+
+* Make **config.json**:
+
+``` json
+{
+    "lastfm": "xxx-lastfm-api-key-xxx",
+    "redis": {
+        "port": 6379,
+        "ip": "localhost",
+        "auth": ""
+    }
+}
+```
 
 * Install the dependencies
 
