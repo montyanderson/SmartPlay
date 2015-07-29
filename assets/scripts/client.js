@@ -35,7 +35,7 @@ module.exports = function() {
     });
 
     socket.on("playlist", function(data) {
-        var widget = '<iframe src="https://embed.spotify.com/?uri=spotify:trackset:PREFEREDTITLE:{{{uris}}}" width=500 height=500 frameborder="0" allowtransparency="true"></iframe>';
+        var widget = '<iframe src="https://embed.spotify.com/?uri=spotify:trackset:PREFEREDTITLE:{{{uris}}}" height=500 frameborder="0" allowtransparency="true"></iframe>';
 
         var uris = [];
 

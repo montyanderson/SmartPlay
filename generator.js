@@ -41,8 +41,9 @@ module.exports = function(data, callback) {
             async.map(songs, function(song, callback) {
                 spotify("search", {
                     type: "track",
-                    q: song.name,
-                    artist: song.artist
+                    q: song.name + " artist:" + song.artist,
+                    token: "BQAJna64ehr9TERX8YRjFPuZCXBibasrJlaUBIhVi1GedbLrlZUTWORiQtWB4GRcrGPFUQDgUTNmKuQ0RLHSHw",
+                    access_token: "BQAJna64ehr9TERX8YRjFPuZCXBibasrJlaUBIhVi1GedbLrlZUTWORiQtWB4GRcrGPFUQDgUTNmKuQ0RLHSHw"
                 }, function(res) {
                     if(res.tracks && res.tracks.items[0]) {
                         callback(null, res.tracks.items[0].uri);
