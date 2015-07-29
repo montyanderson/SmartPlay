@@ -19,6 +19,15 @@ module.exports = function() {
                 }
             });
         }
+        if(location.hash.substr(0, 6) === "#edit-") {
+            $(".sortable").children().each(function() {
+                if($(this).data("name") === location.hash.substr(6)) {
+                    $('.validate').val($(this).data("name"));
+                    $("#add-" + $(this).data("type")).openModal();
+                    location.hash = "#";
+                }
+            });
+        }
     });
 
 };

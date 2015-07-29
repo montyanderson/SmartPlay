@@ -49,6 +49,7 @@ module.exports = function() {
 
     var template = "<li class='ui-state-default' data-name='{{{name}}}' data-type='{{{type}}}'> \
         <a href='#delete-{{name}}'><i class='material-icons small bin'>delete</i></a> \
+        <a href='#edit-{{name}}'><i class='material-icons small cog'>settings_applications</i></a> \
         <div class='card small'> \
             <div class='card-image {{color}}'> \
                 <img src='{{{image}}}'> \
