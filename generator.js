@@ -4,7 +4,7 @@ var tracks = require("./tracks.js"),
     lastfm = require("./lastfm.js"),
     spotify = require("./spotify.js");
 
-module.exports = function(data) {
+module.exports = function(data, callback) {
     data = tracks(data);
 
     var artists = data.filter(function(card) {
@@ -50,7 +50,7 @@ module.exports = function(data) {
                     }
                 });
             }, function(err, res) {
-                console.log(res);
+                callback(res);
             });
         });
     });
