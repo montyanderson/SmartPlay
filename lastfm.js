@@ -15,11 +15,22 @@ var db = redis.createClient(config.redis.port, config.redis.ip, {
     auth_pass: config.redis.auth
 });
 
+var id = "";
+
+db.get("lastfm_id", function(err, reply) {
+    if(!err) {
+        id = reply.toString();
+        console.log("Last.fm API key: " + id);
+    } else {
+        console.error("Failed to get Last.fm api key!");
+    }
+})
+
 var base = "http://ws.audioscrobbler.com/2.0/?";
 
 module.exports = function(query, callback) {
     var url = base + querystring.stringify(merge({
-        api_key: config.lastfm,
+        api_key: id,
         format: "json",
         limit: 1
     }, query)).toLowerCase().trim();

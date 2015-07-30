@@ -12,13 +12,44 @@ var db = redis.createClient(config.redis.port, config.redis.ip, {
 
 var base = "https://api.spotify.com/v1/";
 
-var token = "";
+var id = "",
+    secret = "",
+    token = "";
 
-function accesstoken() {
-    //var auth = btoa(config.spotify.id + ":" + config.spotify.secret);
+db.get("spotify_id", function(err, reply) {
+    if(!err) {
+        id = reply.toString();
+        //if(secret !== "") getToken();
+    } else {
+        console.error("Failed to get Spotify ID!");
+    }
+});
+
+db.get("spotify_secret", function(err, reply) {
+    if(!err) {
+        secret = reply.toString();
+        //if(id !== "") getToken();
+    } else {
+        console.error("Failed to get Spotify secret!");
+    }
+});
+
+function getToken() {
+    console.log("Spotify ID: '" + id + "'");
+    console.log("Spotify secret: '" + secret + "'");
+
+    request.post({
+        url: "https://" + id + ":" + secret + "@" + "accounts.spotify.com/api/token",
+        headers: {
+            "User-Agent": "SmartPlay"
+        },
+        form: {
+            grant_type: "client_credentials"
+        }
+    }, function(err, res, body) {
+        console.log(body);
+    });
 }
-
-accesstoken();
 
 module.exports = function(path, query, callback) {
     var url = base + path + "/?" + querystring.stringify(merge({
