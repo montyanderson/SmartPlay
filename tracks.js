@@ -9,7 +9,7 @@ module.exports = function(data) {
 
     function convert () {
         var naturalSum = (len / 2) * (len + 1),
-            totalTracks = 30;
+            totalTracks = 15;
 
         if (totalTracks >= naturalSum) {
             var sum = 0;

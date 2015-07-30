@@ -4,6 +4,7 @@ module.exports = function() {
 	});
     $('.modal-trigger').click(function () {
           $($(this).attr("href")).openModal();
+          $('.validate').val('').blur();
           var self = this;
           $(document).keypress(function(e) {
               if (e.which == 13) {
@@ -27,7 +28,7 @@ module.exports = function() {
         if(location.hash.substr(0, 6) === "#edit-") {
             $(".sortable").children().each(function() {
                 if($(this).data("name") === location.hash.substr(6)) {
-                    $('.validate').val($(this).data("name"));
+                    $('.validate').val($(this).data("name")).focus();
                     $("#add-" + $(this).data("type")).openModal();
                     location.hash = "#";
                 }
