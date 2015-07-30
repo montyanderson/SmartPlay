@@ -24,6 +24,11 @@ module.exports = function() {
             $(".sortable").children().each(function() {
                 if($(this).data("name") === location.hash.substr(8)) {
                     $(this).remove();
+                    if ($('.sort-container').height() <= '494') {
+                        $('.sort-container').css({
+                            height: '100%',
+                        });
+                    }
                     location.hash = "#";
                 }
             });

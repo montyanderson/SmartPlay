@@ -4,6 +4,7 @@ var io = require("socket.io-client"),
 module.exports = function() {
     var socket = io(location.origin);
     var obscurity = [];
+    var counter = 0;
 
     window.addEventListener("hashchange", function() {
         if(location.hash === "#artist-submit") {
@@ -100,16 +101,16 @@ module.exports = function() {
 
         $(".sortable").append(html);
 
+        counter++;
+        console.log(counter);
+
         if ($('.sort-container').height() >= '494') {
             $('.sort-container').css({
                 height: $('.sort-container').height(),
-                overflow: 'scroll'
+                overflow: 'auto'
             });
             $('.sort-container').scrollTop($('.sort-container').height());
-        } else {
-            console.log("small");
         }
-
     });
 
     socket.on("tag", function(data) {
