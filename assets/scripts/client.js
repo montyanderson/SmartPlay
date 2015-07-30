@@ -55,7 +55,7 @@ module.exports = function() {
     });
 
     socket.emit("artist", {
-        name: "whitechapel",
+        name: "the ink spots",
         obscurity: 75
     });
     socket.emit("tag", "jazzy");

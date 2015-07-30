@@ -1,7 +1,9 @@
 module.exports = function() {
     $('.sortable').sortable({
-		axis: "y"
+		axis: "y",
+        revert: true
 	});
+    $('.bin').addClass('notransition');
     $('.modal-trigger').click(function () {
           $($(this).attr("href")).openModal();
           $('.validate').val('').blur();
