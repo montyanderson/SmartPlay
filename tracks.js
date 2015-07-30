@@ -9,7 +9,8 @@ module.exports = function(data) {
 
     function convert () {
         var naturalSum = (len / 2) * (len + 1),
-            totalTracks = 15;
+            totalTracks = 10 + ((len - 1) * 5);
+            console.log(totalTracks);
 
         if (totalTracks >= naturalSum) {
             var sum = 0;
