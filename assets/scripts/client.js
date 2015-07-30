@@ -1,10 +1,23 @@
 var io = require("socket.io-client"),
     mustache = require("mustache");
+window.counter = 0;
 
 module.exports = function() {
     var socket = io(location.origin);
     var obscurity = [];
-    var counter = 0;
+    function overflow () {
+        counter++;
+        if  (counter == 1) {
+            $('.default-msg').hide();
+        }
+        if (counter >= '3') {
+            $('.sort-container').css({
+                height: '494',
+                overflow: 'auto'
+            });
+            $('.sort-container').scrollTop($('.sort-container').height());
+        }
+    }
 
     window.addEventListener("hashchange", function() {
         if(location.hash === "#artist-submit") {
@@ -24,7 +37,7 @@ module.exports = function() {
     $(".generate").click(function() {
         var data = [];
 
-        $(".sortable").children().each(function() {
+        $(".sortable").children("li").each(function() {
             data.push({
                 name: $(this).data("name"),
                 type: $(this).data("type")
@@ -55,11 +68,7 @@ module.exports = function() {
         $(".playlist").html(html);
     });
 
-    socket.emit("artist", {
-        name: "the ink spots",
-        obscurity: 75
-    });
-    socket.emit("tag", "jazzy");
+
 
     socket.on("alert", function(data) {
         alert(data);
@@ -100,17 +109,8 @@ module.exports = function() {
 
 
         $(".sortable").append(html);
+        overflow();
 
-        counter++;
-        console.log(counter);
-
-        if ($('.sort-container').height() >= '494') {
-            $('.sort-container').css({
-                height: $('.sort-container').height(),
-                overflow: 'auto'
-            });
-            $('.sort-container').scrollTop($('.sort-container').height());
-        }
     });
 
     socket.on("tag", function(data) {
@@ -128,5 +128,7 @@ module.exports = function() {
         });
 
         $(".sortable").append(html);
+
+        overflow();
     });
 };
