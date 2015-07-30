@@ -1,12 +1,13 @@
 module.exports = function() {
     $('.sortable').sortable({
 		axis: "y",
-        revert: true
+        revert: true,
+        containment: ".sort-container"
 	});
     $('.bin').addClass('notransition');
     $('.modal-trigger').click(function () {
           $($(this).attr("href")).openModal();
-          $('.validate').val('').blur();
+          $('.validate').val('').focus();
           var self = this;
           $(document).keypress(function(e) {
               if (e.which == 13) {
