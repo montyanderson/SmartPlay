@@ -1,0 +1,2469 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/home/monty/.bin/iojs-v2.4.0-linux-x64/bin/iojs',
+1 verbose cli   '/home/monty/.bin/iojs-v2.4.0-linux-x64/bin/npm',
+1 verbose cli   'install' ]
+2 info using npm@3.2.0
+3 info using node@v2.4.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly install normalizeTree
+8 silly loadCurrentTree Finishing
+9 silly loadIdealTree Starting
+10 silly install loadIdealTree
+11 silly cloneCurrentTree Starting
+12 silly install cloneCurrentTreeToIdealTree
+13 silly cloneCurrentTree Finishing
+14 silly loadShrinkwrap Starting
+15 silly install loadShrinkwrap
+16 silly loadShrinkwrap Finishing
+17 silly loadAllDepsIntoIdealTree Starting
+18 silly install loadAllDepsIntoIdealTree
+19 silly fetchNamedPackageData fsevents
+20 silly mapToRegistry name fsevents
+21 silly mapToRegistry using default registry
+22 silly mapToRegistry registry https://registry.npmjs.org/
+23 silly mapToRegistry uri https://registry.npmjs.org/fsevents
+24 verbose request uri https://registry.npmjs.org/fsevents
+25 verbose request no auth needed
+26 info attempt registry request try #1 at 16:29:22
+27 verbose request id 108ecedb646b0861
+28 verbose etag "AWY8QOGUFY487GJKYD4SA7ZU5"
+29 http request GET https://registry.npmjs.org/fsevents
+30 http 304 https://registry.npmjs.org/fsevents
+31 silly get cb [ 304,
+31 silly get   { date: 'Thu, 30 Jul 2015 15:29:22 GMT',
+31 silly get     via: '1.1 varnish',
+31 silly get     'cache-control': 'max-age=60',
+31 silly get     etag: '"AWY8QOGUFY487GJKYD4SA7ZU5"',
+31 silly get     age: '56',
+31 silly get     connection: 'keep-alive',
+31 silly get     'x-served-by': 'cache-ams4127-AMS',
+31 silly get     'x-cache': 'HIT',
+31 silly get     'x-cache-hits': '2',
+31 silly get     'x-timer': 'S1438270162.734531,VS0,VE0',
+31 silly get     vary: 'Accept' } ]
+32 verbose etag https://registry.npmjs.org/fsevents from cache
+33 verbose get saving fsevents to /home/monty/.npm/registry.npmjs.org/fsevents/.cache.json
+34 silly resolveWithNewModule fsevents@0.3.6 checking installable status
+35 warn install Couldn't install optional dependency: Unsupported
+36 verbose install Error: Unsupported
+36 verbose install     at checkPlatform (/home/monty/.bin/iojs-v2.4.0-linux-x64/lib/node_modules/npm/node_modules/npm-install-checks/index.js:46:14)
+36 verbose install     at Array.<anonymous> (/home/monty/.bin/iojs-v2.4.0-linux-x64/lib/node_modules/npm/node_modules/slide/lib/bind-actor.js:15:8)
+36 verbose install     at LOOP (/home/monty/.bin/iojs-v2.4.0-linux-x64/lib/node_modules/npm/node_modules/slide/lib/chain.js:15:14)
+36 verbose install     at /home/monty/.bin/iojs-v2.4.0-linux-x64/lib/node_modules/npm/node_modules/slide/lib/chain.js:18:7
+36 verbose install     at checkEngine (/home/monty/.bin/iojs-v2.4.0-linux-x64/lib/node_modules/npm/node_modules/npm-install-checks/index.js:25:10)
+36 verbose install     at Array.<anonymous> (/home/monty/.bin/iojs-v2.4.0-linux-x64/lib/node_modules/npm/node_modules/slide/lib/bind-actor.js:15:8)
+36 verbose install     at LOOP (/home/monty/.bin/iojs-v2.4.0-linux-x64/lib/node_modules/npm/node_modules/slide/lib/chain.js:15:14)
+36 verbose install     at chain (/home/monty/.bin/iojs-v2.4.0-linux-x64/lib/node_modules/npm/node_modules/slide/lib/chain.js:20:5)
+36 verbose install     at module.exports.isInstallable (/home/monty/.bin/iojs-v2.4.0-linux-x64/lib/node_modules/npm/lib/install/validate-args.js:26:3)
+36 verbose install     at resolveWithNewModule (/home/monty/.bin/iojs-v2.4.0-linux-x64/lib/node_modules/npm/lib/install/deps.js:388:12)
+37 silly loadAllDepsIntoIdealTree Finishing
+38 silly idealTree:prePrune yrs2015@0.0.1
+38 silly idealTree:prePrune ├── JSONStream@1.0.4
+38 silly idealTree:prePrune ├── accepts@1.2.11
+38 silly idealTree:prePrune ├─┬ accord@0.15.2
+38 silly idealTree:prePrune │ ├── convert-source-map@0.4.1
+38 silly idealTree:prePrune │ ├── glob@4.5.3
+38 silly idealTree:prePrune │ └── lodash@3.10.0
+38 silly idealTree:prePrune ├── acorn@1.2.2
+38 silly idealTree:prePrune ├── after@0.8.1
+38 silly idealTree:prePrune ├── amdefine@1.0.0
+38 silly idealTree:prePrune ├── animate.css@3.2.5
+38 silly idealTree:prePrune ├── ansi-regex@2.0.0
+38 silly idealTree:prePrune ├── ansi-styles@2.1.0
+38 silly idealTree:prePrune ├── anymatch@1.3.0
+38 silly idealTree:prePrune ├── archy@1.0.0
+38 silly idealTree:prePrune ├── arr-diff@1.0.1
+38 silly idealTree:prePrune ├── array-differ@1.0.0
+38 silly idealTree:prePrune ├── array-filter@0.0.1
+38 silly idealTree:prePrune ├── array-flatten@1.1.0
+38 silly idealTree:prePrune ├── array-map@0.0.0
+38 silly idealTree:prePrune ├── array-reduce@0.0.0
+38 silly idealTree:prePrune ├── array-slice@0.2.3
+38 silly idealTree:prePrune ├── array-uniq@1.0.2
+38 silly idealTree:prePrune ├── array-unique@0.2.1
+38 silly idealTree:prePrune ├── arraybuffer.slice@0.0.6
+38 silly idealTree:prePrune ├── arrify@1.0.0
+38 silly idealTree:prePrune ├── asap@1.0.0
+38 silly idealTree:prePrune ├── asn1@0.1.11
+38 silly idealTree:prePrune ├── asn1.js@2.1.3
+38 silly idealTree:prePrune ├── assert@1.3.0
+38 silly idealTree:prePrune ├── assert-plus@0.1.5
+38 silly idealTree:prePrune ├── astw@2.0.0
+38 silly idealTree:prePrune ├── async@1.4.0
+38 silly idealTree:prePrune ├── async-each@0.1.6
+38 silly idealTree:prePrune ├── aws-sign2@0.5.0
+38 silly idealTree:prePrune ├── backo2@1.0.2
+38 silly idealTree:prePrune ├── balanced-match@0.2.0
+38 silly idealTree:prePrune ├── base64-arraybuffer@0.1.2
+38 silly idealTree:prePrune ├── base64-js@0.0.8
+38 silly idealTree:prePrune ├── base64id@0.1.0
+38 silly idealTree:prePrune ├── beeper@1.1.0
+38 silly idealTree:prePrune ├── benchmark@1.0.0
+38 silly idealTree:prePrune ├── better-assert@1.0.2
+38 silly idealTree:prePrune ├── binary-extensions@1.3.1
+38 silly idealTree:prePrune ├── bindings@1.2.1
+38 silly idealTree:prePrune ├── bl@1.0.0
+38 silly idealTree:prePrune ├── blob@0.0.2
+38 silly idealTree:prePrune ├── bluebird@2.9.34
+38 silly idealTree:prePrune ├── bn.js@2.2.0
+38 silly idealTree:prePrune ├── boom@2.8.0
+38 silly idealTree:prePrune ├── brace-expansion@1.1.0
+38 silly idealTree:prePrune ├── braces@1.8.0
+38 silly idealTree:prePrune ├── brorand@1.0.5
+38 silly idealTree:prePrune ├── browser-pack@5.0.1
+38 silly idealTree:prePrune ├── browser-resolve@1.9.0
+38 silly idealTree:prePrune ├─┬ browserify@11.0.0
+38 silly idealTree:prePrune │ └── glob@4.5.3
+38 silly idealTree:prePrune ├── browserify-aes@1.0.2
+38 silly idealTree:prePrune ├── browserify-rsa@2.0.1
+38 silly idealTree:prePrune ├── browserify-sign@3.0.2
+38 silly idealTree:prePrune ├── browserify-zlib@0.1.4
+38 silly idealTree:prePrune ├── buffer@3.3.1
+38 silly idealTree:prePrune ├── buffer-xor@1.0.2
+38 silly idealTree:prePrune ├─┬ bufferstreams@1.0.1
+38 silly idealTree:prePrune │ └── readable-stream@1.1.13
+38 silly idealTree:prePrune ├── bufferutil@1.1.0
+38 silly idealTree:prePrune ├── builtin-status-codes@1.0.0
+38 silly idealTree:prePrune ├── builtins@0.0.7
+38 silly idealTree:prePrune ├── bytes@2.1.0
+38 silly idealTree:prePrune ├── callsite@1.0.0
+38 silly idealTree:prePrune ├── camelcase@1.1.0
+38 silly idealTree:prePrune ├── camelcase-keys@1.0.0
+38 silly idealTree:prePrune ├── caseless@0.11.0
+38 silly idealTree:prePrune ├── chalk@1.1.0
+38 silly idealTree:prePrune ├── chokidar@1.0.5
+38 silly idealTree:prePrune ├── clean-css@3.3.6
+38 silly idealTree:prePrune ├── clone@1.0.2
+38 silly idealTree:prePrune ├── clone-stats@0.0.1
+38 silly idealTree:prePrune ├── combine-source-map@0.6.1
+38 silly idealTree:prePrune ├── combined-stream@1.0.5
+38 silly idealTree:prePrune ├── commander@2.8.1
+38 silly idealTree:prePrune ├── commondir@0.0.1
+38 silly idealTree:prePrune ├── component-bind@1.0.0
+38 silly idealTree:prePrune ├── component-emitter@1.1.2
+38 silly idealTree:prePrune ├── component-inherit@0.0.3
+38 silly idealTree:prePrune ├── compressible@2.0.4
+38 silly idealTree:prePrune ├── compression@1.5.1
+38 silly idealTree:prePrune ├── concat-map@0.0.1
+38 silly idealTree:prePrune ├─┬ concat-stream@1.4.10
+38 silly idealTree:prePrune │ └── readable-stream@1.1.13
+38 silly idealTree:prePrune ├── console-browserify@1.1.0
+38 silly idealTree:prePrune ├── constants-browserify@0.0.1
+38 silly idealTree:prePrune ├── content-disposition@0.5.0
+38 silly idealTree:prePrune ├── content-type@1.0.1
+38 silly idealTree:prePrune ├── convert-source-map@1.1.1
+38 silly idealTree:prePrune ├── cookie@0.1.3
+38 silly idealTree:prePrune ├── cookie-signature@1.0.6
+38 silly idealTree:prePrune ├── core-util-is@1.0.1
+38 silly idealTree:prePrune ├── create-ecdh@2.0.1
+38 silly idealTree:prePrune ├── create-hash@1.1.1
+38 silly idealTree:prePrune ├── create-hmac@1.1.3
+38 silly idealTree:prePrune ├── cryptiles@2.0.4
+38 silly idealTree:prePrune ├── crypto-browserify@3.9.14
+38 silly idealTree:prePrune ├── ctype@0.5.3
+38 silly idealTree:prePrune ├── date-now@0.1.4
+38 silly idealTree:prePrune ├── dateformat@1.0.11
+38 silly idealTree:prePrune ├── debug@2.2.0
+38 silly idealTree:prePrune ├── decamelize@1.0.0
+38 silly idealTree:prePrune ├── deep-is@0.1.3
+38 silly idealTree:prePrune ├─┬ defaults@1.0.2
+38 silly idealTree:prePrune │ └── clone@0.1.19
+38 silly idealTree:prePrune ├── defined@1.0.0
+38 silly idealTree:prePrune ├── delayed-stream@1.0.0
+38 silly idealTree:prePrune ├── depd@1.0.1
+38 silly idealTree:prePrune ├── deprecated@0.0.1
+38 silly idealTree:prePrune ├── deps-sort@1.3.9
+38 silly idealTree:prePrune ├── destroy@1.0.3
+38 silly idealTree:prePrune ├── detective@4.1.1
+38 silly idealTree:prePrune ├── diffie-hellman@3.0.2
+38 silly idealTree:prePrune ├── domain-browser@1.1.4
+38 silly idealTree:prePrune ├─┬ duplexer2@0.0.2
+38 silly idealTree:prePrune │ └── readable-stream@1.1.13
+38 silly idealTree:prePrune ├── ee-first@1.1.1
+38 silly idealTree:prePrune ├── elliptic@3.1.0
+38 silly idealTree:prePrune ├── end-of-stream@0.1.5
+38 silly idealTree:prePrune ├─┬ engine.io@1.5.2
+38 silly idealTree:prePrune │ ├── debug@1.0.3
+38 silly idealTree:prePrune │ └── ms@0.6.2
+38 silly idealTree:prePrune ├─┬ engine.io-client@1.5.2
+38 silly idealTree:prePrune │ ├── debug@1.0.4
+38 silly idealTree:prePrune │ ├── ms@0.6.2
+38 silly idealTree:prePrune │ └── parseuri@0.0.4
+38 silly idealTree:prePrune ├── engine.io-parser@1.2.1
+38 silly idealTree:prePrune ├── errno@0.1.3
+38 silly idealTree:prePrune ├── escape-html@1.0.2
+38 silly idealTree:prePrune ├── escape-string-regexp@1.0.3
+38 silly idealTree:prePrune ├─┬ escodegen@1.6.1
+38 silly idealTree:prePrune │ └── source-map@0.1.43
+38 silly idealTree:prePrune ├── esprima@1.2.5
+38 silly idealTree:prePrune ├── estraverse@1.9.3
+38 silly idealTree:prePrune ├── esutils@1.1.6
+38 silly idealTree:prePrune ├── etag@1.7.0
+38 silly idealTree:prePrune ├── events@1.0.2
+38 silly idealTree:prePrune ├── expand-brackets@0.1.2
+38 silly idealTree:prePrune ├── expand-range@1.8.1
+38 silly idealTree:prePrune ├── express@4.13.1
+38 silly idealTree:prePrune ├── extend@2.0.1
+38 silly idealTree:prePrune ├── extglob@0.3.0
+38 silly idealTree:prePrune ├── fast-levenshtein@1.0.6
+38 silly idealTree:prePrune ├── filename-regex@2.0.0
+38 silly idealTree:prePrune ├── fill-range@2.2.2
+38 silly idealTree:prePrune ├── finalhandler@0.4.0
+38 silly idealTree:prePrune ├── find-index@0.1.1
+38 silly idealTree:prePrune ├─┬ findup-sync@0.2.1
+38 silly idealTree:prePrune │ └── glob@4.3.5
+38 silly idealTree:prePrune ├── first-chunk-stream@1.0.0
+38 silly idealTree:prePrune ├── flagged-respawn@0.3.1
+38 silly idealTree:prePrune ├── fobject@0.0.3
+38 silly idealTree:prePrune ├── for-in@0.1.4
+38 silly idealTree:prePrune ├── for-own@0.1.3
+38 silly idealTree:prePrune ├── foreach@2.0.5
+38 silly idealTree:prePrune ├── forever-agent@0.6.1
+38 silly idealTree:prePrune ├── form-data@1.0.0-rc2
+38 silly idealTree:prePrune ├── forwarded@0.1.0
+38 silly idealTree:prePrune ├── fresh@0.3.0
+38 silly idealTree:prePrune ├── function-bind@1.0.2
+38 silly idealTree:prePrune ├── gaze@0.5.1
+38 silly idealTree:prePrune ├── generate-function@2.0.0
+38 silly idealTree:prePrune ├── generate-object-property@1.2.0
+38 silly idealTree:prePrune ├── get-stdin@4.0.1
+38 silly idealTree:prePrune ├── glob@5.0.14
+38 silly idealTree:prePrune ├── glob-base@0.2.0
+38 silly idealTree:prePrune ├── glob-parent@1.2.0
+38 silly idealTree:prePrune ├─┬ glob-stream@3.1.18
+38 silly idealTree:prePrune │ ├── glob@4.5.3
+38 silly idealTree:prePrune │ ├── readable-stream@1.0.33
+38 silly idealTree:prePrune │ └── through2@0.6.5
+38 silly idealTree:prePrune ├── glob-watcher@0.0.6
+38 silly idealTree:prePrune ├── glob2base@0.0.12
+38 silly idealTree:prePrune ├── global@2.0.1
+38 silly idealTree:prePrune ├─┬ globule@0.1.0
+38 silly idealTree:prePrune │ ├── glob@3.1.21
+38 silly idealTree:prePrune │ ├── graceful-fs@1.2.3
+38 silly idealTree:prePrune │ ├── inherits@1.0.0
+38 silly idealTree:prePrune │ └── minimatch@0.2.14
+38 silly idealTree:prePrune ├── graceful-fs@3.0.8
+38 silly idealTree:prePrune ├── graceful-readlink@1.0.1
+38 silly idealTree:prePrune ├── gulp@3.9.0
+38 silly idealTree:prePrune ├─┬ gulp-less@3.0.3
+38 silly idealTree:prePrune │ ├── object-assign@2.1.1
+38 silly idealTree:prePrune │ ├── readable-stream@1.0.33
+38 silly idealTree:prePrune │ └── through2@0.6.5
+38 silly idealTree:prePrune ├── gulp-minify-css@1.2.0
+38 silly idealTree:prePrune ├── gulp-rename@1.2.2
+38 silly idealTree:prePrune ├─┬ gulp-util@3.0.6
+38 silly idealTree:prePrune │ └── through2@2.0.0
+38 silly idealTree:prePrune ├── hammerjs@2.0.4
+38 silly idealTree:prePrune ├── har-validator@1.8.0
+38 silly idealTree:prePrune ├── has@1.0.1
+38 silly idealTree:prePrune ├── has-ansi@2.0.0
+38 silly idealTree:prePrune ├── has-binary@0.1.5
+38 silly idealTree:prePrune ├── has-binary-data@0.1.3
+38 silly idealTree:prePrune ├── has-cors@1.0.3
+38 silly idealTree:prePrune ├── hash.js@1.0.3
+38 silly idealTree:prePrune ├── hawk@3.1.0
+38 silly idealTree:prePrune ├── hoek@2.14.0
+38 silly idealTree:prePrune ├── htmlescape@1.1.0
+38 silly idealTree:prePrune ├── http-errors@1.3.1
+38 silly idealTree:prePrune ├── http-signature@0.11.0
+38 silly idealTree:prePrune ├── https-browserify@0.0.0
+38 silly idealTree:prePrune ├── ieee754@1.1.6
+38 silly idealTree:prePrune ├── image-size@0.3.5
+38 silly idealTree:prePrune ├── indent-string@1.2.2
+38 silly idealTree:prePrune ├── indexof@0.0.1
+38 silly idealTree:prePrune ├── indx@0.2.3
+38 silly idealTree:prePrune ├── inflight@1.0.4
+38 silly idealTree:prePrune ├── inherits@2.0.1
+38 silly idealTree:prePrune ├── inline-source-map@0.5.0
+38 silly idealTree:prePrune ├── insert-module-globals@6.5.2
+38 silly idealTree:prePrune ├── interpret@0.6.5
+38 silly idealTree:prePrune ├── ipaddr.js@1.0.1
+38 silly idealTree:prePrune ├── is-array@1.0.1
+38 silly idealTree:prePrune ├── is-binary-path@1.0.1
+38 silly idealTree:prePrune ├── is-dotfile@1.0.1
+38 silly idealTree:prePrune ├── is-equal-shallow@0.1.3
+38 silly idealTree:prePrune ├── is-extglob@1.0.0
+38 silly idealTree:prePrune ├── is-finite@1.0.1
+38 silly idealTree:prePrune ├── is-glob@1.1.3
+38 silly idealTree:prePrune ├── is-my-json-valid@2.12.1
+38 silly idealTree:prePrune ├── is-number@1.1.2
+38 silly idealTree:prePrune ├── is-primitive@2.0.0
+38 silly idealTree:prePrune ├── is-property@1.0.2
+38 silly idealTree:prePrune ├── is-utf8@0.2.0
+38 silly idealTree:prePrune ├── isarray@0.0.1
+38 silly idealTree:prePrune ├── isobject@1.0.2
+38 silly idealTree:prePrune ├── isstream@0.1.2
+38 silly idealTree:prePrune ├── jquery@2.1.4
+38 silly idealTree:prePrune ├── jquery-ui@1.10.5
+38 silly idealTree:prePrune ├── json-stable-stringify@0.0.1
+38 silly idealTree:prePrune ├── json-stringify-safe@5.0.1
+38 silly idealTree:prePrune ├── json3@3.2.6
+38 silly idealTree:prePrune ├── jsonify@0.0.0
+38 silly idealTree:prePrune ├── jsonparse@1.0.0
+38 silly idealTree:prePrune ├── jsonpointer@1.1.0
+38 silly idealTree:prePrune ├── kind-of@1.1.0
+38 silly idealTree:prePrune ├── labeled-stream-splicer@1.0.2
+38 silly idealTree:prePrune ├── less@2.5.1
+38 silly idealTree:prePrune ├── levn@0.2.5
+38 silly idealTree:prePrune ├── lexical-scope@1.1.1
+38 silly idealTree:prePrune ├── liftoff@2.1.0
+38 silly idealTree:prePrune ├── lodash@1.0.2
+38 silly idealTree:prePrune ├── lodash._basecopy@3.0.1
+38 silly idealTree:prePrune ├── lodash._basetostring@3.0.1
+38 silly idealTree:prePrune ├── lodash._basevalues@3.0.0
+38 silly idealTree:prePrune ├── lodash._getnative@3.9.1
+38 silly idealTree:prePrune ├── lodash._isiterateecall@3.0.9
+38 silly idealTree:prePrune ├── lodash._reescape@3.0.0
+38 silly idealTree:prePrune ├── lodash._reevaluate@3.0.0
+38 silly idealTree:prePrune ├── lodash._reinterpolate@3.0.0
+38 silly idealTree:prePrune ├── lodash.escape@3.0.0
+38 silly idealTree:prePrune ├── lodash.isarguments@3.0.4
+38 silly idealTree:prePrune ├── lodash.isarray@3.0.4
+38 silly idealTree:prePrune ├── lodash.keys@3.1.2
+38 silly idealTree:prePrune ├── lodash.memoize@3.0.4
+38 silly idealTree:prePrune ├── lodash.restparam@3.6.1
+38 silly idealTree:prePrune ├── lodash.template@3.6.2
+38 silly idealTree:prePrune ├── lodash.templatesettings@3.1.0
+38 silly idealTree:prePrune ├── lru-cache@2.6.5
+38 silly idealTree:prePrune ├── map-obj@1.0.1
+38 silly idealTree:prePrune ├── materialize-css@0.96.1
+38 silly idealTree:prePrune ├── media-typer@0.3.0
+38 silly idealTree:prePrune ├── meow@3.3.0
+38 silly idealTree:prePrune ├── merge@1.2.0
+38 silly idealTree:prePrune ├── merge-descriptors@1.0.0
+38 silly idealTree:prePrune ├── methods@1.1.1
+38 silly idealTree:prePrune ├── micromatch@2.2.0
+38 silly idealTree:prePrune ├── miller-rabin@2.0.1
+38 silly idealTree:prePrune ├── mime@1.3.4
+38 silly idealTree:prePrune ├── mime-db@1.15.0
+38 silly idealTree:prePrune ├── mime-types@2.1.3
+38 silly idealTree:prePrune ├── minimalistic-assert@1.0.0
+38 silly idealTree:prePrune ├── minimatch@2.0.10
+38 silly idealTree:prePrune ├── minimist@1.1.2
+38 silly idealTree:prePrune ├─┬ mkdirp@0.5.1
+38 silly idealTree:prePrune │ └── minimist@0.0.8
+38 silly idealTree:prePrune ├─┬ module-deps@3.9.0
+38 silly idealTree:prePrune │ └── readable-stream@1.1.13
+38 silly idealTree:prePrune ├── ms@0.7.1
+38 silly idealTree:prePrune ├── multipipe@0.1.2
+38 silly idealTree:prePrune ├── mustache@2.1.3
+38 silly idealTree:prePrune ├── nan@1.8.4
+38 silly idealTree:prePrune ├── negotiator@0.5.3
+38 silly idealTree:prePrune ├── node-uuid@1.4.3
+38 silly idealTree:prePrune ├── number-is-nan@1.0.0
+38 silly idealTree:prePrune ├── oauth-sign@0.8.0
+38 silly idealTree:prePrune ├── object-assign@3.0.0
+38 silly idealTree:prePrune ├── object-component@0.0.3
+38 silly idealTree:prePrune ├── object-keys@1.0.4
+38 silly idealTree:prePrune ├── object.omit@1.1.0
+38 silly idealTree:prePrune ├── on-finished@2.3.0
+38 silly idealTree:prePrune ├── on-headers@1.0.0
+38 silly idealTree:prePrune ├── once@1.3.2
+38 silly idealTree:prePrune ├── optionator@0.5.0
+38 silly idealTree:prePrune ├── options@0.0.6
+38 silly idealTree:prePrune ├── orchestrator@0.3.7
+38 silly idealTree:prePrune ├── ordered-read-streams@0.1.0
+38 silly idealTree:prePrune ├── os-browserify@0.1.2
+38 silly idealTree:prePrune ├── os-homedir@1.0.1
+38 silly idealTree:prePrune ├─┬ outpipe@1.1.1
+38 silly idealTree:prePrune │ └── shell-quote@1.4.3
+38 silly idealTree:prePrune ├── pako@0.2.7
+38 silly idealTree:prePrune ├── parents@1.0.1
+38 silly idealTree:prePrune ├── parse-asn1@3.0.1
+38 silly idealTree:prePrune ├── parse-glob@3.0.2
+38 silly idealTree:prePrune ├── parsejson@0.0.1
+38 silly idealTree:prePrune ├── parseqs@0.0.2
+38 silly idealTree:prePrune ├── parseuri@0.0.2
+38 silly idealTree:prePrune ├── parseurl@1.3.0
+38 silly idealTree:prePrune ├── path-browserify@0.0.0
+38 silly idealTree:prePrune ├── path-is-absolute@1.0.0
+38 silly idealTree:prePrune ├── path-platform@0.11.15
+38 silly idealTree:prePrune ├── path-to-regexp@0.1.6
+38 silly idealTree:prePrune ├── pbkdf2@3.0.4
+38 silly idealTree:prePrune ├── prelude-ls@1.1.2
+38 silly idealTree:prePrune ├── preserve@0.2.0
+38 silly idealTree:prePrune ├── pretty-hrtime@1.0.0
+38 silly idealTree:prePrune ├── process@0.11.1
+38 silly idealTree:prePrune ├── process-nextick-args@1.0.2
+38 silly idealTree:prePrune ├── promise@6.1.0
+38 silly idealTree:prePrune ├── proxy-addr@1.0.8
+38 silly idealTree:prePrune ├── prr@0.0.0
+38 silly idealTree:prePrune ├── public-encrypt@2.0.1
+38 silly idealTree:prePrune ├── punycode@1.3.2
+38 silly idealTree:prePrune ├── qs@4.0.0
+38 silly idealTree:prePrune ├── querystring@0.2.0
+38 silly idealTree:prePrune ├── querystring-es3@0.2.1
+38 silly idealTree:prePrune ├── randomatic@1.1.0
+38 silly idealTree:prePrune ├── randombytes@2.0.1
+38 silly idealTree:prePrune ├── range-parser@1.0.2
+38 silly idealTree:prePrune ├─┬ read-only-stream@1.1.1
+38 silly idealTree:prePrune │ └── readable-stream@1.1.13
+38 silly idealTree:prePrune ├── readable-stream@2.0.2
+38 silly idealTree:prePrune ├─┬ readable-wrap@1.0.0
+38 silly idealTree:prePrune │ └── readable-stream@1.1.13
+38 silly idealTree:prePrune ├─┬ readdirp@1.4.0
+38 silly idealTree:prePrune │ ├── graceful-fs@4.1.2
+38 silly idealTree:prePrune │ ├── minimatch@0.2.14
+38 silly idealTree:prePrune │ └── readable-stream@1.0.33
+38 silly idealTree:prePrune ├── rechoir@0.6.2
+38 silly idealTree:prePrune ├── redis@0.12.1
+38 silly idealTree:prePrune ├── regex-cache@0.4.2
+38 silly idealTree:prePrune ├── repeat-element@1.1.2
+38 silly idealTree:prePrune ├── repeat-string@1.5.2
+38 silly idealTree:prePrune ├── repeating@1.1.3
+38 silly idealTree:prePrune ├── replace-ext@0.0.1
+38 silly idealTree:prePrune ├─┬ request@2.60.0
+38 silly idealTree:prePrune │ └── extend@3.0.0
+38 silly idealTree:prePrune ├── resolve@1.1.6
+38 silly idealTree:prePrune ├── ripemd160@1.0.1
+38 silly idealTree:prePrune ├── semver@4.3.6
+38 silly idealTree:prePrune ├── send@0.13.0
+38 silly idealTree:prePrune ├── sequencify@0.0.7
+38 silly idealTree:prePrune ├── serve-static@1.10.0
+38 silly idealTree:prePrune ├── sha.js@2.4.2
+38 silly idealTree:prePrune ├─┬ shasum@1.0.1
+38 silly idealTree:prePrune │ └── sha.js@2.3.6
+38 silly idealTree:prePrune ├── shell-quote@0.0.1
+38 silly idealTree:prePrune ├── sigmund@1.0.1
+38 silly idealTree:prePrune ├── sntp@1.0.9
+38 silly idealTree:prePrune ├─┬ socket.io@1.3.6
+38 silly idealTree:prePrune │ ├── debug@2.1.0
+38 silly idealTree:prePrune │ └── ms@0.6.2
+38 silly idealTree:prePrune ├─┬ socket.io-adapter@0.3.1
+38 silly idealTree:prePrune │ ├── debug@1.0.2
+38 silly idealTree:prePrune │ ├── ms@0.6.2
+38 silly idealTree:prePrune │ ├── object-keys@1.0.1
+38 silly idealTree:prePrune │ └─┬ socket.io-parser@2.2.2
+38 silly idealTree:prePrune │   └── debug@0.7.4
+38 silly idealTree:prePrune ├─┬ socket.io-client@1.3.6
+38 silly idealTree:prePrune │ ├── debug@0.7.4
+38 silly idealTree:prePrune │ └── has-binary@0.1.6
+38 silly idealTree:prePrune ├─┬ socket.io-parser@2.2.4
+38 silly idealTree:prePrune │ └── debug@0.7.4
+38 silly idealTree:prePrune ├── source-map@0.4.4
+38 silly idealTree:prePrune ├── statuses@1.2.1
+38 silly idealTree:prePrune ├── stream-browserify@2.0.0
+38 silly idealTree:prePrune ├─┬ stream-combiner2@1.0.2
+38 silly idealTree:prePrune │ ├── readable-stream@1.0.33
+38 silly idealTree:prePrune │ ├── through2@0.5.1
+38 silly idealTree:prePrune │ └── xtend@3.0.0
+38 silly idealTree:prePrune ├── stream-consume@0.1.0
+38 silly idealTree:prePrune ├── stream-http@1.3.0
+38 silly idealTree:prePrune ├─┬ stream-splicer@1.3.2
+38 silly idealTree:prePrune │ └── readable-stream@1.1.13
+38 silly idealTree:prePrune ├── string_decoder@0.10.31
+38 silly idealTree:prePrune ├── stringstream@0.0.4
+38 silly idealTree:prePrune ├── strip-ansi@3.0.0
+38 silly idealTree:prePrune ├── strip-bom@1.0.0
+38 silly idealTree:prePrune ├── subarg@1.0.0
+38 silly idealTree:prePrune ├── supports-color@2.0.0
+38 silly idealTree:prePrune ├── syntax-error@1.1.4
+38 silly idealTree:prePrune ├── through@2.3.8
+38 silly idealTree:prePrune ├─┬ through2@1.1.1
+38 silly idealTree:prePrune │ └── readable-stream@1.1.13
+38 silly idealTree:prePrune ├── tildify@1.1.0
+38 silly idealTree:prePrune ├── timers-browserify@1.4.1
+38 silly idealTree:prePrune ├── to-array@0.1.3
+38 silly idealTree:prePrune ├── tough-cookie@2.0.0
+38 silly idealTree:prePrune ├── tty-browserify@0.0.0
+38 silly idealTree:prePrune ├── tunnel-agent@0.4.1
+38 silly idealTree:prePrune ├── type-check@0.3.1
+38 silly idealTree:prePrune ├── type-is@1.6.5
+38 silly idealTree:prePrune ├── typedarray@0.0.6
+38 silly idealTree:prePrune ├─┬ uglify-js@2.4.24
+38 silly idealTree:prePrune │ ├── async@0.2.10
+38 silly idealTree:prePrune │ └── source-map@0.1.34
+38 silly idealTree:prePrune ├── uglify-to-browserify@1.0.2
+38 silly idealTree:prePrune ├── ultron@1.0.2
+38 silly idealTree:prePrune ├── umd@3.0.1
+38 silly idealTree:prePrune ├── unique-stream@1.0.0
+38 silly idealTree:prePrune ├── unpipe@1.0.0
+38 silly idealTree:prePrune ├── url@0.10.3
+38 silly idealTree:prePrune ├── user-home@1.1.1
+38 silly idealTree:prePrune ├── utf-8-validate@1.1.0
+38 silly idealTree:prePrune ├── utf8@2.0.0
+38 silly idealTree:prePrune ├── util@0.10.3
+38 silly idealTree:prePrune ├── util-deprecate@1.0.1
+38 silly idealTree:prePrune ├── utils-merge@1.0.0
+38 silly idealTree:prePrune ├── v8flags@2.0.9
+38 silly idealTree:prePrune ├── vary@1.0.1
+38 silly idealTree:prePrune ├── vinyl@0.5.0
+38 silly idealTree:prePrune ├── vinyl-bufferstream@1.0.1
+38 silly idealTree:prePrune ├─┬ vinyl-fs@0.3.13
+38 silly idealTree:prePrune │ ├── clone@0.2.0
+38 silly idealTree:prePrune │ ├── readable-stream@1.0.33
+38 silly idealTree:prePrune │ ├── through2@0.6.5
+38 silly idealTree:prePrune │ └── vinyl@0.4.6
+38 silly idealTree:prePrune ├─┬ vinyl-source-stream@1.1.0
+38 silly idealTree:prePrune │ ├── clone@0.2.0
+38 silly idealTree:prePrune │ ├── readable-stream@1.0.33
+38 silly idealTree:prePrune │ ├── through2@0.6.5
+38 silly idealTree:prePrune │ └── vinyl@0.4.6
+38 silly idealTree:prePrune ├─┬ vinyl-sourcemaps-apply@0.1.4
+38 silly idealTree:prePrune │ └── source-map@0.1.43
+38 silly idealTree:prePrune ├── vm-browserify@0.0.4
+38 silly idealTree:prePrune ├─┬ watchify@3.3.0
+38 silly idealTree:prePrune │ ├── readable-stream@1.0.33
+38 silly idealTree:prePrune │ └── through2@0.6.5
+38 silly idealTree:prePrune ├── when@3.7.3
+38 silly idealTree:prePrune ├── window-size@0.1.0
+38 silly idealTree:prePrune ├── wordwrap@0.0.3
+38 silly idealTree:prePrune ├── wrappy@1.0.1
+38 silly idealTree:prePrune ├── ws@0.7.2
+38 silly idealTree:prePrune ├── xmlhttprequest@1.5.0
+38 silly idealTree:prePrune ├── xtend@4.0.0
+38 silly idealTree:prePrune └─┬ yargs@3.5.4
+38 silly idealTree:prePrune   └── wordwrap@0.0.2
+39 silly loadIdealTree Finishing
+40 silly currentTree yrs2015@0.0.1
+40 silly currentTree ├── JSONStream@1.0.4
+40 silly currentTree ├── accepts@1.2.11
+40 silly currentTree ├─┬ accord@0.15.2
+40 silly currentTree │ ├── convert-source-map@0.4.1
+40 silly currentTree │ ├── glob@4.5.3
+40 silly currentTree │ └── lodash@3.10.0
+40 silly currentTree ├── acorn@1.2.2
+40 silly currentTree ├── after@0.8.1
+40 silly currentTree ├── amdefine@1.0.0
+40 silly currentTree ├── animate.css@3.2.5
+40 silly currentTree ├── ansi-regex@2.0.0
+40 silly currentTree ├── ansi-styles@2.1.0
+40 silly currentTree ├── anymatch@1.3.0
+40 silly currentTree ├── archy@1.0.0
+40 silly currentTree ├── arr-diff@1.0.1
+40 silly currentTree ├── array-differ@1.0.0
+40 silly currentTree ├── array-filter@0.0.1
+40 silly currentTree ├── array-flatten@1.1.0
+40 silly currentTree ├── array-map@0.0.0
+40 silly currentTree ├── array-reduce@0.0.0
+40 silly currentTree ├── array-slice@0.2.3
+40 silly currentTree ├── array-uniq@1.0.2
+40 silly currentTree ├── array-unique@0.2.1
+40 silly currentTree ├── arraybuffer.slice@0.0.6
+40 silly currentTree ├── arrify@1.0.0
+40 silly currentTree ├── asap@1.0.0
+40 silly currentTree ├── asn1@0.1.11
+40 silly currentTree ├── asn1.js@2.1.3
+40 silly currentTree ├── assert@1.3.0
+40 silly currentTree ├── assert-plus@0.1.5
+40 silly currentTree ├── astw@2.0.0
+40 silly currentTree ├── async@1.4.0
+40 silly currentTree ├── async-each@0.1.6
+40 silly currentTree ├── aws-sign2@0.5.0
+40 silly currentTree ├── backo2@1.0.2
+40 silly currentTree ├── balanced-match@0.2.0
+40 silly currentTree ├── base64-arraybuffer@0.1.2
+40 silly currentTree ├── base64-js@0.0.8
+40 silly currentTree ├── base64id@0.1.0
+40 silly currentTree ├── beeper@1.1.0
+40 silly currentTree ├── benchmark@1.0.0
+40 silly currentTree ├── better-assert@1.0.2
+40 silly currentTree ├── binary-extensions@1.3.1
+40 silly currentTree ├── bindings@1.2.1
+40 silly currentTree ├── bl@1.0.0
+40 silly currentTree ├── blob@0.0.2
+40 silly currentTree ├── bluebird@2.9.34
+40 silly currentTree ├── bn.js@2.2.0
+40 silly currentTree ├── boom@2.8.0
+40 silly currentTree ├── brace-expansion@1.1.0
+40 silly currentTree ├── braces@1.8.0
+40 silly currentTree ├── brorand@1.0.5
+40 silly currentTree ├── browser-pack@5.0.1
+40 silly currentTree ├── browser-resolve@1.9.0
+40 silly currentTree ├─┬ browserify@11.0.0
+40 silly currentTree │ └── glob@4.5.3
+40 silly currentTree ├── browserify-aes@1.0.2
+40 silly currentTree ├── browserify-rsa@2.0.1
+40 silly currentTree ├── browserify-sign@3.0.2
+40 silly currentTree ├── browserify-zlib@0.1.4
+40 silly currentTree ├── buffer@3.3.1
+40 silly currentTree ├── buffer-xor@1.0.2
+40 silly currentTree ├─┬ bufferstreams@1.0.1
+40 silly currentTree │ └── readable-stream@1.1.13
+40 silly currentTree ├── bufferutil@1.1.0
+40 silly currentTree ├── builtin-status-codes@1.0.0
+40 silly currentTree ├── builtins@0.0.7
+40 silly currentTree ├── bytes@2.1.0
+40 silly currentTree ├── callsite@1.0.0
+40 silly currentTree ├── camelcase@1.1.0
+40 silly currentTree ├── camelcase-keys@1.0.0
+40 silly currentTree ├── caseless@0.11.0
+40 silly currentTree ├── chalk@1.1.0
+40 silly currentTree ├── chokidar@1.0.5
+40 silly currentTree ├── clean-css@3.3.6
+40 silly currentTree ├── clone@1.0.2
+40 silly currentTree ├── clone-stats@0.0.1
+40 silly currentTree ├── combine-source-map@0.6.1
+40 silly currentTree ├── combined-stream@1.0.5
+40 silly currentTree ├── commander@2.8.1
+40 silly currentTree ├── commondir@0.0.1
+40 silly currentTree ├── component-bind@1.0.0
+40 silly currentTree ├── component-emitter@1.1.2
+40 silly currentTree ├── component-inherit@0.0.3
+40 silly currentTree ├── compressible@2.0.4
+40 silly currentTree ├── compression@1.5.1
+40 silly currentTree ├── concat-map@0.0.1
+40 silly currentTree ├─┬ concat-stream@1.4.10
+40 silly currentTree │ └── readable-stream@1.1.13
+40 silly currentTree ├── console-browserify@1.1.0
+40 silly currentTree ├── constants-browserify@0.0.1
+40 silly currentTree ├── content-disposition@0.5.0
+40 silly currentTree ├── content-type@1.0.1
+40 silly currentTree ├── convert-source-map@1.1.1
+40 silly currentTree ├── cookie@0.1.3
+40 silly currentTree ├── cookie-signature@1.0.6
+40 silly currentTree ├── core-util-is@1.0.1
+40 silly currentTree ├── create-ecdh@2.0.1
+40 silly currentTree ├── create-hash@1.1.1
+40 silly currentTree ├── create-hmac@1.1.3
+40 silly currentTree ├── cryptiles@2.0.4
+40 silly currentTree ├── crypto-browserify@3.9.14
+40 silly currentTree ├── ctype@0.5.3
+40 silly currentTree ├── date-now@0.1.4
+40 silly currentTree ├── dateformat@1.0.11
+40 silly currentTree ├── debug@2.2.0
+40 silly currentTree ├── decamelize@1.0.0
+40 silly currentTree ├── deep-is@0.1.3
+40 silly currentTree ├─┬ defaults@1.0.2
+40 silly currentTree │ └── clone@0.1.19
+40 silly currentTree ├── defined@1.0.0
+40 silly currentTree ├── delayed-stream@1.0.0
+40 silly currentTree ├── depd@1.0.1
+40 silly currentTree ├── deprecated@0.0.1
+40 silly currentTree ├── deps-sort@1.3.9
+40 silly currentTree ├── destroy@1.0.3
+40 silly currentTree ├── detective@4.1.1
+40 silly currentTree ├── diffie-hellman@3.0.2
+40 silly currentTree ├── domain-browser@1.1.4
+40 silly currentTree ├─┬ duplexer2@0.0.2
+40 silly currentTree │ └── readable-stream@1.1.13
+40 silly currentTree ├── ee-first@1.1.1
+40 silly currentTree ├── elliptic@3.1.0
+40 silly currentTree ├── end-of-stream@0.1.5
+40 silly currentTree ├─┬ engine.io@1.5.2
+40 silly currentTree │ ├── debug@1.0.3
+40 silly currentTree │ └── ms@0.6.2
+40 silly currentTree ├─┬ engine.io-client@1.5.2
+40 silly currentTree │ ├── debug@1.0.4
+40 silly currentTree │ ├── ms@0.6.2
+40 silly currentTree │ └── parseuri@0.0.4
+40 silly currentTree ├── engine.io-parser@1.2.1
+40 silly currentTree ├── errno@0.1.3
+40 silly currentTree ├── escape-html@1.0.2
+40 silly currentTree ├── escape-string-regexp@1.0.3
+40 silly currentTree ├─┬ escodegen@1.6.1
+40 silly currentTree │ └── source-map@0.1.43
+40 silly currentTree ├── esprima@1.2.5
+40 silly currentTree ├── estraverse@1.9.3
+40 silly currentTree ├── esutils@1.1.6
+40 silly currentTree ├── etag@1.7.0
+40 silly currentTree ├── events@1.0.2
+40 silly currentTree ├── expand-brackets@0.1.2
+40 silly currentTree ├── expand-range@1.8.1
+40 silly currentTree ├── express@4.13.1
+40 silly currentTree ├── extend@2.0.1
+40 silly currentTree ├── extglob@0.3.0
+40 silly currentTree ├── fast-levenshtein@1.0.6
+40 silly currentTree ├── filename-regex@2.0.0
+40 silly currentTree ├── fill-range@2.2.2
+40 silly currentTree ├── finalhandler@0.4.0
+40 silly currentTree ├── find-index@0.1.1
+40 silly currentTree ├─┬ findup-sync@0.2.1
+40 silly currentTree │ └── glob@4.3.5
+40 silly currentTree ├── first-chunk-stream@1.0.0
+40 silly currentTree ├── flagged-respawn@0.3.1
+40 silly currentTree ├── fobject@0.0.3
+40 silly currentTree ├── for-in@0.1.4
+40 silly currentTree ├── for-own@0.1.3
+40 silly currentTree ├── foreach@2.0.5
+40 silly currentTree ├── forever-agent@0.6.1
+40 silly currentTree ├── form-data@1.0.0-rc2
+40 silly currentTree ├── forwarded@0.1.0
+40 silly currentTree ├── fresh@0.3.0
+40 silly currentTree ├── function-bind@1.0.2
+40 silly currentTree ├── gaze@0.5.1
+40 silly currentTree ├── generate-function@2.0.0
+40 silly currentTree ├── generate-object-property@1.2.0
+40 silly currentTree ├── get-stdin@4.0.1
+40 silly currentTree ├── glob@5.0.14
+40 silly currentTree ├── glob-base@0.2.0
+40 silly currentTree ├── glob-parent@1.2.0
+40 silly currentTree ├─┬ glob-stream@3.1.18
+40 silly currentTree │ ├── glob@4.5.3
+40 silly currentTree │ ├── readable-stream@1.0.33
+40 silly currentTree │ └── through2@0.6.5
+40 silly currentTree ├── glob-watcher@0.0.6
+40 silly currentTree ├── glob2base@0.0.12
+40 silly currentTree ├── global@2.0.1
+40 silly currentTree ├─┬ globule@0.1.0
+40 silly currentTree │ ├── glob@3.1.21
+40 silly currentTree │ ├── graceful-fs@1.2.3
+40 silly currentTree │ ├── inherits@1.0.0
+40 silly currentTree │ └── minimatch@0.2.14
+40 silly currentTree ├── graceful-fs@3.0.8
+40 silly currentTree ├── graceful-readlink@1.0.1
+40 silly currentTree ├── gulp@3.9.0
+40 silly currentTree ├─┬ gulp-less@3.0.3
+40 silly currentTree │ ├── object-assign@2.1.1
+40 silly currentTree │ ├── readable-stream@1.0.33
+40 silly currentTree │ └── through2@0.6.5
+40 silly currentTree ├── gulp-minify-css@1.2.0
+40 silly currentTree ├── gulp-rename@1.2.2
+40 silly currentTree ├─┬ gulp-util@3.0.6
+40 silly currentTree │ └── through2@2.0.0
+40 silly currentTree ├── hammerjs@2.0.4
+40 silly currentTree ├── har-validator@1.8.0
+40 silly currentTree ├── has@1.0.1
+40 silly currentTree ├── has-ansi@2.0.0
+40 silly currentTree ├── has-binary@0.1.5
+40 silly currentTree ├── has-binary-data@0.1.3
+40 silly currentTree ├── has-cors@1.0.3
+40 silly currentTree ├── hash.js@1.0.3
+40 silly currentTree ├── hawk@3.1.0
+40 silly currentTree ├── hoek@2.14.0
+40 silly currentTree ├── htmlescape@1.1.0
+40 silly currentTree ├── http-errors@1.3.1
+40 silly currentTree ├── http-signature@0.11.0
+40 silly currentTree ├── https-browserify@0.0.0
+40 silly currentTree ├── ieee754@1.1.6
+40 silly currentTree ├── image-size@0.3.5
+40 silly currentTree ├── indent-string@1.2.2
+40 silly currentTree ├── indexof@0.0.1
+40 silly currentTree ├── indx@0.2.3
+40 silly currentTree ├── inflight@1.0.4
+40 silly currentTree ├── inherits@2.0.1
+40 silly currentTree ├── inline-source-map@0.5.0
+40 silly currentTree ├── insert-module-globals@6.5.2
+40 silly currentTree ├── interpret@0.6.5
+40 silly currentTree ├── ipaddr.js@1.0.1
+40 silly currentTree ├── is-array@1.0.1
+40 silly currentTree ├── is-binary-path@1.0.1
+40 silly currentTree ├── is-dotfile@1.0.1
+40 silly currentTree ├── is-equal-shallow@0.1.3
+40 silly currentTree ├── is-extglob@1.0.0
+40 silly currentTree ├── is-finite@1.0.1
+40 silly currentTree ├── is-glob@1.1.3
+40 silly currentTree ├── is-my-json-valid@2.12.1
+40 silly currentTree ├── is-number@1.1.2
+40 silly currentTree ├── is-primitive@2.0.0
+40 silly currentTree ├── is-property@1.0.2
+40 silly currentTree ├── is-utf8@0.2.0
+40 silly currentTree ├── isarray@0.0.1
+40 silly currentTree ├── isobject@1.0.2
+40 silly currentTree ├── isstream@0.1.2
+40 silly currentTree ├── jquery@2.1.4
+40 silly currentTree ├── jquery-ui@1.10.5
+40 silly currentTree ├── json-stable-stringify@0.0.1
+40 silly currentTree ├── json-stringify-safe@5.0.1
+40 silly currentTree ├── json3@3.2.6
+40 silly currentTree ├── jsonify@0.0.0
+40 silly currentTree ├── jsonparse@1.0.0
+40 silly currentTree ├── jsonpointer@1.1.0
+40 silly currentTree ├── kind-of@1.1.0
+40 silly currentTree ├── labeled-stream-splicer@1.0.2
+40 silly currentTree ├── less@2.5.1
+40 silly currentTree ├── levn@0.2.5
+40 silly currentTree ├── lexical-scope@1.1.1
+40 silly currentTree ├── liftoff@2.1.0
+40 silly currentTree ├── lodash@1.0.2
+40 silly currentTree ├── lodash._basecopy@3.0.1
+40 silly currentTree ├── lodash._basetostring@3.0.1
+40 silly currentTree ├── lodash._basevalues@3.0.0
+40 silly currentTree ├── lodash._getnative@3.9.1
+40 silly currentTree ├── lodash._isiterateecall@3.0.9
+40 silly currentTree ├── lodash._reescape@3.0.0
+40 silly currentTree ├── lodash._reevaluate@3.0.0
+40 silly currentTree ├── lodash._reinterpolate@3.0.0
+40 silly currentTree ├── lodash.escape@3.0.0
+40 silly currentTree ├── lodash.isarguments@3.0.4
+40 silly currentTree ├── lodash.isarray@3.0.4
+40 silly currentTree ├── lodash.keys@3.1.2
+40 silly currentTree ├── lodash.memoize@3.0.4
+40 silly currentTree ├── lodash.restparam@3.6.1
+40 silly currentTree ├── lodash.template@3.6.2
+40 silly currentTree ├── lodash.templatesettings@3.1.0
+40 silly currentTree ├── lru-cache@2.6.5
+40 silly currentTree ├── map-obj@1.0.1
+40 silly currentTree ├── materialize-css@0.96.1
+40 silly currentTree ├── media-typer@0.3.0
+40 silly currentTree ├── meow@3.3.0
+40 silly currentTree ├── merge@1.2.0
+40 silly currentTree ├── merge-descriptors@1.0.0
+40 silly currentTree ├── methods@1.1.1
+40 silly currentTree ├── micromatch@2.2.0
+40 silly currentTree ├── miller-rabin@2.0.1
+40 silly currentTree ├── mime@1.3.4
+40 silly currentTree ├── mime-db@1.15.0
+40 silly currentTree ├── mime-types@2.1.3
+40 silly currentTree ├── minimalistic-assert@1.0.0
+40 silly currentTree ├── minimatch@2.0.10
+40 silly currentTree ├── minimist@1.1.2
+40 silly currentTree ├─┬ mkdirp@0.5.1
+40 silly currentTree │ └── minimist@0.0.8
+40 silly currentTree ├─┬ module-deps@3.9.0
+40 silly currentTree │ └── readable-stream@1.1.13
+40 silly currentTree ├── ms@0.7.1
+40 silly currentTree ├── multipipe@0.1.2
+40 silly currentTree ├── mustache@2.1.3
+40 silly currentTree ├── nan@1.8.4
+40 silly currentTree ├── negotiator@0.5.3
+40 silly currentTree ├── node-uuid@1.4.3
+40 silly currentTree ├── number-is-nan@1.0.0
+40 silly currentTree ├── oauth-sign@0.8.0
+40 silly currentTree ├── object-assign@3.0.0
+40 silly currentTree ├── object-component@0.0.3
+40 silly currentTree ├── object-keys@1.0.4
+40 silly currentTree ├── object.omit@1.1.0
+40 silly currentTree ├── on-finished@2.3.0
+40 silly currentTree ├── on-headers@1.0.0
+40 silly currentTree ├── once@1.3.2
+40 silly currentTree ├── optionator@0.5.0
+40 silly currentTree ├── options@0.0.6
+40 silly currentTree ├── orchestrator@0.3.7
+40 silly currentTree ├── ordered-read-streams@0.1.0
+40 silly currentTree ├── os-browserify@0.1.2
+40 silly currentTree ├── os-homedir@1.0.1
+40 silly currentTree ├─┬ outpipe@1.1.1
+40 silly currentTree │ └── shell-quote@1.4.3
+40 silly currentTree ├── pako@0.2.7
+40 silly currentTree ├── parents@1.0.1
+40 silly currentTree ├── parse-asn1@3.0.1
+40 silly currentTree ├── parse-glob@3.0.2
+40 silly currentTree ├── parsejson@0.0.1
+40 silly currentTree ├── parseqs@0.0.2
+40 silly currentTree ├── parseuri@0.0.2
+40 silly currentTree ├── parseurl@1.3.0
+40 silly currentTree ├── path-browserify@0.0.0
+40 silly currentTree ├── path-is-absolute@1.0.0
+40 silly currentTree ├── path-platform@0.11.15
+40 silly currentTree ├── path-to-regexp@0.1.6
+40 silly currentTree ├── pbkdf2@3.0.4
+40 silly currentTree ├── prelude-ls@1.1.2
+40 silly currentTree ├── preserve@0.2.0
+40 silly currentTree ├── pretty-hrtime@1.0.0
+40 silly currentTree ├── process@0.11.1
+40 silly currentTree ├── process-nextick-args@1.0.2
+40 silly currentTree ├── promise@6.1.0
+40 silly currentTree ├── proxy-addr@1.0.8
+40 silly currentTree ├── prr@0.0.0
+40 silly currentTree ├── public-encrypt@2.0.1
+40 silly currentTree ├── punycode@1.3.2
+40 silly currentTree ├── qs@4.0.0
+40 silly currentTree ├── querystring@0.2.0
+40 silly currentTree ├── querystring-es3@0.2.1
+40 silly currentTree ├── randomatic@1.1.0
+40 silly currentTree ├── randombytes@2.0.1
+40 silly currentTree ├── range-parser@1.0.2
+40 silly currentTree ├─┬ read-only-stream@1.1.1
+40 silly currentTree │ └── readable-stream@1.1.13
+40 silly currentTree ├── readable-stream@2.0.2
+40 silly currentTree ├─┬ readable-wrap@1.0.0
+40 silly currentTree │ └── readable-stream@1.1.13
+40 silly currentTree ├─┬ readdirp@1.4.0
+40 silly currentTree │ ├── graceful-fs@4.1.2
+40 silly currentTree │ ├── minimatch@0.2.14
+40 silly currentTree │ └── readable-stream@1.0.33
+40 silly currentTree ├── rechoir@0.6.2
+40 silly currentTree ├── redis@0.12.1
+40 silly currentTree ├── regex-cache@0.4.2
+40 silly currentTree ├── repeat-element@1.1.2
+40 silly currentTree ├── repeat-string@1.5.2
+40 silly currentTree ├── repeating@1.1.3
+40 silly currentTree ├── replace-ext@0.0.1
+40 silly currentTree ├─┬ request@2.60.0
+40 silly currentTree │ └── extend@3.0.0
+40 silly currentTree ├── resolve@1.1.6
+40 silly currentTree ├── ripemd160@1.0.1
+40 silly currentTree ├── semver@4.3.6
+40 silly currentTree ├── send@0.13.0
+40 silly currentTree ├── sequencify@0.0.7
+40 silly currentTree ├── serve-static@1.10.0
+40 silly currentTree ├── sha.js@2.4.2
+40 silly currentTree ├─┬ shasum@1.0.1
+40 silly currentTree │ └── sha.js@2.3.6
+40 silly currentTree ├── shell-quote@0.0.1
+40 silly currentTree ├── sigmund@1.0.1
+40 silly currentTree ├── sntp@1.0.9
+40 silly currentTree ├─┬ socket.io@1.3.6
+40 silly currentTree │ ├── debug@2.1.0
+40 silly currentTree │ └── ms@0.6.2
+40 silly currentTree ├─┬ socket.io-adapter@0.3.1
+40 silly currentTree │ ├── debug@1.0.2
+40 silly currentTree │ ├── ms@0.6.2
+40 silly currentTree │ ├── object-keys@1.0.1
+40 silly currentTree │ └─┬ socket.io-parser@2.2.2
+40 silly currentTree │   └── debug@0.7.4
+40 silly currentTree ├─┬ socket.io-client@1.3.6
+40 silly currentTree │ ├── debug@0.7.4
+40 silly currentTree │ └── has-binary@0.1.6
+40 silly currentTree ├─┬ socket.io-parser@2.2.4
+40 silly currentTree │ └── debug@0.7.4
+40 silly currentTree ├── source-map@0.4.4
+40 silly currentTree ├── statuses@1.2.1
+40 silly currentTree ├── stream-browserify@2.0.0
+40 silly currentTree ├─┬ stream-combiner2@1.0.2
+40 silly currentTree │ ├── readable-stream@1.0.33
+40 silly currentTree │ ├── through2@0.5.1
+40 silly currentTree │ └── xtend@3.0.0
+40 silly currentTree ├── stream-consume@0.1.0
+40 silly currentTree ├── stream-http@1.3.0
+40 silly currentTree ├─┬ stream-splicer@1.3.2
+40 silly currentTree │ └── readable-stream@1.1.13
+40 silly currentTree ├── string_decoder@0.10.31
+40 silly currentTree ├── stringstream@0.0.4
+40 silly currentTree ├── strip-ansi@3.0.0
+40 silly currentTree ├── strip-bom@1.0.0
+40 silly currentTree ├── subarg@1.0.0
+40 silly currentTree ├── supports-color@2.0.0
+40 silly currentTree ├── syntax-error@1.1.4
+40 silly currentTree ├── through@2.3.8
+40 silly currentTree ├─┬ through2@1.1.1
+40 silly currentTree │ └── readable-stream@1.1.13
+40 silly currentTree ├── tildify@1.1.0
+40 silly currentTree ├── timers-browserify@1.4.1
+40 silly currentTree ├── to-array@0.1.3
+40 silly currentTree ├── tough-cookie@2.0.0
+40 silly currentTree ├── tty-browserify@0.0.0
+40 silly currentTree ├── tunnel-agent@0.4.1
+40 silly currentTree ├── type-check@0.3.1
+40 silly currentTree ├── type-is@1.6.5
+40 silly currentTree ├── typedarray@0.0.6
+40 silly currentTree ├─┬ uglify-js@2.4.24
+40 silly currentTree │ ├── async@0.2.10
+40 silly currentTree │ └── source-map@0.1.34
+40 silly currentTree ├── uglify-to-browserify@1.0.2
+40 silly currentTree ├── ultron@1.0.2
+40 silly currentTree ├── umd@3.0.1
+40 silly currentTree ├── unique-stream@1.0.0
+40 silly currentTree ├── unpipe@1.0.0
+40 silly currentTree ├── url@0.10.3
+40 silly currentTree ├── user-home@1.1.1
+40 silly currentTree ├── utf-8-validate@1.1.0
+40 silly currentTree ├── utf8@2.0.0
+40 silly currentTree ├── util@0.10.3
+40 silly currentTree ├── util-deprecate@1.0.1
+40 silly currentTree ├── utils-merge@1.0.0
+40 silly currentTree ├── v8flags@2.0.9
+40 silly currentTree ├── vary@1.0.1
+40 silly currentTree ├── vinyl@0.5.0
+40 silly currentTree ├── vinyl-bufferstream@1.0.1
+40 silly currentTree ├─┬ vinyl-fs@0.3.13
+40 silly currentTree │ ├── clone@0.2.0
+40 silly currentTree │ ├── readable-stream@1.0.33
+40 silly currentTree │ ├── through2@0.6.5
+40 silly currentTree │ └── vinyl@0.4.6
+40 silly currentTree ├─┬ vinyl-source-stream@1.1.0
+40 silly currentTree │ ├── clone@0.2.0
+40 silly currentTree │ ├── readable-stream@1.0.33
+40 silly currentTree │ ├── through2@0.6.5
+40 silly currentTree │ └── vinyl@0.4.6
+40 silly currentTree ├─┬ vinyl-sourcemaps-apply@0.1.4
+40 silly currentTree │ └── source-map@0.1.43
+40 silly currentTree ├── vm-browserify@0.0.4
+40 silly currentTree ├─┬ watchify@3.3.0
+40 silly currentTree │ ├── readable-stream@1.0.33
+40 silly currentTree │ └── through2@0.6.5
+40 silly currentTree ├── when@3.7.3
+40 silly currentTree ├── window-size@0.1.0
+40 silly currentTree ├── wordwrap@0.0.3
+40 silly currentTree ├── wrappy@1.0.1
+40 silly currentTree ├── ws@0.7.2
+40 silly currentTree ├── xmlhttprequest@1.5.0
+40 silly currentTree ├── xtend@4.0.0
+40 silly currentTree └─┬ yargs@3.5.4
+40 silly currentTree   └── wordwrap@0.0.2
+41 silly idealTree yrs2015@0.0.1
+41 silly idealTree ├── JSONStream@1.0.4
+41 silly idealTree ├── accepts@1.2.11
+41 silly idealTree ├─┬ accord@0.15.2
+41 silly idealTree │ ├── convert-source-map@0.4.1
+41 silly idealTree │ ├── glob@4.5.3
+41 silly idealTree │ └── lodash@3.10.0
+41 silly idealTree ├── acorn@1.2.2
+41 silly idealTree ├── after@0.8.1
+41 silly idealTree ├── amdefine@1.0.0
+41 silly idealTree ├── animate.css@3.2.5
+41 silly idealTree ├── ansi-regex@2.0.0
+41 silly idealTree ├── ansi-styles@2.1.0
+41 silly idealTree ├── anymatch@1.3.0
+41 silly idealTree ├── archy@1.0.0
+41 silly idealTree ├── arr-diff@1.0.1
+41 silly idealTree ├── array-differ@1.0.0
+41 silly idealTree ├── array-filter@0.0.1
+41 silly idealTree ├── array-flatten@1.1.0
+41 silly idealTree ├── array-map@0.0.0
+41 silly idealTree ├── array-reduce@0.0.0
+41 silly idealTree ├── array-slice@0.2.3
+41 silly idealTree ├── array-uniq@1.0.2
+41 silly idealTree ├── array-unique@0.2.1
+41 silly idealTree ├── arraybuffer.slice@0.0.6
+41 silly idealTree ├── arrify@1.0.0
+41 silly idealTree ├── asap@1.0.0
+41 silly idealTree ├── asn1@0.1.11
+41 silly idealTree ├── asn1.js@2.1.3
+41 silly idealTree ├── assert@1.3.0
+41 silly idealTree ├── assert-plus@0.1.5
+41 silly idealTree ├── astw@2.0.0
+41 silly idealTree ├── async@1.4.0
+41 silly idealTree ├── async-each@0.1.6
+41 silly idealTree ├── aws-sign2@0.5.0
+41 silly idealTree ├── backo2@1.0.2
+41 silly idealTree ├── balanced-match@0.2.0
+41 silly idealTree ├── base64-arraybuffer@0.1.2
+41 silly idealTree ├── base64-js@0.0.8
+41 silly idealTree ├── base64id@0.1.0
+41 silly idealTree ├── beeper@1.1.0
+41 silly idealTree ├── benchmark@1.0.0
+41 silly idealTree ├── better-assert@1.0.2
+41 silly idealTree ├── binary-extensions@1.3.1
+41 silly idealTree ├── bindings@1.2.1
+41 silly idealTree ├── bl@1.0.0
+41 silly idealTree ├── blob@0.0.2
+41 silly idealTree ├── bluebird@2.9.34
+41 silly idealTree ├── bn.js@2.2.0
+41 silly idealTree ├── boom@2.8.0
+41 silly idealTree ├── brace-expansion@1.1.0
+41 silly idealTree ├── braces@1.8.0
+41 silly idealTree ├── brorand@1.0.5
+41 silly idealTree ├── browser-pack@5.0.1
+41 silly idealTree ├── browser-resolve@1.9.0
+41 silly idealTree ├─┬ browserify@11.0.0
+41 silly idealTree │ └── glob@4.5.3
+41 silly idealTree ├── browserify-aes@1.0.2
+41 silly idealTree ├── browserify-rsa@2.0.1
+41 silly idealTree ├── browserify-sign@3.0.2
+41 silly idealTree ├── browserify-zlib@0.1.4
+41 silly idealTree ├── buffer@3.3.1
+41 silly idealTree ├── buffer-xor@1.0.2
+41 silly idealTree ├─┬ bufferstreams@1.0.1
+41 silly idealTree │ └── readable-stream@1.1.13
+41 silly idealTree ├── bufferutil@1.1.0
+41 silly idealTree ├── builtin-status-codes@1.0.0
+41 silly idealTree ├── builtins@0.0.7
+41 silly idealTree ├── bytes@2.1.0
+41 silly idealTree ├── callsite@1.0.0
+41 silly idealTree ├── camelcase@1.1.0
+41 silly idealTree ├── camelcase-keys@1.0.0
+41 silly idealTree ├── caseless@0.11.0
+41 silly idealTree ├── chalk@1.1.0
+41 silly idealTree ├── chokidar@1.0.5
+41 silly idealTree ├── clean-css@3.3.6
+41 silly idealTree ├── clone@1.0.2
+41 silly idealTree ├── clone-stats@0.0.1
+41 silly idealTree ├── combine-source-map@0.6.1
+41 silly idealTree ├── combined-stream@1.0.5
+41 silly idealTree ├── commander@2.8.1
+41 silly idealTree ├── commondir@0.0.1
+41 silly idealTree ├── component-bind@1.0.0
+41 silly idealTree ├── component-emitter@1.1.2
+41 silly idealTree ├── component-inherit@0.0.3
+41 silly idealTree ├── compressible@2.0.4
+41 silly idealTree ├── compression@1.5.1
+41 silly idealTree ├── concat-map@0.0.1
+41 silly idealTree ├─┬ concat-stream@1.4.10
+41 silly idealTree │ └── readable-stream@1.1.13
+41 silly idealTree ├── console-browserify@1.1.0
+41 silly idealTree ├── constants-browserify@0.0.1
+41 silly idealTree ├── content-disposition@0.5.0
+41 silly idealTree ├── content-type@1.0.1
+41 silly idealTree ├── convert-source-map@1.1.1
+41 silly idealTree ├── cookie@0.1.3
+41 silly idealTree ├── cookie-signature@1.0.6
+41 silly idealTree ├── core-util-is@1.0.1
+41 silly idealTree ├── create-ecdh@2.0.1
+41 silly idealTree ├── create-hash@1.1.1
+41 silly idealTree ├── create-hmac@1.1.3
+41 silly idealTree ├── cryptiles@2.0.4
+41 silly idealTree ├── crypto-browserify@3.9.14
+41 silly idealTree ├── ctype@0.5.3
+41 silly idealTree ├── date-now@0.1.4
+41 silly idealTree ├── dateformat@1.0.11
+41 silly idealTree ├── debug@2.2.0
+41 silly idealTree ├── decamelize@1.0.0
+41 silly idealTree ├── deep-is@0.1.3
+41 silly idealTree ├─┬ defaults@1.0.2
+41 silly idealTree │ └── clone@0.1.19
+41 silly idealTree ├── defined@1.0.0
+41 silly idealTree ├── delayed-stream@1.0.0
+41 silly idealTree ├── depd@1.0.1
+41 silly idealTree ├── deprecated@0.0.1
+41 silly idealTree ├── deps-sort@1.3.9
+41 silly idealTree ├── destroy@1.0.3
+41 silly idealTree ├── detective@4.1.1
+41 silly idealTree ├── diffie-hellman@3.0.2
+41 silly idealTree ├── domain-browser@1.1.4
+41 silly idealTree ├─┬ duplexer2@0.0.2
+41 silly idealTree │ └── readable-stream@1.1.13
+41 silly idealTree ├── ee-first@1.1.1
+41 silly idealTree ├── elliptic@3.1.0
+41 silly idealTree ├── end-of-stream@0.1.5
+41 silly idealTree ├─┬ engine.io@1.5.2
+41 silly idealTree │ ├── debug@1.0.3
+41 silly idealTree │ └── ms@0.6.2
+41 silly idealTree ├─┬ engine.io-client@1.5.2
+41 silly idealTree │ ├── debug@1.0.4
+41 silly idealTree │ ├── ms@0.6.2
+41 silly idealTree │ └── parseuri@0.0.4
+41 silly idealTree ├── engine.io-parser@1.2.1
+41 silly idealTree ├── errno@0.1.3
+41 silly idealTree ├── escape-html@1.0.2
+41 silly idealTree ├── escape-string-regexp@1.0.3
+41 silly idealTree ├─┬ escodegen@1.6.1
+41 silly idealTree │ └── source-map@0.1.43
+41 silly idealTree ├── esprima@1.2.5
+41 silly idealTree ├── estraverse@1.9.3
+41 silly idealTree ├── esutils@1.1.6
+41 silly idealTree ├── etag@1.7.0
+41 silly idealTree ├── events@1.0.2
+41 silly idealTree ├── expand-brackets@0.1.2
+41 silly idealTree ├── expand-range@1.8.1
+41 silly idealTree ├── express@4.13.1
+41 silly idealTree ├── extend@2.0.1
+41 silly idealTree ├── extglob@0.3.0
+41 silly idealTree ├── fast-levenshtein@1.0.6
+41 silly idealTree ├── filename-regex@2.0.0
+41 silly idealTree ├── fill-range@2.2.2
+41 silly idealTree ├── finalhandler@0.4.0
+41 silly idealTree ├── find-index@0.1.1
+41 silly idealTree ├─┬ findup-sync@0.2.1
+41 silly idealTree │ └── glob@4.3.5
+41 silly idealTree ├── first-chunk-stream@1.0.0
+41 silly idealTree ├── flagged-respawn@0.3.1
+41 silly idealTree ├── fobject@0.0.3
+41 silly idealTree ├── for-in@0.1.4
+41 silly idealTree ├── for-own@0.1.3
+41 silly idealTree ├── foreach@2.0.5
+41 silly idealTree ├── forever-agent@0.6.1
+41 silly idealTree ├── form-data@1.0.0-rc2
+41 silly idealTree ├── forwarded@0.1.0
+41 silly idealTree ├── fresh@0.3.0
+41 silly idealTree ├── function-bind@1.0.2
+41 silly idealTree ├── gaze@0.5.1
+41 silly idealTree ├── generate-function@2.0.0
+41 silly idealTree ├── generate-object-property@1.2.0
+41 silly idealTree ├── get-stdin@4.0.1
+41 silly idealTree ├── glob@5.0.14
+41 silly idealTree ├── glob-base@0.2.0
+41 silly idealTree ├── glob-parent@1.2.0
+41 silly idealTree ├─┬ glob-stream@3.1.18
+41 silly idealTree │ ├── glob@4.5.3
+41 silly idealTree │ ├── readable-stream@1.0.33
+41 silly idealTree │ └── through2@0.6.5
+41 silly idealTree ├── glob-watcher@0.0.6
+41 silly idealTree ├── glob2base@0.0.12
+41 silly idealTree ├── global@2.0.1
+41 silly idealTree ├─┬ globule@0.1.0
+41 silly idealTree │ ├── glob@3.1.21
+41 silly idealTree │ ├── graceful-fs@1.2.3
+41 silly idealTree │ ├── inherits@1.0.0
+41 silly idealTree │ └── minimatch@0.2.14
+41 silly idealTree ├── graceful-fs@3.0.8
+41 silly idealTree ├── graceful-readlink@1.0.1
+41 silly idealTree ├── gulp@3.9.0
+41 silly idealTree ├─┬ gulp-less@3.0.3
+41 silly idealTree │ ├── object-assign@2.1.1
+41 silly idealTree │ ├── readable-stream@1.0.33
+41 silly idealTree │ └── through2@0.6.5
+41 silly idealTree ├── gulp-minify-css@1.2.0
+41 silly idealTree ├── gulp-rename@1.2.2
+41 silly idealTree ├─┬ gulp-util@3.0.6
+41 silly idealTree │ └── through2@2.0.0
+41 silly idealTree ├── hammerjs@2.0.4
+41 silly idealTree ├── har-validator@1.8.0
+41 silly idealTree ├── has@1.0.1
+41 silly idealTree ├── has-ansi@2.0.0
+41 silly idealTree ├── has-binary@0.1.5
+41 silly idealTree ├── has-binary-data@0.1.3
+41 silly idealTree ├── has-cors@1.0.3
+41 silly idealTree ├── hash.js@1.0.3
+41 silly idealTree ├── hawk@3.1.0
+41 silly idealTree ├── hoek@2.14.0
+41 silly idealTree ├── htmlescape@1.1.0
+41 silly idealTree ├── http-errors@1.3.1
+41 silly idealTree ├── http-signature@0.11.0
+41 silly idealTree ├── https-browserify@0.0.0
+41 silly idealTree ├── ieee754@1.1.6
+41 silly idealTree ├── image-size@0.3.5
+41 silly idealTree ├── indent-string@1.2.2
+41 silly idealTree ├── indexof@0.0.1
+41 silly idealTree ├── indx@0.2.3
+41 silly idealTree ├── inflight@1.0.4
+41 silly idealTree ├── inherits@2.0.1
+41 silly idealTree ├── inline-source-map@0.5.0
+41 silly idealTree ├── insert-module-globals@6.5.2
+41 silly idealTree ├── interpret@0.6.5
+41 silly idealTree ├── ipaddr.js@1.0.1
+41 silly idealTree ├── is-array@1.0.1
+41 silly idealTree ├── is-binary-path@1.0.1
+41 silly idealTree ├── is-dotfile@1.0.1
+41 silly idealTree ├── is-equal-shallow@0.1.3
+41 silly idealTree ├── is-extglob@1.0.0
+41 silly idealTree ├── is-finite@1.0.1
+41 silly idealTree ├── is-glob@1.1.3
+41 silly idealTree ├── is-my-json-valid@2.12.1
+41 silly idealTree ├── is-number@1.1.2
+41 silly idealTree ├── is-primitive@2.0.0
+41 silly idealTree ├── is-property@1.0.2
+41 silly idealTree ├── is-utf8@0.2.0
+41 silly idealTree ├── isarray@0.0.1
+41 silly idealTree ├── isobject@1.0.2
+41 silly idealTree ├── isstream@0.1.2
+41 silly idealTree ├── jquery@2.1.4
+41 silly idealTree ├── jquery-ui@1.10.5
+41 silly idealTree ├── json-stable-stringify@0.0.1
+41 silly idealTree ├── json-stringify-safe@5.0.1
+41 silly idealTree ├── json3@3.2.6
+41 silly idealTree ├── jsonify@0.0.0
+41 silly idealTree ├── jsonparse@1.0.0
+41 silly idealTree ├── jsonpointer@1.1.0
+41 silly idealTree ├── kind-of@1.1.0
+41 silly idealTree ├── labeled-stream-splicer@1.0.2
+41 silly idealTree ├── less@2.5.1
+41 silly idealTree ├── levn@0.2.5
+41 silly idealTree ├── lexical-scope@1.1.1
+41 silly idealTree ├── liftoff@2.1.0
+41 silly idealTree ├── lodash@1.0.2
+41 silly idealTree ├── lodash._basecopy@3.0.1
+41 silly idealTree ├── lodash._basetostring@3.0.1
+41 silly idealTree ├── lodash._basevalues@3.0.0
+41 silly idealTree ├── lodash._getnative@3.9.1
+41 silly idealTree ├── lodash._isiterateecall@3.0.9
+41 silly idealTree ├── lodash._reescape@3.0.0
+41 silly idealTree ├── lodash._reevaluate@3.0.0
+41 silly idealTree ├── lodash._reinterpolate@3.0.0
+41 silly idealTree ├── lodash.escape@3.0.0
+41 silly idealTree ├── lodash.isarguments@3.0.4
+41 silly idealTree ├── lodash.isarray@3.0.4
+41 silly idealTree ├── lodash.keys@3.1.2
+41 silly idealTree ├── lodash.memoize@3.0.4
+41 silly idealTree ├── lodash.restparam@3.6.1
+41 silly idealTree ├── lodash.template@3.6.2
+41 silly idealTree ├── lodash.templatesettings@3.1.0
+41 silly idealTree ├── lru-cache@2.6.5
+41 silly idealTree ├── map-obj@1.0.1
+41 silly idealTree ├── materialize-css@0.96.1
+41 silly idealTree ├── media-typer@0.3.0
+41 silly idealTree ├── meow@3.3.0
+41 silly idealTree ├── merge@1.2.0
+41 silly idealTree ├── merge-descriptors@1.0.0
+41 silly idealTree ├── methods@1.1.1
+41 silly idealTree ├── micromatch@2.2.0
+41 silly idealTree ├── miller-rabin@2.0.1
+41 silly idealTree ├── mime@1.3.4
+41 silly idealTree ├── mime-db@1.15.0
+41 silly idealTree ├── mime-types@2.1.3
+41 silly idealTree ├── minimalistic-assert@1.0.0
+41 silly idealTree ├── minimatch@2.0.10
+41 silly idealTree ├── minimist@1.1.2
+41 silly idealTree ├─┬ mkdirp@0.5.1
+41 silly idealTree │ └── minimist@0.0.8
+41 silly idealTree ├─┬ module-deps@3.9.0
+41 silly idealTree │ └── readable-stream@1.1.13
+41 silly idealTree ├── ms@0.7.1
+41 silly idealTree ├── multipipe@0.1.2
+41 silly idealTree ├── mustache@2.1.3
+41 silly idealTree ├── nan@1.8.4
+41 silly idealTree ├── negotiator@0.5.3
+41 silly idealTree ├── node-uuid@1.4.3
+41 silly idealTree ├── number-is-nan@1.0.0
+41 silly idealTree ├── oauth-sign@0.8.0
+41 silly idealTree ├── object-assign@3.0.0
+41 silly idealTree ├── object-component@0.0.3
+41 silly idealTree ├── object-keys@1.0.4
+41 silly idealTree ├── object.omit@1.1.0
+41 silly idealTree ├── on-finished@2.3.0
+41 silly idealTree ├── on-headers@1.0.0
+41 silly idealTree ├── once@1.3.2
+41 silly idealTree ├── optionator@0.5.0
+41 silly idealTree ├── options@0.0.6
+41 silly idealTree ├── orchestrator@0.3.7
+41 silly idealTree ├── ordered-read-streams@0.1.0
+41 silly idealTree ├── os-browserify@0.1.2
+41 silly idealTree ├── os-homedir@1.0.1
+41 silly idealTree ├─┬ outpipe@1.1.1
+41 silly idealTree │ └── shell-quote@1.4.3
+41 silly idealTree ├── pako@0.2.7
+41 silly idealTree ├── parents@1.0.1
+41 silly idealTree ├── parse-asn1@3.0.1
+41 silly idealTree ├── parse-glob@3.0.2
+41 silly idealTree ├── parsejson@0.0.1
+41 silly idealTree ├── parseqs@0.0.2
+41 silly idealTree ├── parseuri@0.0.2
+41 silly idealTree ├── parseurl@1.3.0
+41 silly idealTree ├── path-browserify@0.0.0
+41 silly idealTree ├── path-is-absolute@1.0.0
+41 silly idealTree ├── path-platform@0.11.15
+41 silly idealTree ├── path-to-regexp@0.1.6
+41 silly idealTree ├── pbkdf2@3.0.4
+41 silly idealTree ├── prelude-ls@1.1.2
+41 silly idealTree ├── preserve@0.2.0
+41 silly idealTree ├── pretty-hrtime@1.0.0
+41 silly idealTree ├── process@0.11.1
+41 silly idealTree ├── process-nextick-args@1.0.2
+41 silly idealTree ├── promise@6.1.0
+41 silly idealTree ├── proxy-addr@1.0.8
+41 silly idealTree ├── prr@0.0.0
+41 silly idealTree ├── public-encrypt@2.0.1
+41 silly idealTree ├── punycode@1.3.2
+41 silly idealTree ├── qs@4.0.0
+41 silly idealTree ├── querystring@0.2.0
+41 silly idealTree ├── querystring-es3@0.2.1
+41 silly idealTree ├── randomatic@1.1.0
+41 silly idealTree ├── randombytes@2.0.1
+41 silly idealTree ├── range-parser@1.0.2
+41 silly idealTree ├─┬ read-only-stream@1.1.1
+41 silly idealTree │ └── readable-stream@1.1.13
+41 silly idealTree ├── readable-stream@2.0.2
+41 silly idealTree ├─┬ readable-wrap@1.0.0
+41 silly idealTree │ └── readable-stream@1.1.13
+41 silly idealTree ├─┬ readdirp@1.4.0
+41 silly idealTree │ ├── graceful-fs@4.1.2
+41 silly idealTree │ ├── minimatch@0.2.14
+41 silly idealTree │ └── readable-stream@1.0.33
+41 silly idealTree ├── rechoir@0.6.2
+41 silly idealTree ├── redis@0.12.1
+41 silly idealTree ├── regex-cache@0.4.2
+41 silly idealTree ├── repeat-element@1.1.2
+41 silly idealTree ├── repeat-string@1.5.2
+41 silly idealTree ├── repeating@1.1.3
+41 silly idealTree ├── replace-ext@0.0.1
+41 silly idealTree ├─┬ request@2.60.0
+41 silly idealTree │ └── extend@3.0.0
+41 silly idealTree ├── resolve@1.1.6
+41 silly idealTree ├── ripemd160@1.0.1
+41 silly idealTree ├── semver@4.3.6
+41 silly idealTree ├── send@0.13.0
+41 silly idealTree ├── sequencify@0.0.7
+41 silly idealTree ├── serve-static@1.10.0
+41 silly idealTree ├── sha.js@2.4.2
+41 silly idealTree ├─┬ shasum@1.0.1
+41 silly idealTree │ └── sha.js@2.3.6
+41 silly idealTree ├── shell-quote@0.0.1
+41 silly idealTree ├── sigmund@1.0.1
+41 silly idealTree ├── sntp@1.0.9
+41 silly idealTree ├─┬ socket.io@1.3.6
+41 silly idealTree │ ├── debug@2.1.0
+41 silly idealTree │ └── ms@0.6.2
+41 silly idealTree ├─┬ socket.io-adapter@0.3.1
+41 silly idealTree │ ├── debug@1.0.2
+41 silly idealTree │ ├── ms@0.6.2
+41 silly idealTree │ ├── object-keys@1.0.1
+41 silly idealTree │ └─┬ socket.io-parser@2.2.2
+41 silly idealTree │   └── debug@0.7.4
+41 silly idealTree ├─┬ socket.io-client@1.3.6
+41 silly idealTree │ ├── debug@0.7.4
+41 silly idealTree │ └── has-binary@0.1.6
+41 silly idealTree ├─┬ socket.io-parser@2.2.4
+41 silly idealTree │ └── debug@0.7.4
+41 silly idealTree ├── source-map@0.4.4
+41 silly idealTree ├── statuses@1.2.1
+41 silly idealTree ├── stream-browserify@2.0.0
+41 silly idealTree ├─┬ stream-combiner2@1.0.2
+41 silly idealTree │ ├── readable-stream@1.0.33
+41 silly idealTree │ ├── through2@0.5.1
+41 silly idealTree │ └── xtend@3.0.0
+41 silly idealTree ├── stream-consume@0.1.0
+41 silly idealTree ├── stream-http@1.3.0
+41 silly idealTree ├─┬ stream-splicer@1.3.2
+41 silly idealTree │ └── readable-stream@1.1.13
+41 silly idealTree ├── string_decoder@0.10.31
+41 silly idealTree ├── stringstream@0.0.4
+41 silly idealTree ├── strip-ansi@3.0.0
+41 silly idealTree ├── strip-bom@1.0.0
+41 silly idealTree ├── subarg@1.0.0
+41 silly idealTree ├── supports-color@2.0.0
+41 silly idealTree ├── syntax-error@1.1.4
+41 silly idealTree ├── through@2.3.8
+41 silly idealTree ├─┬ through2@1.1.1
+41 silly idealTree │ └── readable-stream@1.1.13
+41 silly idealTree ├── tildify@1.1.0
+41 silly idealTree ├── timers-browserify@1.4.1
+41 silly idealTree ├── to-array@0.1.3
+41 silly idealTree ├── tough-cookie@2.0.0
+41 silly idealTree ├── tty-browserify@0.0.0
+41 silly idealTree ├── tunnel-agent@0.4.1
+41 silly idealTree ├── type-check@0.3.1
+41 silly idealTree ├── type-is@1.6.5
+41 silly idealTree ├── typedarray@0.0.6
+41 silly idealTree ├─┬ uglify-js@2.4.24
+41 silly idealTree │ ├── async@0.2.10
+41 silly idealTree │ └── source-map@0.1.34
+41 silly idealTree ├── uglify-to-browserify@1.0.2
+41 silly idealTree ├── ultron@1.0.2
+41 silly idealTree ├── umd@3.0.1
+41 silly idealTree ├── unique-stream@1.0.0
+41 silly idealTree ├── unpipe@1.0.0
+41 silly idealTree ├── url@0.10.3
+41 silly idealTree ├── user-home@1.1.1
+41 silly idealTree ├── utf-8-validate@1.1.0
+41 silly idealTree ├── utf8@2.0.0
+41 silly idealTree ├── util@0.10.3
+41 silly idealTree ├── util-deprecate@1.0.1
+41 silly idealTree ├── utils-merge@1.0.0
+41 silly idealTree ├── v8flags@2.0.9
+41 silly idealTree ├── vary@1.0.1
+41 silly idealTree ├── vinyl@0.5.0
+41 silly idealTree ├── vinyl-bufferstream@1.0.1
+41 silly idealTree ├─┬ vinyl-fs@0.3.13
+41 silly idealTree │ ├── clone@0.2.0
+41 silly idealTree │ ├── readable-stream@1.0.33
+41 silly idealTree │ ├── through2@0.6.5
+41 silly idealTree │ └── vinyl@0.4.6
+41 silly idealTree ├─┬ vinyl-source-stream@1.1.0
+41 silly idealTree │ ├── clone@0.2.0
+41 silly idealTree │ ├── readable-stream@1.0.33
+41 silly idealTree │ ├── through2@0.6.5
+41 silly idealTree │ └── vinyl@0.4.6
+41 silly idealTree ├─┬ vinyl-sourcemaps-apply@0.1.4
+41 silly idealTree │ └── source-map@0.1.43
+41 silly idealTree ├── vm-browserify@0.0.4
+41 silly idealTree ├─┬ watchify@3.3.0
+41 silly idealTree │ ├── readable-stream@1.0.33
+41 silly idealTree │ └── through2@0.6.5
+41 silly idealTree ├── when@3.7.3
+41 silly idealTree ├── window-size@0.1.0
+41 silly idealTree ├── wordwrap@0.0.3
+41 silly idealTree ├── wrappy@1.0.1
+41 silly idealTree ├── ws@0.7.2
+41 silly idealTree ├── xmlhttprequest@1.5.0
+41 silly idealTree ├── xtend@4.0.0
+41 silly idealTree └─┬ yargs@3.5.4
+41 silly idealTree   └── wordwrap@0.0.2
+42 silly generateActionsToTake Starting
+43 silly install generateActionsToTake
+44 silly generateActionsToTake Finishing
+45 silly diffTrees action count 0
+46 silly decomposeActions action count 0
+47 silly executeActions Starting
+48 silly install executeActions
+49 silly doSerial global-install 0
+50 silly doParallel fetch 0
+51 verbose lock using /home/monty/.npm/_locks/staging-895667dd038938e1.lock for /home/monty/Code/node/yrs2015/node_modules/.staging
+52 silly doParallel extract 0
+53 silly doParallel preinstall 0
+54 silly doReverseSerial remove 0
+55 silly doSerial move 0
+56 silly doSerial finalize 0
+57 silly doSerial build 0
+58 silly doSerial global-link 0
+59 silly doParallel update-linked 0
+60 silly doSerial install 0
+61 silly doSerial postinstall 0
+62 verbose unlock done using /home/monty/.npm/_locks/staging-895667dd038938e1.lock for /home/monty/Code/node/yrs2015/node_modules/.staging
+63 silly executeActions Finishing
+64 silly rollbackFailedOptional Starting
+65 silly rollbackFailedOptional Finishing
+66 silly runTopLevelLifecycles Starting
+67 silly install runTopLevelLifecycles
+68 silly preinstall yrs2015 /home/monty/Code/node/yrs2015/yrs2015-f2cb59e1010ca124d90dbc090af21444
+69 info preinstall yrs2015@0.0.1
+70 silly build yrs2015
+71 info linkStuff yrs2015@0.0.1
+72 silly linkStuff yrs2015@0.0.1 has /home/monty/Code/node as its parent node_modules
+73 verbose linkBins yrs2015@0.0.1
+74 verbose linkMans yrs2015@0.0.1
+75 verbose rebuildBundles yrs2015@0.0.1
+76 verbose rebuildBundles [ '.bin',
+76 verbose rebuildBundles   'JSONStream',
+76 verbose rebuildBundles   'accepts',
+76 verbose rebuildBundles   'accord',
+76 verbose rebuildBundles   'acorn',
+76 verbose rebuildBundles   'after',
+76 verbose rebuildBundles   'amdefine',
+76 verbose rebuildBundles   'animate.css',
+76 verbose rebuildBundles   'ansi-regex',
+76 verbose rebuildBundles   'ansi-styles',
+76 verbose rebuildBundles   'anymatch',
+76 verbose rebuildBundles   'archy',
+76 verbose rebuildBundles   'arr-diff',
+76 verbose rebuildBundles   'array-differ',
+76 verbose rebuildBundles   'array-filter',
+76 verbose rebuildBundles   'array-flatten',
+76 verbose rebuildBundles   'array-map',
+76 verbose rebuildBundles   'array-reduce',
+76 verbose rebuildBundles   'array-slice',
+76 verbose rebuildBundles   'array-uniq',
+76 verbose rebuildBundles   'array-unique',
+76 verbose rebuildBundles   'arraybuffer.slice',
+76 verbose rebuildBundles   'arrify',
+76 verbose rebuildBundles   'asap',
+76 verbose rebuildBundles   'asn1',
+76 verbose rebuildBundles   'asn1.js',
+76 verbose rebuildBundles   'assert',
+76 verbose rebuildBundles   'assert-plus',
+76 verbose rebuildBundles   'astw',
+76 verbose rebuildBundles   'async',
+76 verbose rebuildBundles   'async-each',
+76 verbose rebuildBundles   'aws-sign2',
+76 verbose rebuildBundles   'backo2',
+76 verbose rebuildBundles   'balanced-match',
+76 verbose rebuildBundles   'base64-arraybuffer',
+76 verbose rebuildBundles   'base64-js',
+76 verbose rebuildBundles   'base64id',
+76 verbose rebuildBundles   'beeper',
+76 verbose rebuildBundles   'benchmark',
+76 verbose rebuildBundles   'better-assert',
+76 verbose rebuildBundles   'binary-extensions',
+76 verbose rebuildBundles   'bindings',
+76 verbose rebuildBundles   'bl',
+76 verbose rebuildBundles   'blob',
+76 verbose rebuildBundles   'bluebird',
+76 verbose rebuildBundles   'bn.js',
+76 verbose rebuildBundles   'boom',
+76 verbose rebuildBundles   'brace-expansion',
+76 verbose rebuildBundles   'braces',
+76 verbose rebuildBundles   'brorand',
+76 verbose rebuildBundles   'browser-pack',
+76 verbose rebuildBundles   'browser-resolve',
+76 verbose rebuildBundles   'browserify',
+76 verbose rebuildBundles   'browserify-aes',
+76 verbose rebuildBundles   'browserify-rsa',
+76 verbose rebuildBundles   'browserify-sign',
+76 verbose rebuildBundles   'browserify-zlib',
+76 verbose rebuildBundles   'buffer',
+76 verbose rebuildBundles   'buffer-xor',
+76 verbose rebuildBundles   'bufferstreams',
+76 verbose rebuildBundles   'bufferutil',
+76 verbose rebuildBundles   'builtin-status-codes',
+76 verbose rebuildBundles   'builtins',
+76 verbose rebuildBundles   'bytes',
+76 verbose rebuildBundles   'callsite',
+76 verbose rebuildBundles   'camelcase',
+76 verbose rebuildBundles   'camelcase-keys',
+76 verbose rebuildBundles   'caseless',
+76 verbose rebuildBundles   'chalk',
+76 verbose rebuildBundles   'chokidar',
+76 verbose rebuildBundles   'clean-css',
+76 verbose rebuildBundles   'clone',
+76 verbose rebuildBundles   'clone-stats',
+76 verbose rebuildBundles   'combine-source-map',
+76 verbose rebuildBundles   'combined-stream',
+76 verbose rebuildBundles   'commander',
+76 verbose rebuildBundles   'commondir',
+76 verbose rebuildBundles   'component-bind',
+76 verbose rebuildBundles   'component-emitter',
+76 verbose rebuildBundles   'component-inherit',
+76 verbose rebuildBundles   'compressible',
+76 verbose rebuildBundles   'compression',
+76 verbose rebuildBundles   'concat-map',
+76 verbose rebuildBundles   'concat-stream',
+76 verbose rebuildBundles   'console-browserify',
+76 verbose rebuildBundles   'constants-browserify',
+76 verbose rebuildBundles   'content-disposition',
+76 verbose rebuildBundles   'content-type',
+76 verbose rebuildBundles   'convert-source-map',
+76 verbose rebuildBundles   'cookie',
+76 verbose rebuildBundles   'cookie-signature',
+76 verbose rebuildBundles   'core-util-is',
+76 verbose rebuildBundles   'create-ecdh',
+76 verbose rebuildBundles   'create-hash',
+76 verbose rebuildBundles   'create-hmac',
+76 verbose rebuildBundles   'cryptiles',
+76 verbose rebuildBundles   'crypto-browserify',
+76 verbose rebuildBundles   'ctype',
+76 verbose rebuildBundles   'date-now',
+76 verbose rebuildBundles   'dateformat',
+76 verbose rebuildBundles   'debug',
+76 verbose rebuildBundles   'decamelize',
+76 verbose rebuildBundles   'deep-is',
+76 verbose rebuildBundles   'defaults',
+76 verbose rebuildBundles   'defined',
+76 verbose rebuildBundles   'delayed-stream',
+76 verbose rebuildBundles   'depd',
+76 verbose rebuildBundles   'deprecated',
+76 verbose rebuildBundles   'deps-sort',
+76 verbose rebuildBundles   'destroy',
+76 verbose rebuildBundles   'detective',
+76 verbose rebuildBundles   'diffie-hellman',
+76 verbose rebuildBundles   'domain-browser',
+76 verbose rebuildBundles   'duplexer2',
+76 verbose rebuildBundles   'ee-first',
+76 verbose rebuildBundles   'elliptic',
+76 verbose rebuildBundles   'end-of-stream',
+76 verbose rebuildBundles   'engine.io',
+76 verbose rebuildBundles   'engine.io-client',
+76 verbose rebuildBundles   'engine.io-parser',
+76 verbose rebuildBundles   'errno',
+76 verbose rebuildBundles   'escape-html',
+76 verbose rebuildBundles   'escape-string-regexp',
+76 verbose rebuildBundles   'escodegen',
+76 verbose rebuildBundles   'esprima',
+76 verbose rebuildBundles   'estraverse',
+76 verbose rebuildBundles   'esutils',
+76 verbose rebuildBundles   'etag',
+76 verbose rebuildBundles   'events',
+76 verbose rebuildBundles   'expand-brackets',
+76 verbose rebuildBundles   'expand-range',
+76 verbose rebuildBundles   'express',
+76 verbose rebuildBundles   'extend',
+76 verbose rebuildBundles   'extglob',
+76 verbose rebuildBundles   'fast-levenshtein',
+76 verbose rebuildBundles   'filename-regex',
+76 verbose rebuildBundles   'fill-range',
+76 verbose rebuildBundles   'finalhandler',
+76 verbose rebuildBundles   'find-index',
+76 verbose rebuildBundles   'findup-sync',
+76 verbose rebuildBundles   'first-chunk-stream',
+76 verbose rebuildBundles   'flagged-respawn',
+76 verbose rebuildBundles   'fobject',
+76 verbose rebuildBundles   'for-in',
+76 verbose rebuildBundles   'for-own',
+76 verbose rebuildBundles   'foreach',
+76 verbose rebuildBundles   'forever-agent',
+76 verbose rebuildBundles   'form-data',
+76 verbose rebuildBundles   'forwarded',
+76 verbose rebuildBundles   'fresh',
+76 verbose rebuildBundles   'function-bind',
+76 verbose rebuildBundles   'gaze',
+76 verbose rebuildBundles   'generate-function',
+76 verbose rebuildBundles   'generate-object-property',
+76 verbose rebuildBundles   'get-stdin',
+76 verbose rebuildBundles   'glob',
+76 verbose rebuildBundles   'glob-base',
+76 verbose rebuildBundles   'glob-parent',
+76 verbose rebuildBundles   'glob-stream',
+76 verbose rebuildBundles   'glob-watcher',
+76 verbose rebuildBundles   'glob2base',
+76 verbose rebuildBundles   'global',
+76 verbose rebuildBundles   'globule',
+76 verbose rebuildBundles   'graceful-fs',
+76 verbose rebuildBundles   'graceful-readlink',
+76 verbose rebuildBundles   'gulp',
+76 verbose rebuildBundles   'gulp-less',
+76 verbose rebuildBundles   'gulp-minify-css',
+76 verbose rebuildBundles   'gulp-rename',
+76 verbose rebuildBundles   'gulp-util',
+76 verbose rebuildBundles   'hammerjs',
+76 verbose rebuildBundles   'har-validator',
+76 verbose rebuildBundles   'has',
+76 verbose rebuildBundles   'has-ansi',
+76 verbose rebuildBundles   'has-binary',
+76 verbose rebuildBundles   'has-binary-data',
+76 verbose rebuildBundles   'has-cors',
+76 verbose rebuildBundles   'hash.js',
+76 verbose rebuildBundles   'hawk',
+76 verbose rebuildBundles   'hoek',
+76 verbose rebuildBundles   'htmlescape',
+76 verbose rebuildBundles   'http-errors',
+76 verbose rebuildBundles   'http-signature',
+76 verbose rebuildBundles   'https-browserify',
+76 verbose rebuildBundles   'ieee754',
+76 verbose rebuildBundles   'image-size',
+76 verbose rebuildBundles   'indent-string',
+76 verbose rebuildBundles   'indexof',
+76 verbose rebuildBundles   'indx',
+76 verbose rebuildBundles   'inflight',
+76 verbose rebuildBundles   'inherits',
+76 verbose rebuildBundles   'inline-source-map',
+76 verbose rebuildBundles   'insert-module-globals',
+76 verbose rebuildBundles   'interpret',
+76 verbose rebuildBundles   'ipaddr.js',
+76 verbose rebuildBundles   'is-array',
+76 verbose rebuildBundles   'is-binary-path',
+76 verbose rebuildBundles   'is-dotfile',
+76 verbose rebuildBundles   'is-equal-shallow',
+76 verbose rebuildBundles   'is-extglob',
+76 verbose rebuildBundles   'is-finite',
+76 verbose rebuildBundles   'is-glob',
+76 verbose rebuildBundles   'is-my-json-valid',
+76 verbose rebuildBundles   'is-number',
+76 verbose rebuildBundles   'is-primitive',
+76 verbose rebuildBundles   'is-property',
+76 verbose rebuildBundles   'is-utf8',
+76 verbose rebuildBundles   'isarray',
+76 verbose rebuildBundles   'isobject',
+76 verbose rebuildBundles   'isstream',
+76 verbose rebuildBundles   'jquery',
+76 verbose rebuildBundles   'jquery-ui',
+76 verbose rebuildBundles   'json-stable-stringify',
+76 verbose rebuildBundles   'json-stringify-safe',
+76 verbose rebuildBundles   'json3',
+76 verbose rebuildBundles   'jsonify',
+76 verbose rebuildBundles   'jsonparse',
+76 verbose rebuildBundles   'jsonpointer',
+76 verbose rebuildBundles   'kind-of',
+76 verbose rebuildBundles   'labeled-stream-splicer',
+76 verbose rebuildBundles   'less',
+76 verbose rebuildBundles   'levn',
+76 verbose rebuildBundles   'lexical-scope',
+76 verbose rebuildBundles   'liftoff',
+76 verbose rebuildBundles   'lodash',
+76 verbose rebuildBundles   'lodash._basecopy',
+76 verbose rebuildBundles   'lodash._basetostring',
+76 verbose rebuildBundles   'lodash._basevalues',
+76 verbose rebuildBundles   'lodash._getnative',
+76 verbose rebuildBundles   'lodash._isiterateecall',
+76 verbose rebuildBundles   'lodash._reescape',
+76 verbose rebuildBundles   'lodash._reevaluate',
+76 verbose rebuildBundles   'lodash._reinterpolate',
+76 verbose rebuildBundles   'lodash.escape',
+76 verbose rebuildBundles   'lodash.isarguments',
+76 verbose rebuildBundles   'lodash.isarray',
+76 verbose rebuildBundles   'lodash.keys',
+76 verbose rebuildBundles   'lodash.memoize',
+76 verbose rebuildBundles   'lodash.restparam',
+76 verbose rebuildBundles   'lodash.template',
+76 verbose rebuildBundles   'lodash.templatesettings',
+76 verbose rebuildBundles   'lru-cache',
+76 verbose rebuildBundles   'map-obj',
+76 verbose rebuildBundles   'materialize-css',
+76 verbose rebuildBundles   'media-typer',
+76 verbose rebuildBundles   'meow',
+76 verbose rebuildBundles   'merge',
+76 verbose rebuildBundles   'merge-descriptors',
+76 verbose rebuildBundles   'methods',
+76 verbose rebuildBundles   'micromatch',
+76 verbose rebuildBundles   'miller-rabin',
+76 verbose rebuildBundles   'mime',
+76 verbose rebuildBundles   'mime-db',
+76 verbose rebuildBundles   'mime-types',
+76 verbose rebuildBundles   'minimalistic-assert',
+76 verbose rebuildBundles   'minimatch',
+76 verbose rebuildBundles   'minimist',
+76 verbose rebuildBundles   'mkdirp',
+76 verbose rebuildBundles   'module-deps',
+76 verbose rebuildBundles   'ms',
+76 verbose rebuildBundles   'multipipe',
+76 verbose rebuildBundles   'mustache',
+76 verbose rebuildBundles   'nan',
+76 verbose rebuildBundles   'negotiator',
+76 verbose rebuildBundles   'node-uuid',
+76 verbose rebuildBundles   'number-is-nan',
+76 verbose rebuildBundles   'oauth-sign',
+76 verbose rebuildBundles   'object-assign',
+76 verbose rebuildBundles   'object-component',
+76 verbose rebuildBundles   'object-keys',
+76 verbose rebuildBundles   'object.omit',
+76 verbose rebuildBundles   'on-finished',
+76 verbose rebuildBundles   'on-headers',
+76 verbose rebuildBundles   'once',
+76 verbose rebuildBundles   'optionator',
+76 verbose rebuildBundles   'options',
+76 verbose rebuildBundles   'orchestrator',
+76 verbose rebuildBundles   'ordered-read-streams',
+76 verbose rebuildBundles   'os-browserify',
+76 verbose rebuildBundles   'os-homedir',
+76 verbose rebuildBundles   'outpipe',
+76 verbose rebuildBundles   'pako',
+76 verbose rebuildBundles   'parents',
+76 verbose rebuildBundles   'parse-asn1',
+76 verbose rebuildBundles   'parse-glob',
+76 verbose rebuildBundles   'parsejson',
+76 verbose rebuildBundles   'parseqs',
+76 verbose rebuildBundles   'parseuri',
+76 verbose rebuildBundles   'parseurl',
+76 verbose rebuildBundles   'path-browserify',
+76 verbose rebuildBundles   'path-is-absolute',
+76 verbose rebuildBundles   'path-platform',
+76 verbose rebuildBundles   'path-to-regexp',
+76 verbose rebuildBundles   'pbkdf2',
+76 verbose rebuildBundles   'prelude-ls',
+76 verbose rebuildBundles   'preserve',
+76 verbose rebuildBundles   'pretty-hrtime',
+76 verbose rebuildBundles   'process',
+76 verbose rebuildBundles   'process-nextick-args',
+76 verbose rebuildBundles   'promise',
+76 verbose rebuildBundles   'proxy-addr',
+76 verbose rebuildBundles   'prr',
+76 verbose rebuildBundles   'public-encrypt',
+76 verbose rebuildBundles   'punycode',
+76 verbose rebuildBundles   'qs',
+76 verbose rebuildBundles   'querystring',
+76 verbose rebuildBundles   'querystring-es3',
+76 verbose rebuildBundles   'randomatic',
+76 verbose rebuildBundles   'randombytes',
+76 verbose rebuildBundles   'range-parser',
+76 verbose rebuildBundles   'read-only-stream',
+76 verbose rebuildBundles   'readable-stream',
+76 verbose rebuildBundles   'readable-wrap',
+76 verbose rebuildBundles   'readdirp',
+76 verbose rebuildBundles   'rechoir',
+76 verbose rebuildBundles   'redis',
+76 verbose rebuildBundles   'regex-cache',
+76 verbose rebuildBundles   'repeat-element',
+76 verbose rebuildBundles   'repeat-string',
+76 verbose rebuildBundles   'repeating',
+76 verbose rebuildBundles   'replace-ext',
+76 verbose rebuildBundles   'request',
+76 verbose rebuildBundles   'resolve',
+76 verbose rebuildBundles   'ripemd160',
+76 verbose rebuildBundles   'semver',
+76 verbose rebuildBundles   'send',
+76 verbose rebuildBundles   'sequencify',
+76 verbose rebuildBundles   'serve-static',
+76 verbose rebuildBundles   'sha.js',
+76 verbose rebuildBundles   'shasum',
+76 verbose rebuildBundles   'shell-quote',
+76 verbose rebuildBundles   'sigmund',
+76 verbose rebuildBundles   'sntp',
+76 verbose rebuildBundles   'socket.io',
+76 verbose rebuildBundles   'socket.io-adapter',
+76 verbose rebuildBundles   'socket.io-client',
+76 verbose rebuildBundles   'socket.io-parser',
+76 verbose rebuildBundles   'source-map',
+76 verbose rebuildBundles   'statuses',
+76 verbose rebuildBundles   'stream-browserify',
+76 verbose rebuildBundles   'stream-combiner2',
+76 verbose rebuildBundles   'stream-consume',
+76 verbose rebuildBundles   'stream-http',
+76 verbose rebuildBundles   'stream-splicer',
+76 verbose rebuildBundles   'string_decoder',
+76 verbose rebuildBundles   'stringstream',
+76 verbose rebuildBundles   'strip-ansi',
+76 verbose rebuildBundles   'strip-bom',
+76 verbose rebuildBundles   'subarg',
+76 verbose rebuildBundles   'supports-color',
+76 verbose rebuildBundles   'syntax-error',
+76 verbose rebuildBundles   'through',
+76 verbose rebuildBundles   'through2',
+76 verbose rebuildBundles   'tildify',
+76 verbose rebuildBundles   'timers-browserify',
+76 verbose rebuildBundles   'to-array',
+76 verbose rebuildBundles   'tough-cookie',
+76 verbose rebuildBundles   'tty-browserify',
+76 verbose rebuildBundles   'tunnel-agent',
+76 verbose rebuildBundles   'type-check',
+76 verbose rebuildBundles   'type-is',
+76 verbose rebuildBundles   'typedarray',
+76 verbose rebuildBundles   'uglify-js',
+76 verbose rebuildBundles   'uglify-to-browserify',
+76 verbose rebuildBundles   'ultron',
+76 verbose rebuildBundles   'umd',
+76 verbose rebuildBundles   'unique-stream',
+76 verbose rebuildBundles   'unpipe',
+76 verbose rebuildBundles   'url',
+76 verbose rebuildBundles   'user-home',
+76 verbose rebuildBundles   'utf-8-validate',
+76 verbose rebuildBundles   'utf8',
+76 verbose rebuildBundles   'util',
+76 verbose rebuildBundles   'util-deprecate',
+76 verbose rebuildBundles   'utils-merge',
+76 verbose rebuildBundles   'v8flags',
+76 verbose rebuildBundles   'vary',
+76 verbose rebuildBundles   'vinyl',
+76 verbose rebuildBundles   'vinyl-bufferstream',
+76 verbose rebuildBundles   'vinyl-fs',
+76 verbose rebuildBundles   'vinyl-source-stream',
+76 verbose rebuildBundles   'vinyl-sourcemaps-apply',
+76 verbose rebuildBundles   'vm-browserify',
+76 verbose rebuildBundles   'watchify',
+76 verbose rebuildBundles   'when',
+76 verbose rebuildBundles   'window-size',
+76 verbose rebuildBundles   'wordwrap',
+76 verbose rebuildBundles   'wrappy',
+76 verbose rebuildBundles   'ws',
+76 verbose rebuildBundles   'xmlhttprequest',
+76 verbose rebuildBundles   'xtend',
+76 verbose rebuildBundles   'yargs' ]
+77 verbose rebuild bundle /home/monty/Code/node/yrs2015/node_modules/JSONStream
+78 info build /home/monty/Code/node/yrs2015/node_modules/JSONStream
+79 info preinstall JSONStream@1.0.4
+80 info linkStuff JSONStream@1.0.4
+81 silly linkStuff JSONStream@1.0.4 has /home/monty/Code/node/yrs2015/node_modules as its parent node_modules
+82 verbose linkBins JSONStream@1.0.4
+83 verbose link bins [ { JSONStream: './index.js' },
+83 verbose link bins   '/home/monty/Code/node/yrs2015/node_modules/.bin',
+83 verbose link bins   false ]
+84 verbose linkMans JSONStream@1.0.4
+85 verbose rebuildBundles JSONStream@1.0.4
+86 info install JSONStream@1.0.4
+87 info postinstall JSONStream@1.0.4
+88 verbose rebuild bundle /home/monty/Code/node/yrs2015/node_modules/accepts
+89 info build /home/monty/Code/node/yrs2015/node_modules/accepts
+90 info preinstall accepts@1.2.11
+91 info linkStuff accepts@1.2.11
+92 silly linkStuff accepts@1.2.11 has /home/monty/Code/node/yrs2015/node_modules as its parent node_modules
+93 verbose linkBins accepts@1.2.11
+94 verbose linkMans accepts@1.2.11
+95 verbose rebuildBundles accepts@1.2.11
+96 info install accepts@1.2.11
+97 info postinstall accepts@1.2.11
+98 verbose rebuild bundle /home/monty/Code/node/yrs2015/node_modules/accord
+99 info build /home/monty/Code/node/yrs2015/node_modules/accord
+100 info preinstall accord@0.15.2
+101 info linkStuff accord@0.15.2
+102 silly linkStuff accord@0.15.2 has /home/monty/Code/node/yrs2015/node_modules as its parent node_modules
+103 verbose linkBins accord@0.15.2
+104 verbose linkMans accord@0.15.2
+105 verbose rebuildBundles accord@0.15.2
+106 verbose rebuildBundles [ 'convert-source-map', 'glob', 'lodash' ]
+107 info install accord@0.15.2
+108 info postinstall accord@0.15.2
+109 verbose rebuild bundle /home/monty/Code/node/yrs2015/node_modules/acorn
+110 info build /home/monty/Code/node/yrs2015/node_modules/acorn
+111 info preinstall acorn@1.2.2
+112 info linkStuff acorn@1.2.2
+113 silly linkStuff acorn@1.2.2 has /home/monty/Code/node/yrs2015/node_modules as its parent node_modules
+114 verbose linkBins acorn@1.2.2
+115 verbose link bins [ { acorn: './bin/acorn' },
+115 verbose link bins   '/home/monty/Code/node/yrs2015/node_modules/.bin',
+115 verbose link bins   false ]
+116 verbose linkMans acorn@1.2.2
+117 verbose rebuildBundles acorn@1.2.2
+118 info install acorn@1.2.2
+119 info postinstall acorn@1.2.2
+120 verbose rebuild bundle /home/monty/Code/node/yrs2015/node_modules/after
+121 info build /home/monty/Code/node/yrs2015/node_modules/after
+122 info preinstall after@0.8.1
+123 info linkStuff after@0.8.1
+124 silly linkStuff after@0.8.1 has /home/monty/Code/node/yrs2015/node_modules as its parent node_modules
+125 verbose linkBins after@0.8.1
+126 verbose linkMans after@0.8.1
+127 verbose rebuildBundles after@0.8.1
+128 info install after@0.8.1
+129 info postinstall after@0.8.1
+130 verbose rebuild bundle /home/monty/Code/node/yrs2015/node_modules/amdefine
+131 info build /home/monty/Code/node/yrs2015/node_modules/amdefine
+132 info preinstall amdefine@1.0.0
+133 info linkStuff amdefine@1.0.0
+134 silly linkStuff amdefine@1.0.0 has /home/monty/Code/node/yrs2015/node_modules as its parent node_modules
+135 verbose linkBins amdefine@1.0.0
+136 verbose linkMans amdefine@1.0.0
+137 verbose rebuildBundles amdefine@1.0.0
+138 info install amdefine@1.0.0
+139 info postinstall amdefine@1.0.0
+140 verbose rebuild bundle /home/monty/Code/node/yrs2015/node_modules/ansi-regex
+141 info build /home/monty/Code/node/yrs2015/node_modules/ansi-regex
+142 info preinstall ansi-regex@2.0.0
+143 info linkStuff ansi-regex@2.0.0
+144 silly linkStuff ansi-regex@2.0.0 has /home/monty/Code/node/yrs2015/node_modules as its parent node_modules
+145 verbose linkBins ansi-regex@2.0.0
+146 verbose linkMans ansi-regex@2.0.0
+147 verbose rebuildBundles ansi-regex@2.0.0
+148 info install ansi-regex@2.0.0
+149 info postinstall ansi-regex@2.0.0
+150 verbose rebuild bundle /home/monty/Code/node/yrs2015/node_modules/ansi-styles
+151 info build /home/monty/Code/node/yrs2015/node_modules/ansi-styles
+152 info preinstall ansi-styles@2.1.0
+153 info linkStuff ansi-styles@2.1.0
+154 silly linkStuff ansi-styles@2.1.0 has /home/monty/Code/node/yrs2015/node_modules as its parent node_modules
+155 verbose linkBins ansi-styles@2.1.0
+156 verbose linkMans ansi-styles@2.1.0
+157 verbose rebuildBundles ansi-styles@2.1.0
+158 info install ansi-styles@2.1.0
+159 info postinstall ansi-styles@2.1.0
+160 verbose rebuild bundle /home/monty/Code/node/yrs2015/node_modules/anymatch
+161 info build /home/monty/Code/node/yrs2015/node_modules/anymatch
+162 info preinstall anymatch@1.3.0
+163 info linkStuff anymatch@1.3.0
+164 silly linkStuff anymatch@1.3.0 has /home/monty/Code/node/yrs2015/node_modules as its parent node_modules
+165 verbose linkBins anymatch@1.3.0
+166 verbose linkMans anymatch@1.3.0
+167 verbose rebuildBundles anymatch@1.3.0
+168 info install anymatch@1.3.0
+169 info postinstall anymatch@1.3.0
+170 verbose rebuild bundle /home/monty/Code/node/yrs2015/node_modules/archy
+171 info build /home/monty/Code/node/yrs2015/node_modules/archy
+172 info preinstall archy@1.0.0
+173 info linkStuff archy@1.0.0
+174 silly linkStuff archy@1.0.0 has /home/monty/Code/node/yrs2015/node_modules as its parent node_modules
+175 verbose linkBins archy@1.0.0
+176 verbose linkMans archy@1.0.0
+177 verbose rebuildBundles archy@1.0.0
+178 info install archy@1.0.0
+179 info postinstall archy@1.0.0
+180 verbose rebuild bundle /home/monty/Code/node/yrs2015/node_modules/arr-diff
+181 info build /home/monty/Code/node/yrs2015/node_modules/arr-diff
+182 info preinstall arr-diff@1.0.1
+183 info linkStuff arr-diff@1.0.1
+184 silly linkStuff arr-diff@1.0.1 has /home/monty/Code/node/yrs2015/node_modules as its parent node_modules
+185 verbose linkBins arr-diff@1.0.1
+186 verbose linkMans arr-diff@1.0.1
+187 verbose rebuildBundles arr-diff@1.0.1
+188 info install arr-diff@1.0.1
+189 info postinstall arr-diff@1.0.1
+190 verbose rebuild bundle /home/monty/Code/node/yrs2015/node_modules/array-differ
+191 info build /home/monty/Code/node/yrs2015/node_modules/array-differ
+192 info preinstall array-differ@1.0.0
+193 info linkStuff array-differ@1.0.0
+194 silly linkStuff array-differ@1.0.0 has /home/monty/Code/node/yrs2015/node_modules as its parent node_modules
+195 verbose linkBins array-differ@1.0.0
+196 verbose linkMans array-differ@1.0.0
+197 verbose rebuildBundles array-differ@1.0.0
+198 info install array-differ@1.0.0
+199 info postinstall array-differ@1.0.0
+200 verbose rebuild bundle /home/monty/Code/node/yrs2015/node_modules/array-filter
+201 info build /home/monty/Code/node/yrs2015/node_modules/array-filter
+202 info preinstall array-filter@0.0.1
+203 info linkStuff array-filter@0.0.1
+204 silly linkStuff array-filter@0.0.1 has /home/monty/Code/node/yrs2015/node_modules as its parent node_modules
+205 verbose linkBins array-filter@0.0.1
+206 verbose linkMans array-filter@0.0.1
+207 verbose rebuildBundles array-filter@0.0.1
+208 info install array-filter@0.0.1
+209 info postinstall array-filter@0.0.1
+210 verbose rebuild bundle /home/monty/Code/node/yrs2015/node_modules/array-flatten
+211 info build /home/monty/Code/node/yrs2015/node_modules/array-flatten
+212 info preinstall array-flatten@1.1.0
+213 info linkStuff array-flatten@1.1.0
+214 silly linkStuff array-flatten@1.1.0 has /home/monty/Code/node/yrs2015/node_modules as its parent node_modules
+215 verbose linkBins array-flatten@1.1.0
+216 verbose linkMans array-flatten@1.1.0
+217 verbose rebuildBundles array-flatten@1.1.0
+218 info install array-flatten@1.1.0
+219 info postinstall array-flatten@1.1.0
+220 verbose rebuild bundle /home/monty/Code/node/yrs2015/node_modules/array-map
+221 info build /home/monty/Code/node/yrs2015/node_modules/array-map
+222 info preinstall array-map@0.0.0
+223 info linkStuff array-map@0.0.0
+224 silly linkStuff array-map@0.0.0 has /home/monty/Code/node/yrs2015/node_modules as its parent node_modules
+225 verbose linkBins array-map@0.0.0
+226 verbose linkMans array-map@0.0.0
+227 verbose rebuildBundles array-map@0.0.0
+228 info install array-map@0.0.0
+229 info postinstall array-map@0.0.0
+230 verbose rebuild bundle /home/monty/Code/node/yrs2015/node_modules/array-reduce
+231 info build /home/monty/Code/node/yrs2015/node_modules/array-reduce
+232 info preinstall array-reduce@0.0.0
+233 info linkStuff array-reduce@0.0.0
+234 silly linkStuff array-reduce@0.0.0 has /home/monty/Code/node/yrs2015/node_modules as its parent node_modules
+235 verbose linkBins array-reduce@0.0.0
+236 verbose linkMans array-reduce@0.0.0
+237 verbose rebuildBundles array-reduce@0.0.0
+238 info install array-reduce@0.0.0
+239 info postinstall array-reduce@0.0.0
+240 verbose rebuild bundle /home/monty/Code/node/yrs2015/node_modules/array-slice
+241 info build /home/monty/Code/node/yrs2015/node_modules/array-slice
+242 info preinstall array-slice@0.2.3
+243 info linkStuff array-slice@0.2.3
+244 silly linkStuff array-slice@0.2.3 has /home/monty/Code/node/yrs2015/node_modules as its parent node_modules
+245 verbose linkBins array-slice@0.2.3
+246 verbose linkMans array-slice@0.2.3
+247 verbose rebuildBundles array-slice@0.2.3
+248 info install array-slice@0.2.3
+249 info postinstall array-slice@0.2.3
+250 verbose rebuild bundle /home/monty/Code/node/yrs2015/node_modules/array-uniq
+251 info build /home/monty/Code/node/yrs2015/node_modules/array-uniq
+252 info preinstall array-uniq@1.0.2
+253 info linkStuff array-uniq@1.0.2
+254 silly linkStuff array-uniq@1.0.2 has /home/monty/Code/node/yrs2015/node_modules as its parent node_modules
+255 verbose linkBins array-uniq@1.0.2
+256 verbose linkMans array-uniq@1.0.2
+257 verbose rebuildBundles array-uniq@1.0.2
+258 info install array-uniq@1.0.2
+259 info postinstall array-uniq@1.0.2
+260 verbose rebuild bundle /home/monty/Code/node/yrs2015/node_modules/array-unique
+261 info build /home/monty/Code/node/yrs2015/node_modules/array-unique
+262 info preinstall array-unique@0.2.1
+263 info linkStuff array-unique@0.2.1
+264 silly linkStuff array-unique@0.2.1 has /home/monty/Code/node/yrs2015/node_modules as its parent node_modules
+265 verbose linkBins array-unique@0.2.1
+266 verbose linkMans array-unique@0.2.1
+267 verbose rebuildBundles array-unique@0.2.1
+268 info install array-unique@0.2.1
+269 info postinstall array-unique@0.2.1
+270 verbose rebuild bundle /home/monty/Code/node/yrs2015/node_modules/arraybuffer.slice
+271 info build /home/monty/Code/node/yrs2015/node_modules/arraybuffer.slice
+272 info preinstall arraybuffer.slice@0.0.6
+273 info linkStuff arraybuffer.slice@0.0.6
+274 silly linkStuff arraybuffer.slice@0.0.6 has /home/monty/Code/node/yrs2015/node_modules as its parent node_modules
+275 verbose linkBins arraybuffer.slice@0.0.6
+276 verbose linkMans arraybuffer.slice@0.0.6
+277 verbose rebuildBundles arraybuffer.slice@0.0.6
+278 info install arraybuffer.slice@0.0.6
+279 info postinstall arraybuffer.slice@0.0.6
+280 verbose rebuild bundle /home/monty/Code/node/yrs2015/node_modules/arrify
+281 info build /home/monty/Code/node/yrs2015/node_modules/arrify
+282 info preinstall arrify@1.0.0
+283 info linkStuff arrify@1.0.0
+284 silly linkStuff arrify@1.0.0 has /home/monty/Code/node/yrs2015/node_modules as its parent node_modules
+285 verbose linkBins arrify@1.0.0
+286 verbose linkMans arrify@1.0.0
+287 verbose rebuildBundles arrify@1.0.0
+288 info install arrify@1.0.0
+289 info postinstall arrify@1.0.0
+290 verbose rebuild bundle /home/monty/Code/node/yrs2015/node_modules/asap
+291 info build /home/monty/Code/node/yrs2015/node_modules/asap
+292 info preinstall asap@1.0.0
+293 info linkStuff asap@1.0.0
+294 silly linkStuff asap@1.0.0 has /home/monty/Code/node/yrs2015/node_modules as its parent node_modules
+295 verbose linkBins asap@1.0.0
+296 verbose linkMans asap@1.0.0
+297 verbose rebuildBundles asap@1.0.0
+298 info install asap@1.0.0
+299 info postinstall asap@1.0.0
+300 verbose rebuild bundle /home/monty/Code/node/yrs2015/node_modules/asn1
+301 info build /home/monty/Code/node/yrs2015/node_modules/asn1
+302 info preinstall asn1@0.1.11
+303 info linkStuff asn1@0.1.11
+304 silly linkStuff asn1@0.1.11 has /home/monty/Code/node/yrs2015/node_modules as its parent node_modules
+305 verbose linkBins asn1@0.1.11
+306 verbose linkMans asn1@0.1.11
+307 verbose rebuildBundles asn1@0.1.11
+308 info install asn1@0.1.11
+309 info postinstall asn1@0.1.11
+310 verbose rebuild bundle /home/monty/Code/node/yrs2015/node_modules/asn1.js
+311 info build /home/monty/Code/node/yrs2015/node_modules/asn1.js
+312 info preinstall asn1.js@2.1.3
+313 info linkStuff asn1.js@2.1.3
+314 silly linkStuff asn1.js@2.1.3 has /home/monty/Code/node/yrs2015/node_modules as its parent node_modules
+315 verbose linkBins asn1.js@2.1.3
+316 verbose linkMans asn1.js@2.1.3
+317 verbose rebuildBundles asn1.js@2.1.3
+318 info install asn1.js@2.1.3
+319 info postinstall asn1.js@2.1.3
+320 verbose rebuild bundle /home/monty/Code/node/yrs2015/node_modules/assert
+321 info build /home/monty/Code/node/yrs2015/node_modules/assert
+322 info preinstall assert@1.3.0
+323 info linkStuff assert@1.3.0
+324 silly linkStuff assert@1.3.0 has /home/monty/Code/node/yrs2015/node_modules as its parent node_modules
+325 verbose linkBins assert@1.3.0
+326 verbose linkMans assert@1.3.0
+327 verbose rebuildBundles assert@1.3.0
+328 info install assert@1.3.0
+329 info postinstall assert@1.3.0
+330 verbose rebuild bundle /home/monty/Code/node/yrs2015/node_modules/assert-plus
+331 info build /home/monty/Code/node/yrs2015/node_modules/assert-plus
+332 info preinstall assert-plus@0.1.5
+333 info linkStuff assert-plus@0.1.5
+334 silly linkStuff assert-plus@0.1.5 has /home/monty/Code/node/yrs2015/node_modules as its parent node_modules
+335 verbose linkBins assert-plus@0.1.5
+336 verbose linkMans assert-plus@0.1.5
+337 verbose rebuildBundles assert-plus@0.1.5
+338 info install assert-plus@0.1.5
+339 info postinstall assert-plus@0.1.5
+340 verbose rebuild bundle /home/monty/Code/node/yrs2015/node_modules/astw
+341 info build /home/monty/Code/node/yrs2015/node_modules/astw
+342 info preinstall astw@2.0.0
+343 info linkStuff astw@2.0.0
+344 silly linkStuff astw@2.0.0 has /home/monty/Code/node/yrs2015/node_modules as its parent node_modules
+345 verbose linkBins astw@2.0.0
+346 verbose linkMans astw@2.0.0
+347 verbose rebuildBundles astw@2.0.0
+348 info install astw@2.0.0
+349 info postinstall astw@2.0.0
+350 verbose rebuild bundle /home/monty/Code/node/yrs2015/node_modules/async-each
+351 info build /home/monty/Code/node/yrs2015/node_modules/async-each
+352 info preinstall async-each@0.1.6
+353 info linkStuff async-each@0.1.6
+354 silly linkStuff async-each@0.1.6 has /home/monty/Code/node/yrs2015/node_modules as its parent node_modules
+355 verbose linkBins async-each@0.1.6
+356 verbose linkMans async-each@0.1.6
+357 verbose rebuildBundles async-each@0.1.6
+358 info install async-each@0.1.6
+359 info postinstall async-each@0.1.6
+360 verbose rebuild bundle /home/monty/Code/node/yrs2015/node_modules/aws-sign2
+361 info build /home/monty/Code/node/yrs2015/node_modules/aws-sign2
+362 info preinstall aws-sign2@0.5.0
+363 info linkStuff aws-sign2@0.5.0
+364 silly linkStuff aws-sign2@0.5.0 has /home/monty/Code/node/yrs2015/node_modules as its parent node_modules
+365 verbose linkBins aws-sign2@0.5.0
+366 verbose linkMans aws-sign2@0.5.0
+367 verbose rebuildBundles aws-sign2@0.5.0
+368 info install aws-sign2@0.5.0
+369 info postinstall aws-sign2@0.5.0
+370 verbose rebuild bundle /home/monty/Code/node/yrs2015/node_modules/backo2
+371 info build /home/monty/Code/node/yrs2015/node_modules/backo2
+372 info preinstall backo2@1.0.2
+373 info linkStuff backo2@1.0.2
+374 silly linkStuff backo2@1.0.2 has /home/monty/Code/node/yrs2015/node_modules as its parent node_modules
+375 verbose linkBins backo2@1.0.2
+376 verbose linkMans backo2@1.0.2
+377 verbose rebuildBundles backo2@1.0.2
+378 info install backo2@1.0.2
+379 info postinstall backo2@1.0.2
+380 verbose rebuild bundle /home/monty/Code/node/yrs2015/node_modules/balanced-match
+381 info build /home/monty/Code/node/yrs2015/node_modules/balanced-match
+382 info preinstall balanced-match@0.2.0
+383 info linkStuff balanced-match@0.2.0
+384 silly linkStuff balanced-match@0.2.0 has /home/monty/Code/node/yrs2015/node_modules as its parent node_modules
+385 verbose linkBins balanced-match@0.2.0
+386 verbose linkMans balanced-match@0.2.0
+387 verbose rebuildBundles balanced-match@0.2.0
+388 info install balanced-match@0.2.0
+389 info postinstall balanced-match@0.2.0
+390 verbose rebuild bundle /home/monty/Code/node/yrs2015/node_modules/base64-arraybuffer
+391 info build /home/monty/Code/node/yrs2015/node_modules/base64-arraybuffer
+392 info preinstall base64-arraybuffer@0.1.2
+393 info linkStuff base64-arraybuffer@0.1.2
+394 silly linkStuff base64-arraybuffer@0.1.2 has /home/monty/Code/node/yrs2015/node_modules as its parent node_modules
+395 verbose linkBins base64-arraybuffer@0.1.2
+396 verbose linkMans base64-arraybuffer@0.1.2
+397 verbose rebuildBundles base64-arraybuffer@0.1.2
+398 info install base64-arraybuffer@0.1.2
+399 info postinstall base64-arraybuffer@0.1.2
+400 verbose rebuild bundle /home/monty/Code/node/yrs2015/node_modules/base64-js
+401 info build /home/monty/Code/node/yrs2015/node_modules/base64-js
+402 info preinstall base64-js@0.0.8
+403 info linkStuff base64-js@0.0.8
+404 silly linkStuff base64-js@0.0.8 has /home/monty/Code/node/yrs2015/node_modules as its parent node_modules
+405 verbose linkBins base64-js@0.0.8
+406 verbose linkMans base64-js@0.0.8
+407 verbose rebuildBundles base64-js@0.0.8
+408 info install base64-js@0.0.8
+409 info postinstall base64-js@0.0.8
+410 verbose rebuild bundle /home/monty/Code/node/yrs2015/node_modules/base64id
+411 info build /home/monty/Code/node/yrs2015/node_modules/base64id
+412 info preinstall base64id@0.1.0
+413 info linkStuff base64id@0.1.0
+414 silly linkStuff base64id@0.1.0 has /home/monty/Code/node/yrs2015/node_modules as its parent node_modules
+415 verbose linkBins base64id@0.1.0
+416 verbose linkMans base64id@0.1.0
+417 verbose rebuildBundles base64id@0.1.0
+418 info install base64id@0.1.0
+419 info postinstall base64id@0.1.0
+420 verbose rebuild bundle /home/monty/Code/node/yrs2015/node_modules/beeper
+421 info build /home/monty/Code/node/yrs2015/node_modules/beeper
+422 info preinstall beeper@1.1.0
+423 info linkStuff beeper@1.1.0
+424 silly linkStuff beeper@1.1.0 has /home/monty/Code/node/yrs2015/node_modules as its parent node_modules
+425 verbose linkBins beeper@1.1.0
+426 verbose linkMans beeper@1.1.0
+427 verbose rebuildBundles beeper@1.1.0
+428 info install beeper@1.1.0
+429 info postinstall beeper@1.1.0
+430 verbose rebuild bundle /home/monty/Code/node/yrs2015/node_modules/benchmark
+431 info build /home/monty/Code/node/yrs2015/node_modules/benchmark
+432 info preinstall benchmark@1.0.0
+433 info linkStuff benchmark@1.0.0
+434 silly linkStuff benchmark@1.0.0 has /home/monty/Code/node/yrs2015/node_modules as its parent node_modules
+435 verbose linkBins benchmark@1.0.0
+436 verbose linkMans benchmark@1.0.0
+437 verbose rebuildBundles benchmark@1.0.0
+438 info install benchmark@1.0.0
+439 info postinstall benchmark@1.0.0
+440 verbose rebuild bundle /home/monty/Code/node/yrs2015/node_modules/better-assert
+441 info build /home/monty/Code/node/yrs2015/node_modules/better-assert
+442 info preinstall better-assert@1.0.2
+443 info linkStuff better-assert@1.0.2
+444 silly linkStuff better-assert@1.0.2 has /home/monty/Code/node/yrs2015/node_modules as its parent node_modules
+445 verbose linkBins better-assert@1.0.2
+446 verbose linkMans better-assert@1.0.2
+447 verbose rebuildBundles better-assert@1.0.2
+448 info install better-assert@1.0.2
+449 info postinstall better-assert@1.0.2
+450 verbose rebuild bundle /home/monty/Code/node/yrs2015/node_modules/binary-extensions
+451 info build /home/monty/Code/node/yrs2015/node_modules/binary-extensions
+452 info preinstall binary-extensions@1.3.1
+453 info linkStuff binary-extensions@1.3.1
+454 silly linkStuff binary-extensions@1.3.1 has /home/monty/Code/node/yrs2015/node_modules as its parent node_modules
+455 verbose linkBins binary-extensions@1.3.1
+456 verbose linkMans binary-extensions@1.3.1
+457 verbose rebuildBundles binary-extensions@1.3.1
+458 info install binary-extensions@1.3.1
+459 info postinstall binary-extensions@1.3.1
+460 verbose rebuild bundle /home/monty/Code/node/yrs2015/node_modules/bindings
+461 info build /home/monty/Code/node/yrs2015/node_modules/bindings
+462 info preinstall bindings@1.2.1
+463 info linkStuff bindings@1.2.1
+464 silly linkStuff bindings@1.2.1 has /home/monty/Code/node/yrs2015/node_modules as its parent node_modules
+465 verbose linkBins bindings@1.2.1
+466 verbose linkMans bindings@1.2.1
+467 verbose rebuildBundles bindings@1.2.1
+468 info install bindings@1.2.1
+469 info postinstall bindings@1.2.1
+470 verbose rebuild bundle /home/monty/Code/node/yrs2015/node_modules/bl
+471 info build /home/monty/Code/node/yrs2015/node_modules/bl
+472 info preinstall bl@1.0.0
+473 info linkStuff bl@1.0.0
+474 silly linkStuff bl@1.0.0 has /home/monty/Code/node/yrs2015/node_modules as its parent node_modules
+475 verbose linkBins bl@1.0.0
+476 verbose linkMans bl@1.0.0
+477 verbose rebuildBundles bl@1.0.0
+478 info install bl@1.0.0
+479 info postinstall bl@1.0.0
+480 verbose rebuild bundle /home/monty/Code/node/yrs2015/node_modules/blob
+481 info build /home/monty/Code/node/yrs2015/node_modules/blob
+482 info preinstall blob@0.0.2
+483 info linkStuff blob@0.0.2
+484 silly linkStuff blob@0.0.2 has /home/monty/Code/node/yrs2015/node_modules as its parent node_modules
+485 verbose linkBins blob@0.0.2
+486 verbose linkMans blob@0.0.2
+487 verbose rebuildBundles blob@0.0.2
+488 info install blob@0.0.2
+489 info postinstall blob@0.0.2
+490 verbose rebuild bundle /home/monty/Code/node/yrs2015/node_modules/bluebird
+491 info build /home/monty/Code/node/yrs2015/node_modules/bluebird
+492 info preinstall bluebird@2.9.34
+493 info linkStuff bluebird@2.9.34
+494 silly linkStuff bluebird@2.9.34 has /home/monty/Code/node/yrs2015/node_modules as its parent node_modules
+495 verbose linkBins bluebird@2.9.34
+496 verbose linkMans bluebird@2.9.34
+497 verbose rebuildBundles bluebird@2.9.34
+498 info install bluebird@2.9.34
+499 info postinstall bluebird@2.9.34
+500 verbose rebuild bundle /home/monty/Code/node/yrs2015/node_modules/bn.js
+501 info build /home/monty/Code/node/yrs2015/node_modules/bn.js
+502 info preinstall bn.js@2.2.0
+503 info linkStuff bn.js@2.2.0
+504 silly linkStuff bn.js@2.2.0 has /home/monty/Code/node/yrs2015/node_modules as its parent node_modules
+505 verbose linkBins bn.js@2.2.0
+506 verbose linkMans bn.js@2.2.0
+507 verbose rebuildBundles bn.js@2.2.0
+508 info install bn.js@2.2.0
+509 info postinstall bn.js@2.2.0
+510 verbose rebuild bundle /home/monty/Code/node/yrs2015/node_modules/boom
+511 info build /home/monty/Code/node/yrs2015/node_modules/boom
+512 info preinstall boom@2.8.0
+513 info linkStuff boom@2.8.0
+514 silly linkStuff boom@2.8.0 has /home/monty/Code/node/yrs2015/node_modules as its parent node_modules
+515 verbose linkBins boom@2.8.0
+516 verbose linkMans boom@2.8.0
+517 verbose rebuildBundles boom@2.8.0
+518 info install boom@2.8.0
+519 info postinstall boom@2.8.0
+520 verbose rebuild bundle /home/monty/Code/node/yrs2015/node_modules/brace-expansion
+521 info build /home/monty/Code/node/yrs2015/node_modules/brace-expansion
+522 info preinstall brace-expansion@1.1.0
+523 info linkStuff brace-expansion@1.1.0
+524 silly linkStuff brace-expansion@1.1.0 has /home/monty/Code/node/yrs2015/node_modules as its parent node_modules
+525 verbose linkBins brace-expansion@1.1.0
+526 verbose linkMans brace-expansion@1.1.0
+527 verbose rebuildBundles brace-expansion@1.1.0
+528 info install brace-expansion@1.1.0
+529 info postinstall brace-expansion@1.1.0
+530 verbose rebuild bundle /home/monty/Code/node/yrs2015/node_modules/braces
+531 info build /home/monty/Code/node/yrs2015/node_modules/braces
+532 info preinstall braces@1.8.0
+533 info linkStuff braces@1.8.0
+534 silly linkStuff braces@1.8.0 has /home/monty/Code/node/yrs2015/node_modules as its parent node_modules
+535 verbose linkBins braces@1.8.0
+536 verbose linkMans braces@1.8.0
+537 verbose rebuildBundles braces@1.8.0
+538 info install braces@1.8.0
+539 info postinstall braces@1.8.0
+540 verbose rebuild bundle /home/monty/Code/node/yrs2015/node_modules/brorand
+541 info build /home/monty/Code/node/yrs2015/node_modules/brorand
+542 info preinstall brorand@1.0.5
+543 info linkStuff brorand@1.0.5
+544 silly linkStuff brorand@1.0.5 has /home/monty/Code/node/yrs2015/node_modules as its parent node_modules
+545 verbose linkBins brorand@1.0.5
+546 verbose linkMans brorand@1.0.5
+547 verbose rebuildBundles brorand@1.0.5
+548 info install brorand@1.0.5
+549 info postinstall brorand@1.0.5
+550 verbose rebuild bundle /home/monty/Code/node/yrs2015/node_modules/browser-pack
+551 info build /home/monty/Code/node/yrs2015/node_modules/browser-pack
+552 info preinstall browser-pack@5.0.1
+553 info linkStuff browser-pack@5.0.1
+554 silly linkStuff browser-pack@5.0.1 has /home/monty/Code/node/yrs2015/node_modules as its parent node_modules
+555 verbose linkBins browser-pack@5.0.1
+556 verbose link bins [ { 'browser-pack': 'bin/cmd.js' },
+556 verbose link bins   '/home/monty/Code/node/yrs2015/node_modules/.bin',
+556 verbose link bins   false ]
+557 verbose linkMans browser-pack@5.0.1
+558 verbose rebuildBundles browser-pack@5.0.1
+559 info install browser-pack@5.0.1
+560 info postinstall browser-pack@5.0.1
+561 verbose rebuild bundle /home/monty/Code/node/yrs2015/node_modules/browser-resolve
+562 info build /home/monty/Code/node/yrs2015/node_modules/browser-resolve
+563 info preinstall browser-resolve@1.9.0
+564 info linkStuff browser-resolve@1.9.0
+565 silly linkStuff browser-resolve@1.9.0 has /home/monty/Code/node/yrs2015/node_modules as its parent node_modules
+566 verbose linkBins browser-resolve@1.9.0
+567 verbose linkMans browser-resolve@1.9.0
+568 verbose rebuildBundles browser-resolve@1.9.0
+569 info install browser-resolve@1.9.0
+570 info postinstall browser-resolve@1.9.0
+571 verbose rebuild bundle /home/monty/Code/node/yrs2015/node_modules/browserify-aes
+572 info build /home/monty/Code/node/yrs2015/node_modules/browserify-aes
+573 info preinstall browserify-aes@1.0.2
+574 info linkStuff browserify-aes@1.0.2
+575 silly linkStuff browserify-aes@1.0.2 has /home/monty/Code/node/yrs2015/node_modules as its parent node_modules
+576 verbose linkBins browserify-aes@1.0.2
+577 verbose linkMans browserify-aes@1.0.2
+578 verbose rebuildBundles browserify-aes@1.0.2
+579 info install browserify-aes@1.0.2
+580 info postinstall browserify-aes@1.0.2
+581 verbose rebuild bundle /home/monty/Code/node/yrs2015/node_modules/browserify-rsa
+582 info build /home/monty/Code/node/yrs2015/node_modules/browserify-rsa
+583 info preinstall browserify-rsa@2.0.1
+584 info linkStuff browserify-rsa@2.0.1
+585 silly linkStuff browserify-rsa@2.0.1 has /home/monty/Code/node/yrs2015/node_modules as its parent node_modules
+586 verbose linkBins browserify-rsa@2.0.1
+587 verbose linkMans browserify-rsa@2.0.1
+588 verbose rebuildBundles browserify-rsa@2.0.1
+589 info install browserify-rsa@2.0.1
+590 info postinstall browserify-rsa@2.0.1
+591 verbose rebuild bundle /home/monty/Code/node/yrs2015/node_modules/browserify-sign
+592 info build /home/monty/Code/node/yrs2015/node_modules/browserify-sign
+593 info preinstall browserify-sign@3.0.2
+594 info linkStuff browserify-sign@3.0.2
+595 silly linkStuff browserify-sign@3.0.2 has /home/monty/Code/node/yrs2015/node_modules as its parent node_modules
+596 verbose linkBins browserify-sign@3.0.2
+597 verbose linkMans browserify-sign@3.0.2
+598 verbose rebuildBundles browserify-sign@3.0.2
+599 info install browserify-sign@3.0.2
+600 info postinstall browserify-sign@3.0.2
+601 verbose rebuild bundle /home/monty/Code/node/yrs2015/node_modules/browserify-zlib
+602 info build /home/monty/Code/node/yrs2015/node_modules/browserify-zlib
+603 info preinstall browserify-zlib@0.1.4
+604 info linkStuff browserify-zlib@0.1.4
+605 silly linkStuff browserify-zlib@0.1.4 has /home/monty/Code/node/yrs2015/node_modules as its parent node_modules
+606 verbose linkBins browserify-zlib@0.1.4
+607 verbose linkMans browserify-zlib@0.1.4
+608 verbose rebuildBundles browserify-zlib@0.1.4
+609 info install browserify-zlib@0.1.4
+610 info postinstall browserify-zlib@0.1.4
+611 verbose rebuild bundle /home/monty/Code/node/yrs2015/node_modules/buffer
+612 info build /home/monty/Code/node/yrs2015/node_modules/buffer
+613 info preinstall buffer@3.3.1
+614 info linkStuff buffer@3.3.1
+615 silly linkStuff buffer@3.3.1 has /home/monty/Code/node/yrs2015/node_modules as its parent node_modules
+616 verbose linkBins buffer@3.3.1
+617 verbose linkMans buffer@3.3.1
+618 verbose rebuildBundles buffer@3.3.1
+619 info install buffer@3.3.1
+620 info postinstall buffer@3.3.1
+621 verbose rebuild bundle /home/monty/Code/node/yrs2015/node_modules/buffer-xor
+622 info build /home/monty/Code/node/yrs2015/node_modules/buffer-xor
+623 info preinstall buffer-xor@1.0.2
+624 info linkStuff buffer-xor@1.0.2
+625 silly linkStuff buffer-xor@1.0.2 has /home/monty/Code/node/yrs2015/node_modules as its parent node_modules
+626 verbose linkBins buffer-xor@1.0.2
+627 verbose linkMans buffer-xor@1.0.2
+628 verbose rebuildBundles buffer-xor@1.0.2
+629 info install buffer-xor@1.0.2
+630 info postinstall buffer-xor@1.0.2
+631 verbose rebuild bundle /home/monty/Code/node/yrs2015/node_modules/bufferstreams
+632 info build /home/monty/Code/node/yrs2015/node_modules/bufferstreams
+633 info preinstall bufferstreams@1.0.1
+634 info linkStuff bufferstreams@1.0.1
+635 silly linkStuff bufferstreams@1.0.1 has /home/monty/Code/node/yrs2015/node_modules as its parent node_modules
+636 verbose linkBins bufferstreams@1.0.1
+637 verbose linkMans bufferstreams@1.0.1
+638 verbose rebuildBundles bufferstreams@1.0.1
+639 verbose rebuildBundles [ 'readable-stream' ]
+640 info install bufferstreams@1.0.1
+641 info postinstall bufferstreams@1.0.1
+642 verbose rebuild bundle /home/monty/Code/node/yrs2015/node_modules/bufferutil
+643 info build /home/monty/Code/node/yrs2015/node_modules/bufferutil
+644 info preinstall bufferutil@1.1.0
+645 info linkStuff bufferutil@1.1.0
+646 silly linkStuff bufferutil@1.1.0 has /home/monty/Code/node/yrs2015/node_modules as its parent node_modules
+647 verbose linkBins bufferutil@1.1.0
+648 verbose linkMans bufferutil@1.1.0
+649 verbose rebuildBundles bufferutil@1.1.0
+650 info install bufferutil@1.1.0
+651 verbose unsafe-perm in lifecycle true
+652 info bufferutil@1.1.0 Failed to exec install script
+653 verbose stack Error: bufferutil@1.1.0 install: `node-gyp rebuild`
+653 verbose stack Exit status 1
+653 verbose stack     at EventEmitter.<anonymous> (/home/monty/.bin/iojs-v2.4.0-linux-x64/lib/node_modules/npm/lib/utils/lifecycle.js:223:16)
+653 verbose stack     at emitTwo (events.js:87:13)
+653 verbose stack     at EventEmitter.emit (events.js:172:7)
+653 verbose stack     at ChildProcess.<anonymous> (/home/monty/.bin/iojs-v2.4.0-linux-x64/lib/node_modules/npm/lib/utils/spawn.js:24:14)
+653 verbose stack     at emitTwo (events.js:87:13)
+653 verbose stack     at ChildProcess.emit (events.js:172:7)
+653 verbose stack     at maybeClose (internal/child_process.js:764:16)
+653 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:211:5)
+654 verbose pkgid bufferutil@1.1.0
+655 verbose cwd /home/monty/Code/node/yrs2015
+656 error Linux 3.19.0-23-generic
+657 error argv "/home/monty/.bin/iojs-v2.4.0-linux-x64/bin/iojs" "/home/monty/.bin/iojs-v2.4.0-linux-x64/bin/npm" "install"
+658 error node v2.4.0
+659 error npm  v3.2.0
+660 error code ELIFECYCLE
+661 error bufferutil@1.1.0 install: `node-gyp rebuild`
+661 error Exit status 1
+662 error Failed at the bufferutil@1.1.0 install script 'node-gyp rebuild'.
+662 error This is most likely a problem with the bufferutil package,
+662 error not with npm itself.
+662 error Tell the author that this fails on your system:
+662 error     node-gyp rebuild
+662 error You can get their info via:
+662 error     npm owner ls bufferutil
+662 error There is likely additional logging output above.
+663 verbose exit [ 1, true ]
