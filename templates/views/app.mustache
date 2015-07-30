@@ -5,7 +5,19 @@
             <a class="waves-effect waves-light btn modal-trigger orange s12" href="#add-artist">Add Artist</a>
             <a class="waves-effect waves-light btn modal-trigger orange s12" href="#add-tag">Add Tag</a>
             <a class="waves-effect waves-light btn red s12 generate">Generate playlist</a>
-            <span class="playlist"></span>
+            <span class="playlist">
+                <div class="preloader-wrapper big active">
+                    <div class="spinner-layer spinner-orange-only">
+                        <div class="circle-clipper left">
+                            <div class="circle"></div>
+                            </div><div class="gap-patch">
+                            <div class="circle"></div>
+                            </div><div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+            </div>
+        </span>
         </div>
         <div class="col s12 m6">
             <h2>Most Important</h2>
@@ -13,16 +25,6 @@
             <h2>Least important</h2>
         </div>
     </div>
-    <div class="fixed-action-btn">
-   <a class="btn-floating btn-large red">
-     <i class="large material-icons">mode_edit</i>
-   </a>
-   <ul>
-     <li><a class="btn-floating yellow darken-1 btn-expand" data-directionOn="padding-left"><i class="material-icons">queue_music</i></a></li>
-     <li><a class="btn-floating green btn-expand" data-directionOn="padding-right"><i class="material-icons">queue_music</i></a></li>
-     <li><a class="btn-floating blue btn-expand" data-directionOn="padding-left"><i class="material-icons">queue_music</i></a></li>
-   </ul>
- </div>
 </div>
 
 {{#modals}}
@@ -52,30 +54,3 @@
 </div>
 
 {{/modals}}
-
-
-<footer class="page-footer">
-  <div class="container">
-    <div class="row">
-       <div class="col l6 s12">
-         <h5 class="white-text">Footer Content</h5>
-            <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
-          </div>
-          <div class="col l4 offset-l2 s12">
-              <h5 class="white-text">Links</h5>
-              <ul>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
-              </ul>
-          </div>
-            </div>
-          </div>
-          <div class="footer-copyright">
-              <div class="container">
-                  © 2014 Copyright Text
-              <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
-          </div>
-    </div>
-</footer>
