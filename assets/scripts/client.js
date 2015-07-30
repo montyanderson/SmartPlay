@@ -99,6 +99,17 @@ module.exports = function() {
 
 
         $(".sortable").append(html);
+
+        if ($('.sort-container').height() >= '494') {
+            console.log($('.sort-container'));
+            $('.sort-container').css({
+                height: $('.sort-container').height(),
+                overflow: 'scroll'
+            });
+        } else {
+            console.log("small");
+        }
+
     });
 
     socket.on("tag", function(data) {
