@@ -101,11 +101,11 @@ module.exports = function() {
         $(".sortable").append(html);
 
         if ($('.sort-container').height() >= '494') {
-            console.log($('.sort-container'));
             $('.sort-container').css({
                 height: $('.sort-container').height(),
                 overflow: 'scroll'
             });
+            $('.sort-container').scrollTop($('.sort-container').height());
         } else {
             console.log("small");
         }
