@@ -1,16 +1,20 @@
 module.exports = function(data) {
-    console.log(data);
-    var len = data.length,
+    var len = data.length - 1,
         descendArr = [],
-        i = 0;
+        i = 0,
+        totalTracks = data[len];
+    console.log(totalTracks);
+    console.log(data);
+    data.pop();
+    console.log(data);
 
     for (i = len; i > 0; i--) {
         descendArr.push(i);
     }
 
     function convert () {
-        var naturalSum = (len / 2) * (len + 1),
-            totalTracks = 10 + ((len - 1) * 5);
+        var naturalSum = (len / 2) * (len + 1);
+
         if (totalTracks >= naturalSum) {
             var sum = 0;
             for (i = 0; i < len; i++) {

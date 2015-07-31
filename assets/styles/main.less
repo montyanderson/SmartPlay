@@ -171,4 +171,30 @@ input[type=range]::-moz-focus-outer {
 		 box-shadow: 0 2px 5px 0 rgba(0,0,0,.16),0 2px 10px 0 rgba(0,0,0,.12);
 		 color: orange;
 		 background-color: #fff;
-   }
+}
+input.circle {
+    width: 100px;
+    height: 100px;
+	padding: 10px;
+	border-radius: 50%;
+    border: none;
+	text-align: center;
+	color: white;
+	font-size: 50px;
+	outline: none;
+	margin-top:20px;
+}
+input.circle::-webkit-input-placeholder { /* WebKit browsers */
+	color: white;
+}
+input.circle:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color: white;
+   opacity:  1;
+}
+input.circle::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color: white;
+   opacity:  1;
+}
+input.circle:-ms-input-placeholder { 
+   color: white;
+}
