@@ -35,9 +35,7 @@ module.exports = function() {
     }, false);
 
     $(".generate").click(function() {
-        var data = [],
-            value = parseInt($('input.circle').val());
-        $('input.circle').hide();
+        var data = [];
 
         $(".sortable").children("li").each(function() {
             data.push({
@@ -45,7 +43,6 @@ module.exports = function() {
                 type: $(this).data("type")
             });
         });
-        data.push(value);
 
         console.log(data);
         socket.emit("generate", data);
