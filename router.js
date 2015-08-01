@@ -30,5 +30,10 @@ router.get("/", function(req, res) {
     });
 });
 
+router.get("/tech", function(req, res) {
+    res.render("tech", {
+        layout: "main"
+    });
+});
 
 module.exports = router;

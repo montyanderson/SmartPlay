@@ -121,7 +121,7 @@ module.exports = function() {
         var html = mustache.render(template, {
             name: data.name,
             data: [
-                ["Wiki", data.wiki.summary]
+                ["Total Songs", data.taggings]
             ],
             type: "tag",
             color: colors[Math.floor(Math.random() * colors.length)]
