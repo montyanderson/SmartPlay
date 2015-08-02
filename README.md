@@ -10,13 +10,19 @@
 
 ``` json
 {
-    "lastfm": "xxx-lastfm-api-key-xxx",
     "redis": {
         "port": 6379,
         "ip": "localhost",
         "auth": ""
     }
 }
+```
+
+* Set your API keys
+
+``` bash
+$ redis-cli
+127.0.0.1:6379> SET lastfm_id xxx-your-api-key-xxx
 ```
 
 * Install the dependencies
