@@ -12,6 +12,7 @@ var db = redis.createClient(config.redis.port, config.redis.ip, {
 
 var base = "https://api.spotify.com/v1/";
 
+/*
 var id = "",
     secret = "",
     token = "";
@@ -50,6 +51,7 @@ function getToken() {
         console.log(body);
     });
 }
+*/
 
 module.exports = function(path, query, callback) {
     var url = base + path + "/?" + querystring.stringify(merge({
