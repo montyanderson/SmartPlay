@@ -22,7 +22,7 @@ module.exports = function(io) {
                 }, function(data) {
                     console.log(data);
 
-                    if(typeof data.results.artistmatches.length == "array" && data.results.artistmatches.length > 0) {
+                    if(data.results.artistmatches != "\n") {
                         if(artist.obscurity && Math.abs(artist.obscuity) <= 100) {
                             data.results.artistmatches.artist.obscurity = artist.obscurity;
                         }
