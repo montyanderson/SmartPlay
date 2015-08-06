@@ -1,5 +1,5 @@
 {
-  "name": "yrs2015",
+  "name": "SmartPlay",
   "version": "0.0.1",
   "description": "",
   "main": "server.js",
@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/montyanderson/yrs2015.git"
+    "url": "git+https://github.com/montyanderson/SmartPlay.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/montyanderson/yrs2015/issues"
+    "url": "https://github.com/montyanderson/SmartPlay/issues"
   },
-  "homepage": "https://github.com/montyanderson/yrs2015#readme",
+  "homepage": "https://github.com/montyanderson/SmartPlay#readme",
   "dependencies": {
     "animate.css": "^3.2.5",
     "async": "^1.4.0",

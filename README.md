@@ -1,6 +1,6 @@
-# yrs2015
+# SmartPlay
 
-![David DM](https://david-dm.org/montyanderson/yrs2015.svg)
+![David DM](https://david-dm.org/montyanderson/SmartPlay.svg)
 
 ## Install
 
