@@ -1,0 +1,10 @@
+{
+  "name": "yrs2015",
+  "version": "0.0.0",
+  "homepage": "https://github.com/montyanderson/yrs2015",
+  "description": "smartplay",
+  "license": "MIT",
+  "dependencies": {
+    "wow": "wowjs#~1.1.2"
+  }
+}
