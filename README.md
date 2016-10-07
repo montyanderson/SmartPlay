@@ -2,6 +2,8 @@
 
 ![David DM](https://david-dm.org/montyanderson/SmartPlay.svg)
 
+## This project is discontinued, please check out [Storm](https://github.com/montyanderson/storm).
+
 ## Install
 
 * Install Node.js and redis.
